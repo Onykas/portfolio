@@ -843,6 +843,7 @@ fr: {
 "proj.nova.shot6.cap": "Tableau de bord boutique",
 "proj.nova.shot7.cap": "Messagerie instantanée client &amp; boutique",
 "proj.nova.cta.github": "Voir sur GitHub",
+"portp.cta.lede": "Je recherche une alternance en Master à partir de septembre 2026.",
 },
 
 en: {
@@ -1688,6 +1689,7 @@ en: {
 "proj.nova.shot6.cap": "Shop dashboard",
 "proj.nova.shot7.cap": "Instant messaging between client &amp; shop",
 "proj.nova.cta.github": "View on GitHub",
+"portp.cta.lede": "I'm looking for a Master's work-study placement starting September 2026.",
 },
 
 es: {
@@ -2533,6 +2535,7 @@ es: {
 "proj.nova.shot6.cap": "Panel de control de la tienda",
 "proj.nova.shot7.cap": "Mensajería instantánea entre cliente y tienda",
 "proj.nova.cta.github": "Ver en GitHub",
+"portp.cta.lede": "Busco un contrato de formación en Máster a partir de septiembre de 2026.",
 },
 
 de: {
@@ -3378,6 +3381,7 @@ de: {
 "proj.nova.shot6.cap": "Shop-Dashboard",
 "proj.nova.shot7.cap": "Sofortnachrichten zwischen Kunde &amp; Shop",
 "proj.nova.cta.github": "Auf GitHub ansehen",
+"portp.cta.lede": "Ich suche einen dualen Masterplatz ab September 2026.",
 }
 
 };
