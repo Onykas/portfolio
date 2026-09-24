@@ -833,6 +833,15 @@ fr: {
 "passions.video.sub": "Quelques montages, cliquez pour visionner",
 "passions.events.h2": "Événements et rencontres",
 "passions.events.sub": "Conférences, tables rondes et rencontres, clique pour voir",
+"proj.nova.shot1.cap": "Écran d'accueil : créer un compte client ou boutique",
+"proj.nova.s1b.h2": "Le parcours client",
+"proj.nova.s1b.p1": "Un client parcourt les boutiques et les nouveautés, ouvre une fiche produit puis l'ajoute au panier, jusqu'au paiement Stripe, sans jamais quitter l'application.",
+"proj.nova.shot2.cap": "Explorer les boutiques et les nouveautés",
+"proj.nova.shot3.cap": "Fiche produit, ajout au panier",
+"proj.nova.shot4.cap": "Panier avant passage au paiement",
+"proj.nova.shot5.cap": "Réservation obligatoire de la séance photo",
+"proj.nova.shot6.cap": "Tableau de bord boutique",
+"proj.nova.shot7.cap": "Messagerie instantanée client &amp; boutique",
 },
 
 en: {
@@ -1668,6 +1677,15 @@ en: {
 "passions.video.sub": "A few edits, click to watch",
 "passions.events.h2": "Events and encounters",
 "passions.events.sub": "Talks, panels and meetups, click to view",
+"proj.nova.shot1.cap": "Home screen: create a client or shop account",
+"proj.nova.s1b.h2": "The client journey",
+"proj.nova.s1b.p1": "A client browses shops and new arrivals, opens a product page and adds it to the cart, through to Stripe checkout, without ever leaving the app.",
+"proj.nova.shot2.cap": "Exploring shops and new arrivals",
+"proj.nova.shot3.cap": "Product page, add to cart",
+"proj.nova.shot4.cap": "Cart before checkout",
+"proj.nova.shot5.cap": "Mandatory photo session booking",
+"proj.nova.shot6.cap": "Shop dashboard",
+"proj.nova.shot7.cap": "Instant messaging between client &amp; shop",
 },
 
 es: {
@@ -2503,6 +2521,15 @@ es: {
 "passions.video.sub": "Algunas ediciones, haz clic para verlas",
 "passions.events.h2": "Eventos y encuentros",
 "passions.events.sub": "Conferencias, mesas redondas y encuentros, haz clic para ver",
+"proj.nova.shot1.cap": "Pantalla de inicio: crear una cuenta de cliente o tienda",
+"proj.nova.s1b.h2": "El recorrido del cliente",
+"proj.nova.s1b.p1": "Un cliente explora las tiendas y las novedades, abre una ficha de producto y la añade al carrito, hasta el pago con Stripe, sin salir nunca de la aplicación.",
+"proj.nova.shot2.cap": "Explorar tiendas y novedades",
+"proj.nova.shot3.cap": "Ficha de producto, añadir al carrito",
+"proj.nova.shot4.cap": "Carrito antes del pago",
+"proj.nova.shot5.cap": "Reserva obligatoria de la sesión de fotos",
+"proj.nova.shot6.cap": "Panel de control de la tienda",
+"proj.nova.shot7.cap": "Mensajería instantánea entre cliente y tienda",
 },
 
 de: {
@@ -3338,6 +3365,15 @@ de: {
 "passions.video.sub": "Ein paar Schnitte, klicken zum Ansehen",
 "passions.events.h2": "Veranstaltungen und Begegnungen",
 "passions.events.sub": "Vorträge, Podiumsdiskussionen und Begegnungen, klicken zum Ansehen",
+"proj.nova.shot1.cap": "Startbildschirm: Kunden- oder Shop-Konto erstellen",
+"proj.nova.s1b.h2": "Die Customer Journey",
+"proj.nova.s1b.p1": "Ein Kunde durchstöbert Shops und Neuheiten, öffnet eine Produktseite und legt sie in den Warenkorb, bis hin zur Stripe-Kasse, ohne die App je zu verlassen.",
+"proj.nova.shot2.cap": "Shops und Neuheiten entdecken",
+"proj.nova.shot3.cap": "Produktseite, zum Warenkorb hinzufügen",
+"proj.nova.shot4.cap": "Warenkorb vor dem Checkout",
+"proj.nova.shot5.cap": "Verpflichtende Buchung der Fotosession",
+"proj.nova.shot6.cap": "Shop-Dashboard",
+"proj.nova.shot7.cap": "Sofortnachrichten zwischen Kunde &amp; Shop",
 }
 
 };

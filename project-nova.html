@@ -911,6 +911,35 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 .story-shot{ margin:32px 0; border-radius:18px; overflow:hidden; border:1px solid var(--line-strong); box-shadow:0 20px 50px rgba(0,0,0,.3); }
 .story-shot img{ width:100%; display:block; }
 .story-shot-cap{ text-align:center; font-family:var(--mono); font-size:11px; color:var(--ink-muted); margin-top:10px; }
+.story-shot-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:32px 0; max-width:520px; margin-left:auto; margin-right:auto; }
+.story-shot-grid .story-shot{ margin:0; }
+@media (max-width:768px){ .story-shot-grid{ grid-template-columns:repeat(3,1fr); max-width:340px; } }
+
+/* ============ PHONE MOCKUP ============ */
+.phone-wrap{ margin:32px auto; display:flex; flex-direction:column; align-items:center; perspective:1400px; }
+.phone-frame{
+  position:relative; margin:0 auto;
+  background:linear-gradient(145deg,#2c2c2c,#050505);
+  border-radius:34px;
+  box-shadow:0 30px 60px rgba(0,0,0,.5), inset 0 0 0 2px rgba(255,255,255,.08);
+  animation: phoneFloat 6s ease-in-out infinite;
+  transform-style:preserve-3d;
+  will-change:transform;
+}
+.phone-frame.lg{ width:210px; padding:13px 13px 20px; }
+.phone-frame .notch{ position:absolute; top:11px; left:50%; transform:translateX(-50%); width:56px; height:13px; background:#050505; border-radius:10px; z-index:2; }
+.phone-frame .home-bar{ position:absolute; bottom:7px; left:50%; transform:translateX(-50%); width:56px; height:4px; background:rgba(255,255,255,.25); border-radius:4px; z-index:2; }
+.phone-screen{ position:relative; border-radius:22px; overflow:hidden; border:1px solid rgba(255,255,255,.08); }
+.phone-screen img{ width:100%; display:block; }
+.phone-glow{ position:absolute; inset:-34px; z-index:-1; border-radius:50%; background:radial-gradient(circle, var(--accent-soft) 0%, color-mix(in srgb, var(--accent) 12%, transparent) 35%, transparent 72%); filter:blur(42px); animation:phoneGlowPulse 6s ease-in-out infinite; }
+.phone-shadow{ position:absolute; left:50%; bottom:-26px; width:72%; height:22px; background:radial-gradient(ellipse, rgba(0,0,0,.55) 0%, transparent 72%); transform:translateX(-50%); animation:phoneShadowPulse 6s ease-in-out infinite; z-index:-1; }
+@keyframes phoneFloat{
+  0%,100%{ transform:translateY(0) rotateY(-10deg) rotateX(5deg); }
+  50%{ transform:translateY(-18px) rotateY(9deg) rotateX(-4deg); }
+}
+@keyframes phoneGlowPulse{ 0%,100%{ opacity:.65; transform:scale(1); } 50%{ opacity:1; transform:scale(1.18); } }
+@keyframes phoneShadowPulse{ 0%,100%{ opacity:.8; transform:translateX(-50%) scale(1); } 50%{ opacity:.35; transform:translateX(-50%) scale(.78); } }
+@media (prefers-reduced-motion: reduce){ .phone-frame{ animation:none; } .phone-glow{ animation:none; } .phone-shadow{ animation:none; } }
 
 .cta-buttons{ display:flex; gap:16px; margin-top:40px; flex-wrap:wrap; }
 
@@ -1068,8 +1097,52 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
     
     <h2 class="story-h2" data-i18n="proj.nova.s1.h2">Le concept</h2>
     <p class="story-p" data-i18n-html="proj.nova.s1.p1"><strong>NOVA</strong> met en relation des boutiques (vendeurs) et des clients sur une seule application, avec deux profils distincts au même login : <strong>client</strong> et <strong>boutique</strong>. Le client parcourt, ajoute au panier et paie ; la boutique gère son catalogue et ses commandes.</p>
+
+    <div class="phone-wrap">
+      <div class="phone-frame lg">
+        <div class="phone-glow"></div>
+        <div class="phone-shadow"></div>
+        <div class="notch"></div>
+        <div class="phone-screen"><img src="assets/images/projects/nova/nova-app-welcome.jpg" alt="Écran d'accueil de l'application NOVA"></div>
+        <div class="home-bar"></div>
+      </div>
+      <p class="story-shot-cap" data-i18n="proj.nova.shot1.cap">Écran d'accueil : créer un compte client ou boutique</p>
+    </div>
+
+    <h2 class="story-h2" data-i18n="proj.nova.s1b.h2">Le parcours client</h2>
+    <p class="story-p" data-i18n="proj.nova.s1b.p1">Un client parcourt les boutiques et les nouveautés, ouvre une fiche produit puis l'ajoute au panier, jusqu'au paiement Stripe, sans jamais quitter l'application.</p>
+    <div class="story-shot-grid">
+      <div class="story-shot">
+        <img src="assets/images/projects/nova/nova-app-marketplace.jpg" alt="Écran d'accueil du marketplace NOVA, boutiques en vedette">
+        <p class="story-shot-cap" data-i18n="proj.nova.shot2.cap">Explorer les boutiques et les nouveautés</p>
+      </div>
+      <div class="story-shot">
+        <img src="assets/images/projects/nova/nova-app-produit.jpg" alt="Fiche produit dans NOVA, prix et ajout au panier">
+        <p class="story-shot-cap" data-i18n="proj.nova.shot3.cap">Fiche produit, ajout au panier</p>
+      </div>
+      <div class="story-shot">
+        <img src="assets/images/projects/nova/nova-app-panier.jpg" alt="Panier de l'application NOVA avant paiement">
+        <p class="story-shot-cap" data-i18n="proj.nova.shot4.cap">Panier avant passage au paiement</p>
+      </div>
+    </div>
+
     <h2 class="story-h2" data-i18n="proj.nova.s2.h2">Une règle métier volontairement contraignante</h2>
     <p class="story-p" data-i18n-html="proj.nova.s2.p1">Avant de pouvoir publier un produit, une boutique doit obligatoirement <strong>réserver une séance photo produit</strong>. Cette contrainte, pensée dès la conception, garantit un niveau minimal de qualité visuelle sur toute la marketplace plutôt que de laisser chaque boutique publier des photos inégales.</p>
+    <div class="story-shot-grid">
+      <div class="story-shot">
+        <img src="assets/images/projects/nova/nova-app-photo-session.jpg" alt="Réservation obligatoire de la séance photo produit dans NOVA">
+        <p class="story-shot-cap" data-i18n="proj.nova.shot5.cap">Réservation obligatoire de la séance photo</p>
+      </div>
+      <div class="story-shot">
+        <img src="assets/images/projects/nova/nova-app-dashboard.jpg" alt="Tableau de bord boutique dans NOVA, chiffre d'affaires et commandes">
+        <p class="story-shot-cap" data-i18n="proj.nova.shot6.cap">Tableau de bord boutique</p>
+      </div>
+      <div class="story-shot">
+        <img src="assets/images/projects/nova/nova-app-chat.jpg" alt="Messagerie instantanée entre client et boutique dans NOVA">
+        <p class="story-shot-cap" data-i18n-html="proj.nova.shot7.cap">Messagerie instantanée client &amp; boutique</p>
+      </div>
+    </div>
+
     <h2 class="story-h2" data-i18n="proj.nova.s3.h2">Stack technique</h2>
     <p class="story-p" data-i18n-html="proj.nova.s3.p1">Le mobile est développé en <strong>React Native</strong> via <strong>Expo</strong>, avec React Navigation et une gestion d'état par Context API. Le paiement passe par <strong>Stripe</strong>, et le chat en temps réel par <strong>Socket.io</strong>.</p>
     <p class="story-p" data-i18n-html="proj.nova.s3.p2">Côté backend : <strong>Node.js / Express</strong>, avec <strong>Prisma</strong> comme ORM sur PostgreSQL, et une authentification via Firebase.</p>
