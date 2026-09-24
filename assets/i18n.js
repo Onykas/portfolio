@@ -842,6 +842,7 @@ fr: {
 "proj.nova.shot5.cap": "Réservation obligatoire de la séance photo",
 "proj.nova.shot6.cap": "Tableau de bord boutique",
 "proj.nova.shot7.cap": "Messagerie instantanée client &amp; boutique",
+"proj.nova.cta.github": "Voir sur GitHub",
 },
 
 en: {
@@ -1686,6 +1687,7 @@ en: {
 "proj.nova.shot5.cap": "Mandatory photo session booking",
 "proj.nova.shot6.cap": "Shop dashboard",
 "proj.nova.shot7.cap": "Instant messaging between client &amp; shop",
+"proj.nova.cta.github": "View on GitHub",
 },
 
 es: {
@@ -2530,6 +2532,7 @@ es: {
 "proj.nova.shot5.cap": "Reserva obligatoria de la sesión de fotos",
 "proj.nova.shot6.cap": "Panel de control de la tienda",
 "proj.nova.shot7.cap": "Mensajería instantánea entre cliente y tienda",
+"proj.nova.cta.github": "Ver en GitHub",
 },
 
 de: {
@@ -3374,6 +3377,7 @@ de: {
 "proj.nova.shot5.cap": "Verpflichtende Buchung der Fotosession",
 "proj.nova.shot6.cap": "Shop-Dashboard",
 "proj.nova.shot7.cap": "Sofortnachrichten zwischen Kunde &amp; Shop",
+"proj.nova.cta.github": "Auf GitHub ansehen",
 }
 
 };
