@@ -927,29 +927,30 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
   <div class="wrap contact-grid2">
     <div class="contact-form-wrapper reveal">
       <h2 data-i18n="contact.form.eyebrow">Envoyez-moi un message</h2>
-      <form class="contact-form" onsubmit="return false;">
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/myezjvpk" method="POST">
         <div class="form-group">
           <label data-i18n="contact.form.name_label">Nom complet *</label>
-          <input type="text" required placeholder="Votre nom" data-i18n-placeholder="contact.form.name_placeholder">
+          <input type="text" name="name" required placeholder="Votre nom" data-i18n-placeholder="contact.form.name_placeholder">
         </div>
         <div class="form-group">
           <label data-i18n="contact.form.email_label">Email *</label>
-          <input type="email" required placeholder="votre@email.com">
+          <input type="email" name="email" required placeholder="votre@email.com">
         </div>
         <div class="form-group">
           <label data-i18n="contact.form.subject_label">Sujet</label>
-          <input type="text" placeholder="Alternance / Projet / Question" data-i18n-placeholder="contact.form.subject_placeholder">
+          <input type="text" name="subject" placeholder="Alternance / Projet / Question" data-i18n-placeholder="contact.form.subject_placeholder">
         </div>
         <div class="form-group">
           <label data-i18n="contact.form.message_label">Message *</label>
-          <textarea rows="6" required placeholder="Votre message..." data-i18n-placeholder="contact.form.message_placeholder"></textarea>
+          <textarea name="message" rows="6" required placeholder="Votre message..." data-i18n-placeholder="contact.form.message_placeholder"></textarea>
         </div>
-        <button type="submit" class="submit-btn" data-cursor="envoyer">
+        <button type="submit" class="submit-btn" id="contactSubmitBtn" data-cursor="envoyer">
           <span data-i18n="contact.form.submit">Envoyer le message</span>
           <span class="submit-btn-icon">
             <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
           </span>
         </button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite" style="margin-top:14px; font-size:14px; min-height:1.2em;"></p>
       </form>
     </div>
 
@@ -1094,6 +1095,48 @@ if (isFinePointer && !reduceMotion) {
     el.addEventListener('mouseleave', () => { cursor.classList.remove('hovering'); });
   });
 }
+
+// ===== Contact form (Formspree) =====
+(function(){
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+  const statusEl = document.getElementById('formStatus');
+  const btn = document.getElementById('contactSubmitBtn');
+  const btnLabel = btn.querySelector('span[data-i18n]');
+  const defaultLabel = btnLabel ? btnLabel.textContent : 'Envoyer le message';
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    btn.disabled = true;
+    if (btnLabel) btnLabel.textContent = 'Envoi en cours...';
+    statusEl.textContent = '';
+    statusEl.style.color = '';
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        statusEl.textContent = 'Message envoyé, merci ! Je réponds au plus vite.';
+        statusEl.style.color = '#4ade80';
+        form.reset();
+      } else {
+        return response.json().then(data => {
+          const msg = (data && data.errors) ? data.errors.map(er => er.message).join(', ') : null;
+          statusEl.textContent = msg || "Une erreur est survenue, réessaie ou écris-moi directement par email.";
+          statusEl.style.color = '#f87171';
+        });
+      }
+    }).catch(() => {
+      statusEl.textContent = "Connexion impossible, réessaie ou écris-moi directement par email.";
+      statusEl.style.color = '#f87171';
+    }).finally(() => {
+      btn.disabled = false;
+      if (btnLabel) btnLabel.textContent = defaultLabel;
+    });
+  });
+})();
 
 </script>
 </body>
