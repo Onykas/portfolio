@@ -978,19 +978,19 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <div class="chat-panel" id="chatPanel">
   <div class="chat-head">
     <span class="dot-live"></span>
-    <div><strong>Assistant Olga</strong><span>Questions sur mon profil</span></div>
+    <div><strong data-i18n="homep2.chat.title">Assistant Olga</strong><span data-i18n="homep2.chat.subtitle">Questions sur mon profil</span></div>
   </div>
   <div class="chat-body" id="chatBody">
-    <div class="chat-msg bot">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
+    <div class="chat-msg bot" data-i18n="homep2.chat.greeting">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
   </div>
   <div class="chat-suggestions">
-    <button type="button" class="chat-chip" data-q="competences">Compétences ?</button>
-    <button type="button" class="chat-chip" data-q="disponibilite">Disponibilité ?</button>
-    <button type="button" class="chat-chip" data-q="contact">Contact ?</button>
-    <button type="button" class="chat-chip" data-q="projets">Projets ?</button>
+    <button type="button" class="chat-chip" data-q="competences" data-i18n="homep2.chat.chip.competences">Compétences ?</button>
+    <button type="button" class="chat-chip" data-q="disponibilite" data-i18n="homep2.chat.chip.disponibilite">Disponibilité ?</button>
+    <button type="button" class="chat-chip" data-q="contact" data-i18n="homep2.chat.chip.contact">Contact ?</button>
+    <button type="button" class="chat-chip" data-q="projets" data-i18n="homep2.chat.chip.projets">Projets ?</button>
   </div>
   <div class="chat-input-row">
-    <input type="text" id="chatInput" placeholder="Ecris ta question...">
+    <input type="text" id="chatInput" placeholder="Ecris ta question..." data-i18n-placeholder="homep2.chat.input_placeholder">
     <button type="button" id="chatSend" aria-label="Envoyer"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
   </div>
 </div>
@@ -1038,14 +1038,14 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><path d="M19 7l-5.5 1.5L12 7l-1.5 1.5L5 7M12 8.5V13m0 0l-3 8m3-8l3 8"/></svg>
         </button>
         <div class="a11y-panel" id="a11yPanel">
-          <h4>Accessibilité</h4>
-          <div class="a11y-row"><span>Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
-          <div class="a11y-row"><span>Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
-          <div class="a11y-row"><span>Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
-          <div class="a11y-row"><span>Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
-          <div class="a11y-row"><span>Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
+          <h4 data-i18n="a11y.title">Accessibilité</h4>
+          <div class="a11y-row"><span data-i18n="a11y.dyslexic">Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.contrast">Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.colorblind">Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.underline">Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.reduce_motion">Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
           <div class="a11y-row">
-            <span>Taille du texte</span>
+            <span data-i18n="a11y.text_size">Taille du texte</span>
             <div class="a11y-textsize-group">
               <button type="button" data-textsize="">A</button>
               <button type="button" data-textsize="lg">A+</button>
@@ -1089,21 +1089,21 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
   <div class="detail-hero-bg"></div>
   <div class="wrap detail-hero-content">
     <nav class="detail-breadcrumb"><a href="portfolio.html">Portfolio</a><span class="sep">/</span><a href="portfolio.html#stages">Mes Stages</a><span class="sep">/</span><span>Enseignante</span></nav>
-    <div class="detail-tags"><span class="detail-tag dev">Stage pédagogique</span><span class="detail-tag">Vulgarisation</span></div>
-    <h1 class="detail-page-title reveal">Stagiaire enseignante en informatique</h1>
-    <p class="detail-page-accroche reveal">Animer des séances d'initiation à l'informatique et concevoir des supports clairs pour un public qui découvre le sujet.</p>
+    <div class="detail-tags"><span class="detail-tag dev" data-i18n="stage.enseignante.hero.tag1">Stage pédagogique</span><span class="detail-tag" data-i18n="stage.enseignante.hero.tag2">Vulgarisation</span></div>
+    <h1 class="detail-page-title reveal" data-i18n="stage.enseignante.hero.title">Stagiaire enseignante en informatique</h1>
+    <p class="detail-page-accroche reveal" data-i18n="stage.enseignante.hero.accroche">Animer des séances d'initiation à l'informatique et concevoir des supports clairs pour un public qui découvre le sujet.</p>
   </div>
 </section>
 
 <div class="wrap">
-  <div class="detail-meta-bar reveal"><div><div class="ml">Structure</div><div class="mv">Établissement scolaire</div></div><div><div class="ml">Année</div><div class="mv">2024</div></div><div><div class="ml">Public</div><div class="mv">Élèves de Terminale</div></div><div><div class="ml">Domaine</div><div class="mv">Pédagogie &amp; informatique</div></div></div>
+  <div class="detail-meta-bar reveal"><div><div class="ml" data-i18n="stage.enseignante.meta.structure">Structure</div><div class="mv" data-i18n="stage.enseignante.meta.structure.value">Établissement scolaire</div></div><div><div class="ml" data-i18n="stage.enseignante.meta.annee">Année</div><div class="mv">2024</div></div><div><div class="ml" data-i18n="stage.enseignante.meta.public">Public</div><div class="mv" data-i18n="stage.enseignante.meta.public.value">Élèves de Terminale</div></div><div><div class="ml" data-i18n="stage.enseignante.meta.domaine">Domaine</div><div class="mv" data-i18n-html="stage.enseignante.meta.domaine.value">Pédagogie &amp; informatique</div></div></div>
 
   <div class="stage-org reveal">
     <div class="stage-org-info">
       <div class="so-logo is-empty" data-fallback="EDU"></div>
-      <h3>Stage d'enseignement en informatique</h3>
-      <div class="so-role">Stagiaire enseignante</div>
-      <div class="so-meta">Classe de Terminale · initiation à l'informatique<br>Année scolaire 2024</div>
+      <h3 data-i18n="stage.enseignante.org.title">Stage d'enseignement en informatique</h3>
+      <div class="so-role" data-i18n="stage.enseignante.org.role">Stagiaire enseignante</div>
+      <div class="so-meta" data-i18n-html="stage.enseignante.org.meta">Classe de Terminale · initiation à l'informatique<br>Année scolaire 2024</div>
     </div>
     <div class="stage-figure">
       <img src="assets/images/stage-enseignante-salle.jpg" alt="Séance d'initiation en salle informatique" onerror="this.remove()">
@@ -1121,45 +1121,45 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 
   <article class="detail-story">
     
-    <h2 class="story-h2">La mission</h2>
-    <p class="story-p">Ici, l'objectif n'était plus de produire mais de <strong>transmettre</strong> : rendre accessibles des notions d'informatique à des élèves de Terminale, dont beaucoup découvraient la matière.</p>
+    <h2 class="story-h2" data-i18n="stage.enseignante.s1.h2">La mission</h2>
+    <p class="story-p" data-i18n-html="stage.enseignante.s1.p1">Ici, l'objectif n'était plus de produire mais de <strong>transmettre</strong> : rendre accessibles des notions d'informatique à des élèves de Terminale, dont beaucoup découvraient la matière.</p>
 
-    <h2 class="story-h2">Mes missions</h2>
-    <p class="story-p">Concrètement, j'ai pris en charge :</p>
+    <h2 class="story-h2" data-i18n="stage.enseignante.s2.h2">Mes missions</h2>
+    <p class="story-p" data-i18n="stage.enseignante.s2.intro">Concrètement, j'ai pris en charge :</p>
     <ul class="mission-list">
-      <li><strong>Préparation des séances</strong> : découpage du programme en objectifs simples, choix d'exemples concrets et progressifs.</li>
-      <li><strong>Animation en classe</strong> : présentation des notions, démonstrations en direct, accompagnement individuel pendant les exercices.</li>
-      <li><strong>Conception de supports</strong> : fiches, diaporamas et exercices pensés pour être relus en autonomie.</li>
-      <li><strong>Vérification des acquis</strong> : questions de contrôle et reformulation jusqu'à ce que la notion soit comprise.</li>
+      <li data-i18n-html="stage.enseignante.mission1"><strong>Préparation des séances</strong> : découpage du programme en objectifs simples, choix d'exemples concrets et progressifs.</li>
+      <li data-i18n-html="stage.enseignante.mission2"><strong>Animation en classe</strong> : présentation des notions, démonstrations en direct, accompagnement individuel pendant les exercices.</li>
+      <li data-i18n-html="stage.enseignante.mission3"><strong>Conception de supports</strong> : fiches, diaporamas et exercices pensés pour être relus en autonomie.</li>
+      <li data-i18n-html="stage.enseignante.mission4"><strong>Vérification des acquis</strong> : questions de contrôle et reformulation jusqu'à ce que la notion soit comprise.</li>
     </ul>
 
     <div class="stage-diagram reveal">
-      <div class="sd-title">Ma trame de séance</div>
+      <div class="sd-title" data-i18n="stage.enseignante.diagram.title">Ma trame de séance</div>
       <div class="stage-flow">
-        <div class="fstep"><div class="fn">01</div><div class="ft">Préparer</div><div class="fd">Un objectif clair, un exemple concret</div></div>
-        <div class="fstep"><div class="fn">02</div><div class="ft">Expliquer</div><div class="fd">La notion illustrée, pas à pas</div></div>
-        <div class="fstep"><div class="fn">03</div><div class="ft">Pratiquer</div><div class="fd">Exercice guidé puis autonome</div></div>
-        <div class="fstep"><div class="fn">04</div><div class="ft">Vérifier</div><div class="fd">Reformuler, corriger, consolider</div></div>
+        <div class="fstep"><div class="fn">01</div><div class="ft" data-i18n="stage.enseignante.flow1.t">Préparer</div><div class="fd" data-i18n="stage.enseignante.flow1.d">Un objectif clair, un exemple concret</div></div>
+        <div class="fstep"><div class="fn">02</div><div class="ft" data-i18n="stage.enseignante.flow2.t">Expliquer</div><div class="fd" data-i18n="stage.enseignante.flow2.d">La notion illustrée, pas à pas</div></div>
+        <div class="fstep"><div class="fn">03</div><div class="ft" data-i18n="stage.enseignante.flow3.t">Pratiquer</div><div class="fd" data-i18n="stage.enseignante.flow3.d">Exercice guidé puis autonome</div></div>
+        <div class="fstep"><div class="fn">04</div><div class="ft" data-i18n="stage.enseignante.flow4.t">Vérifier</div><div class="fd" data-i18n="stage.enseignante.flow4.d">Reformuler, corriger, consolider</div></div>
       </div>
     </div>
 
-    <h2 class="story-h2">Compétences développées</h2>
+    <h2 class="story-h2" data-i18n="stage.enseignante.s3.h2">Compétences développées</h2>
     <div class="skill-tags">
-      <span>Vulgarisation technique</span><span>Prise de parole</span><span>Conception pédagogique</span><span>Gestion de groupe</span><span>Écoute active</span><span>Adaptation au niveau</span><span>Diaporamas &amp; supports</span><span>Évaluation des acquis</span>
+      <span data-i18n="stage.enseignante.skill1">Vulgarisation technique</span><span data-i18n="stage.enseignante.skill2">Prise de parole</span><span data-i18n="stage.enseignante.skill3">Conception pédagogique</span><span data-i18n="stage.enseignante.skill4">Gestion de groupe</span><span data-i18n="stage.enseignante.skill5">Écoute active</span><span data-i18n="stage.enseignante.skill6">Adaptation au niveau</span><span data-i18n-html="stage.enseignante.skill7">Diaporamas &amp; supports</span><span data-i18n="stage.enseignante.skill8">Évaluation des acquis</span>
     </div>
 
-    <h2 class="story-h2">Ce que j'ai apporté</h2>
+    <h2 class="story-h2" data-i18n="stage.enseignante.s4.h2">Ce que j'ai apporté</h2>
     <div class="story-chips">
-      <span class="stage-result-chip">Supports de cours réutilisables</span>
-      <span class="stage-result-chip">Notions expliquées sans jargon</span>
-      <span class="stage-result-chip">Élèves autonomes sur les bases</span>
-      <span class="stage-result-chip">Discours calé sur le niveau réel</span>
+      <span class="stage-result-chip" data-i18n="stage.enseignante.chip1">Supports de cours réutilisables</span>
+      <span class="stage-result-chip" data-i18n="stage.enseignante.chip2">Notions expliquées sans jargon</span>
+      <span class="stage-result-chip" data-i18n="stage.enseignante.chip3">Élèves autonomes sur les bases</span>
+      <span class="stage-result-chip" data-i18n="stage.enseignante.chip4">Discours calé sur le niveau réel</span>
     </div>
 
-    <div class="story-quote">« Si je ne peux pas l'expliquer simplement, c'est que je ne l'ai pas encore assez compris. »</div>
+    <div class="story-quote" data-i18n="stage.enseignante.quote">« Si je ne peux pas l'expliquer simplement, c'est que je ne l'ai pas encore assez compris. »</div>
 
-    <h2 class="story-h2">Ce que j'en retiens</h2>
-    <p class="story-p">Enseigner m'a obligée à <strong>clarifier ma propre compréhension</strong> et à soigner la forme autant que le fond. Cette exigence de clarté me sert directement en conception d'interfaces et en recherche utilisateur : dans les deux cas, il faut se mettre à la place de quelqu'un qui ne sait pas encore.</p>
+    <h2 class="story-h2" data-i18n="stage.enseignante.s5.h2">Ce que j'en retiens</h2>
+    <p class="story-p" data-i18n-html="stage.enseignante.s5.p1">Enseigner m'a obligée à <strong>clarifier ma propre compréhension</strong> et à soigner la forme autant que le fond. Cette exigence de clarté me sert directement en conception d'interfaces et en recherche utilisateur : dans les deux cas, il faut se mettre à la place de quelqu'un qui ne sait pas encore.</p>
     
     
   </article>

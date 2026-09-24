@@ -978,19 +978,19 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <div class="chat-panel" id="chatPanel">
   <div class="chat-head">
     <span class="dot-live"></span>
-    <div><strong>Assistant Olga</strong><span>Questions sur mon profil</span></div>
+    <div><strong data-i18n="homep2.chat.title">Assistant Olga</strong><span data-i18n="homep2.chat.subtitle">Questions sur mon profil</span></div>
   </div>
   <div class="chat-body" id="chatBody">
-    <div class="chat-msg bot">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
+    <div class="chat-msg bot" data-i18n="homep2.chat.greeting">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
   </div>
   <div class="chat-suggestions">
-    <button type="button" class="chat-chip" data-q="competences">Compétences ?</button>
-    <button type="button" class="chat-chip" data-q="disponibilite">Disponibilité ?</button>
-    <button type="button" class="chat-chip" data-q="contact">Contact ?</button>
-    <button type="button" class="chat-chip" data-q="projets">Projets ?</button>
+    <button type="button" class="chat-chip" data-q="competences" data-i18n="homep2.chat.chip.competences">Compétences ?</button>
+    <button type="button" class="chat-chip" data-q="disponibilite" data-i18n="homep2.chat.chip.disponibilite">Disponibilité ?</button>
+    <button type="button" class="chat-chip" data-q="contact" data-i18n="homep2.chat.chip.contact">Contact ?</button>
+    <button type="button" class="chat-chip" data-q="projets" data-i18n="homep2.chat.chip.projets">Projets ?</button>
   </div>
   <div class="chat-input-row">
-    <input type="text" id="chatInput" placeholder="Ecris ta question...">
+    <input type="text" id="chatInput" placeholder="Ecris ta question..." data-i18n-placeholder="homep2.chat.input_placeholder">
     <button type="button" id="chatSend" aria-label="Envoyer"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
   </div>
 </div>
@@ -1038,14 +1038,14 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><path d="M19 7l-5.5 1.5L12 7l-1.5 1.5L5 7M12 8.5V13m0 0l-3 8m3-8l3 8"/></svg>
         </button>
         <div class="a11y-panel" id="a11yPanel">
-          <h4>Accessibilité</h4>
-          <div class="a11y-row"><span>Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
-          <div class="a11y-row"><span>Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
-          <div class="a11y-row"><span>Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
-          <div class="a11y-row"><span>Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
-          <div class="a11y-row"><span>Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
+          <h4 data-i18n="a11y.title">Accessibilité</h4>
+          <div class="a11y-row"><span data-i18n="a11y.dyslexic">Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.contrast">Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.colorblind">Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.underline">Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.reduce_motion">Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
           <div class="a11y-row">
-            <span>Taille du texte</span>
+            <span data-i18n="a11y.text_size">Taille du texte</span>
             <div class="a11y-textsize-group">
               <button type="button" data-textsize="">A</button>
               <button type="button" data-textsize="lg">A+</button>
@@ -1089,21 +1089,21 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
   <div class="detail-hero-bg"></div>
   <div class="wrap detail-hero-content">
     <nav class="detail-breadcrumb"><a href="portfolio.html">Portfolio</a><span class="sep">/</span><a href="portfolio.html#stages">Mes Stages</a><span class="sep">/</span><span>SNEL</span></nav>
-    <div class="detail-tags"><span class="detail-tag systeme">Stage informatique</span><span class="detail-tag">Support &amp; déploiement</span></div>
-    <h1 class="detail-page-title reveal">Stagiaire informatique · SNEL</h1>
-    <p class="detail-page-accroche reveal">Câblage réseau, installation système, maintenance matérielle et bases de données : un mois de stage pratique au service informatique de la SNEL, direction régionale Kinshasa Sud.</p>
+    <div class="detail-tags"><span class="detail-tag systeme" data-i18n="stage.snel.hero.tag1">Stage informatique</span><span class="detail-tag" data-i18n="stage.snel.hero.tag2">Support &amp; déploiement</span></div>
+    <h1 class="detail-page-title reveal" data-i18n="stage.snel.hero.title">Stagiaire informatique · SNEL</h1>
+    <p class="detail-page-accroche reveal" data-i18n="stage.snel.hero.accroche">Câblage réseau, installation système, maintenance matérielle et bases de données : un mois de stage pratique au service informatique de la SNEL, direction régionale Kinshasa Sud.</p>
   </div>
 </section>
 
 <div class="wrap">
-  <div class="detail-meta-bar reveal"><div><div class="ml">Structure</div><div class="mv">Société Nationale d'Électricité (SNEL), Division Informatique Kinshasa Sud</div></div><div><div class="ml">Période</div><div class="mv">27 mai - 27 juin 2024</div></div><div><div class="ml">Lieu</div><div class="mv">Kinshasa, RDC</div></div><div><div class="ml">Domaine</div><div class="mv">Réseaux, systèmes &amp; bases de données</div></div></div>
+  <div class="detail-meta-bar reveal"><div><div class="ml" data-i18n="stage.snel.meta.structure">Structure</div><div class="mv" data-i18n="stage.snel.meta.structure.value">Société Nationale d'Électricité (SNEL), Division Informatique Kinshasa Sud</div></div><div><div class="ml" data-i18n="stage.snel.meta.periode">Période</div><div class="mv">27 mai - 27 juin 2024</div></div><div><div class="ml" data-i18n="stage.ucc.meta.lieu">Lieu</div><div class="mv" data-i18n="stage.snel.meta.lieu.value">Kinshasa, RDC</div></div><div><div class="ml" data-i18n="stage.ucc.meta.domaine">Domaine</div><div class="mv" data-i18n-html="stage.snel.meta.domaine.value">Réseaux, systèmes &amp; bases de données</div></div></div>
 
   <div class="stage-org reveal">
     <div class="stage-org-info">
       <div class="so-logo" data-fallback="SNEL"><img src="assets/images/snel-logo.png" alt="Logo SNEL" onerror="this.remove(); this.parentNode.classList.add('is-empty');"></div>
       <h3>Société Nationale d'Électricité</h3>
-      <div class="so-role">Stagiaire · Division Informatique Kinshasa Sud (IKS)</div>
-      <div class="so-meta">Encadreur : Daniel Elumba<br>Direction Régionale Kinshasa Sud, RDC · 27 mai - 27 juin 2024</div>
+      <div class="so-role" data-i18n="stage.snel.org.role">Stagiaire · Division Informatique Kinshasa Sud (IKS)</div>
+      <div class="so-meta" data-i18n-html="stage.snel.org.meta">Encadreur : Daniel Elumba<br>Direction Régionale Kinshasa Sud, RDC · 27 mai - 27 juin 2024</div>
     </div>
     <div class="stage-figure">
       <img src="assets/images/snel-batiment.jpg" alt="Bureaux de la SNEL à Kinshasa" onerror="this.remove()">
@@ -1120,46 +1120,46 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 
   <article class="detail-story">
     
-    <h2 class="story-h2">Le contexte</h2>
-    <p class="story-p">J'ai effectué ce stage à la <strong>Division Informatique Kinshasa Sud (IKS)</strong> de la Société Nationale d'Électricité (SNEL), sous la direction régionale Kinshasa Sud. Un rythme précis : les lundis, mercredis et vendredis, de 8h15 à 15h30, encadrée par <strong>Daniel Elumba</strong>, aux côtés d'autres stagiaires de ma promotion (Jean Paul, Lajoie et Japhet).</p>
-    <p class="story-p">La division gère un petit parc informatique (serveur, postes clients, base de données Oracle) pour le compte de la direction commerciale. Le stage m'a fait toucher à la fois au <strong>matériel</strong>, au <strong>système</strong> et aux <strong>bases de données</strong>, plutôt qu'à une seule spécialité.</p>
+    <h2 class="story-h2" data-i18n="stage.snel.s1.h2">Le contexte</h2>
+    <p class="story-p" data-i18n-html="stage.snel.s1.p1">J'ai effectué ce stage à la <strong>Division Informatique Kinshasa Sud (IKS)</strong> de la Société Nationale d'Électricité (SNEL), sous la direction régionale Kinshasa Sud. Un rythme précis : les lundis, mercredis et vendredis, de 8h15 à 15h30, encadrée par <strong>Daniel Elumba</strong>, aux côtés d'autres stagiaires de ma promotion (Jean Paul, Lajoie et Japhet).</p>
+    <p class="story-p" data-i18n-html="stage.snel.s1.p2">La division gère un petit parc informatique (serveur, postes clients, base de données Oracle) pour le compte de la direction commerciale. Le stage m'a fait toucher à la fois au <strong>matériel</strong>, au <strong>système</strong> et aux <strong>bases de données</strong>, plutôt qu'à une seule spécialité.</p>
 
-    <h2 class="story-h2">Mes missions</h2>
-    <p class="story-p">Sous l'œil de mon encadreur, j'ai été mise à contribution sur quatre activités concrètes :</p>
+    <h2 class="story-h2" data-i18n="stage.snel.s2.h2">Mes missions</h2>
+    <p class="story-p" data-i18n="stage.snel.s2.intro">Sous l'œil de mon encadreur, j'ai été mise à contribution sur quatre activités concrètes :</p>
     <ul class="mission-list">
-      <li><strong>Câblage réseau</strong> : fabrication de câbles Ethernet RJ45 (paires torsadées, sertissage aux normes T568A/T568B, test au câble-testeur).</li>
-      <li><strong>Installation système</strong> : installation complète d'un système d'exploitation Windows à partir d'un support de démarrage (langue, partition, configuration post-installation).</li>
-      <li><strong>Maintenance matérielle</strong> : entretien d'une unité centrale (dépoussiérage), repérage du disque dur et de la pile CMOS sur la carte mère.</li>
-      <li><strong>Base de données</strong> : installation d'Oracle Database 10g en architecture client-serveur, partie serveur et partie cliente.</li>
+      <li data-i18n-html="stage.snel.mission1"><strong>Câblage réseau</strong> : fabrication de câbles Ethernet RJ45 (paires torsadées, sertissage aux normes T568A/T568B, test au câble-testeur).</li>
+      <li data-i18n-html="stage.snel.mission2"><strong>Installation système</strong> : installation complète d'un système d'exploitation Windows à partir d'un support de démarrage (langue, partition, configuration post-installation).</li>
+      <li data-i18n-html="stage.snel.mission3"><strong>Maintenance matérielle</strong> : entretien d'une unité centrale (dépoussiérage), repérage du disque dur et de la pile CMOS sur la carte mère.</li>
+      <li data-i18n-html="stage.snel.mission4"><strong>Base de données</strong> : installation d'Oracle Database 10g en architecture client-serveur, partie serveur et partie cliente.</li>
     </ul>
 
     <div class="story-shot-grid">
-      <div class="story-shot"><img src="assets/images/stage-snel/cable-materiel.jpg" alt="Câble réseau, connecteurs RJ45, pince à sertir et testeur"><p class="story-shot-cap">Matériel de câblage : câble, connecteurs, pince à sertir, testeur</p></div>
-      <div class="story-shot"><img src="assets/images/stage-snel/pinout-568.png" alt="Schéma de brochage RJ45, normes T568A et T568B"><p class="story-shot-cap">Norme de brochage T568A / T568B suivie pour chaque câble</p></div>
-      <div class="story-shot"><img src="assets/images/stage-snel/install-windows.jpg" alt="Écran d'installation de Windows"><p class="story-shot-cap">Installation de Windows depuis le support de démarrage</p></div>
+      <div class="story-shot"><img src="assets/images/stage-snel/cable-materiel.jpg" alt="Câble réseau, connecteurs RJ45, pince à sertir et testeur"><p class="story-shot-cap" data-i18n="stage.snel.shot1.cap">Matériel de câblage : câble, connecteurs, pince à sertir, testeur</p></div>
+      <div class="story-shot"><img src="assets/images/stage-snel/pinout-568.png" alt="Schéma de brochage RJ45, normes T568A et T568B"><p class="story-shot-cap" data-i18n="stage.snel.shot2.cap">Norme de brochage T568A / T568B suivie pour chaque câble</p></div>
+      <div class="story-shot"><img src="assets/images/stage-snel/install-windows.jpg" alt="Écran d'installation de Windows"><p class="story-shot-cap" data-i18n="stage.snel.shot3.cap">Installation de Windows depuis le support de démarrage</p></div>
     </div>
     <div class="story-shot-grid">
-      <div class="story-shot"><img src="assets/images/stage-snel/pile-cmos.jpg" alt="Pile CMOS sur une carte mère"><p class="story-shot-cap">Repérage de la pile CMOS sur la carte mère</p></div>
-      <div class="story-shot"><img src="assets/images/stage-snel/unite-centrale.jpg" alt="Unité centrale, faces avant et arrière"><p class="story-shot-cap">Unité centrale entretenue lors de la maintenance</p></div>
-      <div class="story-shot"><img src="assets/images/stage-snel/install-oracle.png" alt="Installation d'Oracle Database 10g"><p class="story-shot-cap">Installation d'Oracle Database 10g, architecture client-serveur</p></div>
+      <div class="story-shot"><img src="assets/images/stage-snel/pile-cmos.jpg" alt="Pile CMOS sur une carte mère"><p class="story-shot-cap" data-i18n="stage.snel.shot4.cap">Repérage de la pile CMOS sur la carte mère</p></div>
+      <div class="story-shot"><img src="assets/images/stage-snel/unite-centrale.jpg" alt="Unité centrale, faces avant et arrière"><p class="story-shot-cap" data-i18n="stage.snel.shot5.cap">Unité centrale entretenue lors de la maintenance</p></div>
+      <div class="story-shot"><img src="assets/images/stage-snel/install-oracle.png" alt="Installation d'Oracle Database 10g"><p class="story-shot-cap" data-i18n="stage.snel.shot6.cap">Installation d'Oracle Database 10g, architecture client-serveur</p></div>
     </div>
 
-    <h2 class="story-h2">Compétences développées</h2>
+    <h2 class="story-h2" data-i18n="stage.ucc.s3.h2">Compétences développées</h2>
     <div class="skill-tags">
-      <span>Câblage réseau RJ45</span><span>Normes T568A/T568B</span><span>Installation Windows</span><span>Maintenance matérielle</span><span>Oracle 10g (client-serveur)</span><span>Polyvalence technique</span>
+      <span data-i18n="stage.snel.skill1">Câblage réseau RJ45</span><span data-i18n="stage.snel.skill2">Normes T568A/T568B</span><span data-i18n="stage.snel.skill3">Installation Windows</span><span data-i18n="stage.snel.skill4">Maintenance matérielle</span><span data-i18n="stage.snel.skill5">Oracle 10g (client-serveur)</span><span data-i18n="stage.snel.skill6">Polyvalence technique</span>
     </div>
 
-    <h2 class="story-h2">Ce que j'ai apporté</h2>
+    <h2 class="story-h2" data-i18n="stage.snel.s4.h2">Ce que j'ai apporté</h2>
     <div class="story-chips">
-      <span class="stage-result-chip">Câbles réseau fabriqués et testés</span>
-      <span class="stage-result-chip">Poste réinstallé de A à Z</span>
-      <span class="stage-result-chip">Environnement Oracle client-serveur opérationnel</span>
+      <span class="stage-result-chip" data-i18n="stage.snel.chip1">Câbles réseau fabriqués et testés</span>
+      <span class="stage-result-chip" data-i18n="stage.snel.chip2">Poste réinstallé de A à Z</span>
+      <span class="stage-result-chip" data-i18n="stage.snel.chip3">Environnement Oracle client-serveur opérationnel</span>
     </div>
 
-    <div class="story-quote">« Un informaticien ne reste pas limité à son domaine de prédilection : il doit avoir des bases dans chaque brique du système. »</div>
+    <div class="story-quote" data-i18n="stage.snel.quote">« Un informaticien ne reste pas limité à son domaine de prédilection : il doit avoir des bases dans chaque brique du système. »</div>
 
-    <h2 class="story-h2">Ce que j'en retiens</h2>
-    <p class="story-p">Ce stage m'a montré qu'un même service informatique jongle en permanence entre <strong>matériel</strong>, <strong>système</strong> et <strong>données</strong> : un câble mal serti, un mauvais réglage Windows ou une base de données mal configurée peuvent tous les trois interrompre le même service. Travailler aux côtés d'autres stagiaires sur ces sujets très concrets m'a confirmé l'intérêt d'avoir des bases solides dans plusieurs domaines de l'informatique, pas seulement celui que je préfère.</p>
+    <h2 class="story-h2" data-i18n="stage.snel.s5.h2">Ce que j'en retiens</h2>
+    <p class="story-p" data-i18n-html="stage.snel.s5.p1">Ce stage m'a montré qu'un même service informatique jongle en permanence entre <strong>matériel</strong>, <strong>système</strong> et <strong>données</strong> : un câble mal serti, un mauvais réglage Windows ou une base de données mal configurée peuvent tous les trois interrompre le même service. Travailler aux côtés d'autres stagiaires sur ces sujets très concrets m'a confirmé l'intérêt d'avoir des bases solides dans plusieurs domaines de l'informatique, pas seulement celui que je préfère.</p>
   </article>
 </div>
 

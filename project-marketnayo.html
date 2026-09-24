@@ -982,19 +982,19 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <div class="chat-panel" id="chatPanel">
   <div class="chat-head">
     <span class="dot-live"></span>
-    <div><strong>Assistant Olga</strong><span>Questions sur mon profil</span></div>
+    <div><strong data-i18n="homep2.chat.title">Assistant Olga</strong><span data-i18n="homep2.chat.subtitle">Questions sur mon profil</span></div>
   </div>
   <div class="chat-body" id="chatBody">
-    <div class="chat-msg bot">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
+    <div class="chat-msg bot" data-i18n="homep2.chat.greeting">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
   </div>
   <div class="chat-suggestions">
-    <button type="button" class="chat-chip" data-q="competences">Compétences ?</button>
-    <button type="button" class="chat-chip" data-q="disponibilite">Disponibilité ?</button>
-    <button type="button" class="chat-chip" data-q="contact">Contact ?</button>
-    <button type="button" class="chat-chip" data-q="projets">Projets ?</button>
+    <button type="button" class="chat-chip" data-q="competences" data-i18n="homep2.chat.chip.competences">Compétences ?</button>
+    <button type="button" class="chat-chip" data-q="disponibilite" data-i18n="homep2.chat.chip.disponibilite">Disponibilité ?</button>
+    <button type="button" class="chat-chip" data-q="contact" data-i18n="homep2.chat.chip.contact">Contact ?</button>
+    <button type="button" class="chat-chip" data-q="projets" data-i18n="homep2.chat.chip.projets">Projets ?</button>
   </div>
   <div class="chat-input-row">
-    <input type="text" id="chatInput" placeholder="Ecris ta question...">
+    <input type="text" id="chatInput" placeholder="Ecris ta question..." data-i18n-placeholder="homep2.chat.input_placeholder">
     <button type="button" id="chatSend" aria-label="Envoyer"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
   </div>
 </div>
@@ -1042,14 +1042,14 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><path d="M19 7l-5.5 1.5L12 7l-1.5 1.5L5 7M12 8.5V13m0 0l-3 8m3-8l3 8"/></svg>
         </button>
         <div class="a11y-panel" id="a11yPanel">
-          <h4>Accessibilité</h4>
-          <div class="a11y-row"><span>Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
-          <div class="a11y-row"><span>Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
-          <div class="a11y-row"><span>Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
-          <div class="a11y-row"><span>Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
-          <div class="a11y-row"><span>Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
+          <h4 data-i18n="a11y.title">Accessibilité</h4>
+          <div class="a11y-row"><span data-i18n="a11y.dyslexic">Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.contrast">Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.colorblind">Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.underline">Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.reduce_motion">Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
           <div class="a11y-row">
-            <span>Taille du texte</span>
+            <span data-i18n="a11y.text_size">Taille du texte</span>
             <div class="a11y-textsize-group">
               <button type="button" data-textsize="">A</button>
               <button type="button" data-textsize="lg">A+</button>
@@ -1093,19 +1093,19 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
   <div class="detail-hero-bg"></div>
   <div class="wrap detail-hero-content">
     <nav class="detail-breadcrumb"><a href="portfolio.html">Portfolio</a><span class="sep">/</span><span>MarketNaYo</span></nav>
-    <div class="detail-tags"><span class="detail-tag dev">Mobile</span><span class="detail-tag">Backend</span></div>
-    <h1 class="detail-page-title reveal">MarketNaYo, le march&eacute; version smart</h1>
-    <p class="detail-page-accroche reveal">Marketplace mobile pour marchés locaux, avec paiement mobile money, chat et prix en temps réel.</p>
+    <div class="detail-tags"><span class="detail-tag dev" data-i18n="proj.marketnayo.hero.tag1">Mobile</span><span class="detail-tag" data-i18n="proj.marketnayo.hero.tag2">Backend</span></div>
+    <h1 class="detail-page-title reveal" data-i18n="proj.marketnayo.hero.title">MarketNaYo, le march&eacute; version smart</h1>
+    <p class="detail-page-accroche reveal" data-i18n="proj.marketnayo.hero.accroche">Marketplace mobile pour marchés locaux, avec paiement mobile money, chat et prix en temps réel.</p>
   </div>
 </section>
 
 <div class="wrap">
-  <div class="detail-meta-bar reveal"><div><div class="ml">Contexte</div><div class="mv">Projet personnel</div></div><div><div class="ml">Cible</div><div class="mv">Vendeurs &amp; acheteurs de marché local</div></div><div><div class="ml">Mon rôle</div><div class="mv">Conception full-stack (backend + mobile)</div></div><div><div class="ml">Statut</div><div class="mv">En développement</div></div></div>
+  <div class="detail-meta-bar reveal"><div><div class="ml" data-i18n="proj.meta.contexte">Contexte</div><div class="mv" data-i18n="proj.marketnayo.meta.contexte.value">Projet personnel</div></div><div><div class="ml" data-i18n="proj.meta.cible">Cible</div><div class="mv" data-i18n="proj.marketnayo.meta.cible.value">Vendeurs &amp; acheteurs de marché local</div></div><div><div class="ml" data-i18n="proj.meta.role">Mon rôle</div><div class="mv" data-i18n="proj.marketnayo.meta.role.value">Conception full-stack (backend + mobile)</div></div><div><div class="ml" data-i18n="proj.meta.statut">Statut</div><div class="mv" data-i18n="proj.marketnayo.meta.statut.value">En développement</div></div></div>
 
   <article class="detail-story">
     
-    <h2 class="story-h2">Le besoin</h2>
-    <p class="story-p">Dans beaucoup de marchés locaux, les prix et la disponibilité des produits circulent uniquement de bouche-à-oreille. <strong>MarketNaYo</strong> ("le marché, version smart") vise à digitaliser cette expérience : un vendeur publie ses produits et ses prix, un acheteur compare et échange en direct, sans quitter son téléphone. J'ai conçu et développé le projet de bout en bout : <strong>base de données, API backend, application mobile et paiement</strong>.</p>
+    <h2 class="story-h2" data-i18n="proj.marketnayo.s1.h2">Le besoin</h2>
+    <p class="story-p" data-i18n-html="proj.marketnayo.s1.p1">Dans beaucoup de marchés locaux, les prix et la disponibilité des produits circulent uniquement de bouche-à-oreille. <strong>MarketNaYo</strong> ("le marché, version smart") vise à digitaliser cette expérience : un vendeur publie ses produits et ses prix, un acheteur compare et échange en direct, sans quitter son téléphone. J'ai conçu et développé le projet de bout en bout : <strong>base de données, API backend, application mobile et paiement</strong>.</p>
     <div class="phone-wrap">
       <div class="phone-frame lg">
         <div class="phone-glow"></div>
@@ -1114,56 +1114,56 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
         <div class="phone-screen"><img src="assets/images/marketnayo-app-connexion.jpg" alt="Écran de connexion de l'application MarketNaYo"></div>
         <div class="home-bar"></div>
       </div>
-      <p class="story-shot-cap">Connexion à l'application</p>
+      <p class="story-shot-cap" data-i18n="proj.marketnayo.shot1.cap">Connexion à l'application</p>
     </div>
-    <h2 class="story-h2">Une vraie application, pas une maquette</h2>
-    <p class="story-p">MarketNaYo n'est pas un prototype figé : c'est une application fonctionnelle connectée à une <strong>API en production</strong>, avec un vrai compte utilisateur, une vraie base de produits et de vrais échanges entre acheteurs et vendeurs. À l'inscription, chacun choisit son profil, <strong>acheteur</strong> pour parcourir et négocier, ou <strong>vendeur</strong> pour publier ses produits, ce qui adapte immédiatement les fonctionnalités disponibles.</p>
-    <p class="story-p">Une fois connecté, l'utilisateur retrouve un <strong>tableau de bord personnalisé</strong> avec les produits disponibles sur le marché en temps réel, un accès rapide à ses commandes et à ses messages. Chaque fiche produit affiche le prix, le stock disponible et le lieu de vente, et propose un bouton <strong>Négocier</strong> qui ouvre une discussion en direct avec le vendeur, exactement comme on négocierait de vive voix sur un marché. C'est ce détail, pensé pour l'usage réel des marchés locaux, qui distingue MarketNaYo d'une simple boutique en ligne. Depuis son profil, l'utilisateur retrouve aussi son identité, son rôle et un accès centralisé à ses commandes, ses messages et les paramètres du compte.</p>
+    <h2 class="story-h2" data-i18n="proj.marketnayo.s2.h2">Une vraie application, pas une maquette</h2>
+    <p class="story-p" data-i18n-html="proj.marketnayo.s2.p1">MarketNaYo n'est pas un prototype figé : c'est une application fonctionnelle connectée à une <strong>API en production</strong>, avec un vrai compte utilisateur, une vraie base de produits et de vrais échanges entre acheteurs et vendeurs. À l'inscription, chacun choisit son profil, <strong>acheteur</strong> pour parcourir et négocier, ou <strong>vendeur</strong> pour publier ses produits, ce qui adapte immédiatement les fonctionnalités disponibles.</p>
+    <p class="story-p" data-i18n-html="proj.marketnayo.s2.p2">Une fois connecté, l'utilisateur retrouve un <strong>tableau de bord personnalisé</strong> avec les produits disponibles sur le marché en temps réel, un accès rapide à ses commandes et à ses messages. Chaque fiche produit affiche le prix, le stock disponible et le lieu de vente, et propose un bouton <strong>Négocier</strong> qui ouvre une discussion en direct avec le vendeur, exactement comme on négocierait de vive voix sur un marché. C'est ce détail, pensé pour l'usage réel des marchés locaux, qui distingue MarketNaYo d'une simple boutique en ligne. Depuis son profil, l'utilisateur retrouve aussi son identité, son rôle et un accès centralisé à ses commandes, ses messages et les paramètres du compte.</p>
     <div class="story-shot-grid">
       <div class="story-shot">
         <img src="assets/images/marketnayo-app-accueil.jpg" alt="Tableau de bord de l'application MarketNaYo, produits disponibles en temps réel">
-        <p class="story-shot-cap">Tableau de bord</p>
+        <p class="story-shot-cap" data-i18n="proj.marketnayo.shot2.cap">Tableau de bord</p>
       </div>
       <div class="story-shot">
         <img src="assets/images/marketnayo-app-negociation.jpg" alt="Recherche et négociation de prix en direct dans MarketNaYo">
-        <p class="story-shot-cap">Négociation du prix</p>
+        <p class="story-shot-cap" data-i18n="proj.marketnayo.shot3.cap">Négociation du prix</p>
       </div>
       <div class="story-shot">
         <img src="assets/images/marketnayo-app-profil.jpg" alt="Écran de profil utilisateur dans MarketNaYo">
-        <p class="story-shot-cap">Profil utilisateur</p>
+        <p class="story-shot-cap" data-i18n="proj.marketnayo.shot4.cap">Profil utilisateur</p>
       </div>
     </div>
-    <h2 class="story-h2">De la négociation au paiement, tout le parcours est réel</h2>
-    <p class="story-p">Le bouton <strong>Négocier</strong> ouvre une vraie conversation avec le vendeur : l'acheteur peut proposer un prix, le vendeur répond et envoie une <strong>offre de vente</strong> avec le prix final, la quantité et l'adresse de livraison. L'acheteur n'a plus qu'à accepter directement depuis le fil de discussion.</p>
-    <p class="story-p">À l'acceptation, l'application propose le choix du <strong>mode de paiement</strong> (paiement à la livraison, Orange Money, Wave, carte bancaire) puis ouvre un écran de paiement dédié, avec les instructions propres à chaque moyen de paiement local. Une fois la commande passée, l'acheteur peut suivre sa livraison en direct sur une <strong>timeline de suivi</strong> : commande reçue, confirmée, en préparation, livreur en route, livreur proche, livrée.</p>
+    <h2 class="story-h2" data-i18n="proj.marketnayo.s3.h2">De la négociation au paiement, tout le parcours est réel</h2>
+    <p class="story-p" data-i18n-html="proj.marketnayo.s3.p1">Le bouton <strong>Négocier</strong> ouvre une vraie conversation avec le vendeur : l'acheteur peut proposer un prix, le vendeur répond et envoie une <strong>offre de vente</strong> avec le prix final, la quantité et l'adresse de livraison. L'acheteur n'a plus qu'à accepter directement depuis le fil de discussion.</p>
+    <p class="story-p" data-i18n-html="proj.marketnayo.s3.p2">À l'acceptation, l'application propose le choix du <strong>mode de paiement</strong> (paiement à la livraison, Orange Money, Wave, carte bancaire) puis ouvre un écran de paiement dédié, avec les instructions propres à chaque moyen de paiement local. Une fois la commande passée, l'acheteur peut suivre sa livraison en direct sur une <strong>timeline de suivi</strong> : commande reçue, confirmée, en préparation, livreur en route, livreur proche, livrée.</p>
     <div class="story-shot-grid">
       <div class="story-shot">
         <img src="assets/images/marketnayo-app-negociation-chat.jpg" alt="Négociation de prix et offre de vente dans le chat MarketNaYo">
-        <p class="story-shot-cap">Négociation en direct avec le vendeur</p>
+        <p class="story-shot-cap" data-i18n="proj.marketnayo.shot5.cap">Négociation en direct avec le vendeur</p>
       </div>
       <div class="story-shot">
         <img src="assets/images/marketnayo-app-paiement.jpg" alt="Écran de paiement Orange Money dans MarketNaYo">
-        <p class="story-shot-cap">Paiement mobile money</p>
+        <p class="story-shot-cap" data-i18n="proj.marketnayo.shot6.cap">Paiement mobile money</p>
       </div>
       <div class="story-shot">
         <img src="assets/images/marketnayo-app-suivi.jpg" alt="Suivi de livraison en temps réel dans MarketNaYo">
-        <p class="story-shot-cap">Suivi de livraison</p>
+        <p class="story-shot-cap" data-i18n="proj.marketnayo.shot7.cap">Suivi de livraison</p>
       </div>
     </div>
-    <h2 class="story-h2">Architecture technique</h2>
-    <p class="story-p">Le backend est construit en <strong>FastAPI</strong> avec <strong>SQLAlchemy</strong> comme ORM sur une base <strong>PostgreSQL</strong>, et <strong>Redis</strong> pour les données temps réel. L'application mobile est développée en <strong>Flutter</strong> (Dart) pour l'interface la plus récente et en <strong>KivyMD</strong> (Python) pour une première version, avec une authentification par <strong>JWT et OTP SMS</strong> via Twilio.</p>
-    <p class="story-p">Le point le plus spécifique du projet : l'intégration des moyens de paiement réellement utilisés sur le terrain, <strong>Orange Money, Wave et MTN Mobile Money</strong>, plutôt qu'une carte bancaire classique. L'API est déployée en production sur <strong>Render</strong> et sert l'application mobile en temps réel.</p>
-    <h2 class="story-h2">Temps réel</h2>
-    <p class="story-p">Le chat entre acheteur et vendeur, la négociation de prix, ainsi que les mises à jour de stock, passent par des <strong>WebSockets</strong> pour rester instantanés même sur une connexion mobile modeste.</p>
-    <div class="story-quote">« Le marché, version smart. »</div>
+    <h2 class="story-h2" data-i18n="proj.marketnayo.s4.h2">Architecture technique</h2>
+    <p class="story-p" data-i18n-html="proj.marketnayo.s4.p1">Le backend est construit en <strong>FastAPI</strong> avec <strong>SQLAlchemy</strong> comme ORM sur une base <strong>PostgreSQL</strong>, et <strong>Redis</strong> pour les données temps réel. L'application mobile est développée en <strong>Flutter</strong> (Dart) pour l'interface la plus récente et en <strong>KivyMD</strong> (Python) pour une première version, avec une authentification par <strong>JWT et OTP SMS</strong> via Twilio.</p>
+    <p class="story-p" data-i18n-html="proj.marketnayo.s4.p2">Le point le plus spécifique du projet : l'intégration des moyens de paiement réellement utilisés sur le terrain, <strong>Orange Money, Wave et MTN Mobile Money</strong>, plutôt qu'une carte bancaire classique. L'API est déployée en production sur <strong>Render</strong> et sert l'application mobile en temps réel.</p>
+    <h2 class="story-h2" data-i18n="proj.marketnayo.s5.h2">Temps réel</h2>
+    <p class="story-p" data-i18n-html="proj.marketnayo.s5.p1">Le chat entre acheteur et vendeur, la négociation de prix, ainsi que les mises à jour de stock, passent par des <strong>WebSockets</strong> pour rester instantanés même sur une connexion mobile modeste.</p>
+    <div class="story-quote" data-i18n="proj.marketnayo.quote">« Le marché, version smart. »</div>
     <div class="story-chips">
-      <span class="stage-result-chip">Négociation de prix en direct</span>
-      <span class="stage-result-chip">Paiement mobile money</span>
-      <span class="stage-result-chip">Chat &amp; stock temps réel</span>
-      <span class="stage-result-chip">Auth JWT + OTP SMS</span>
+      <span class="stage-result-chip" data-i18n="proj.marketnayo.chip1">Négociation de prix en direct</span>
+      <span class="stage-result-chip" data-i18n="proj.marketnayo.chip2">Paiement mobile money</span>
+      <span class="stage-result-chip" data-i18n="proj.marketnayo.chip3">Chat &amp; stock temps réel</span>
+      <span class="stage-result-chip" data-i18n="proj.marketnayo.chip4">Auth JWT + OTP SMS</span>
     </div>
 
-    <div class="cta-buttons reveal"><a href="https://github.com/Onykas/marketnayo-backend" target="_blank" rel="noopener" class="btn btn-solid"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="flex-shrink:0;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg><span>Voir sur GitHub</span></a></div>
+    <div class="cta-buttons reveal"><a href="https://github.com/Onykas/marketnayo-backend" target="_blank" rel="noopener" class="btn btn-solid"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="flex-shrink:0;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg><span data-i18n="proj.marketnayo.cta.github">Voir sur GitHub</span></a></div>
   </article>
 </div>
 

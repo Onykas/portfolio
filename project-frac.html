@@ -996,19 +996,19 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <div class="chat-panel" id="chatPanel">
   <div class="chat-head">
     <span class="dot-live"></span>
-    <div><strong>Assistant Olga</strong><span>Questions sur mon profil</span></div>
+    <div><strong data-i18n="homep2.chat.title">Assistant Olga</strong><span data-i18n="homep2.chat.subtitle">Questions sur mon profil</span></div>
   </div>
   <div class="chat-body" id="chatBody">
-    <div class="chat-msg bot">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
+    <div class="chat-msg bot" data-i18n="homep2.chat.greeting">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
   </div>
   <div class="chat-suggestions">
-    <button type="button" class="chat-chip" data-q="competences">Compétences ?</button>
-    <button type="button" class="chat-chip" data-q="disponibilite">Disponibilité ?</button>
-    <button type="button" class="chat-chip" data-q="contact">Contact ?</button>
-    <button type="button" class="chat-chip" data-q="projets">Projets ?</button>
+    <button type="button" class="chat-chip" data-q="competences" data-i18n="homep2.chat.chip.competences">Compétences ?</button>
+    <button type="button" class="chat-chip" data-q="disponibilite" data-i18n="homep2.chat.chip.disponibilite">Disponibilité ?</button>
+    <button type="button" class="chat-chip" data-q="contact" data-i18n="homep2.chat.chip.contact">Contact ?</button>
+    <button type="button" class="chat-chip" data-q="projets" data-i18n="homep2.chat.chip.projets">Projets ?</button>
   </div>
   <div class="chat-input-row">
-    <input type="text" id="chatInput" placeholder="Ecris ta question...">
+    <input type="text" id="chatInput" placeholder="Ecris ta question..." data-i18n-placeholder="homep2.chat.input_placeholder">
     <button type="button" id="chatSend" aria-label="Envoyer"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
   </div>
 </div>
@@ -1056,14 +1056,14 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><path d="M19 7l-5.5 1.5L12 7l-1.5 1.5L5 7M12 8.5V13m0 0l-3 8m3-8l3 8"/></svg>
         </button>
         <div class="a11y-panel" id="a11yPanel">
-          <h4>Accessibilité</h4>
-          <div class="a11y-row"><span>Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
-          <div class="a11y-row"><span>Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
-          <div class="a11y-row"><span>Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
-          <div class="a11y-row"><span>Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
-          <div class="a11y-row"><span>Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
+          <h4 data-i18n="a11y.title">Accessibilité</h4>
+          <div class="a11y-row"><span data-i18n="a11y.dyslexic">Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.contrast">Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.colorblind">Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.underline">Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.reduce_motion">Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
           <div class="a11y-row">
-            <span>Taille du texte</span>
+            <span data-i18n="a11y.text_size">Taille du texte</span>
             <div class="a11y-textsize-group">
               <button type="button" data-textsize="">A</button>
               <button type="button" data-textsize="lg">A+</button>
@@ -1107,30 +1107,30 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
   <div class="detail-hero-bg"></div>
   <div class="wrap detail-hero-content">
     <nav class="detail-breadcrumb"><a href="portfolio.html">Portfolio</a><span class="sep">/</span><span>FRAC Franche-Comté</span></nav>
-    <div class="detail-tags"><span class="detail-tag iot">UX/UI</span><span class="detail-tag">Refonte web</span></div>
-    <h1 class="detail-page-title reveal">FRAC Franche-Comté, la création contemporaine en partage</h1>
-    <p class="detail-page-accroche reveal">Refonte du site d'un Fonds régional d'art contemporain : rendre l'art contemporain accessible au public le plus large, sans perdre l'exigence du lieu. Projet d'école en Master, de la recherche à la maquette Figma.</p>
+    <div class="detail-tags"><span class="detail-tag iot" data-i18n="proj.frac.hero.tag1">UX/UI</span><span class="detail-tag" data-i18n="proj.frac.hero.tag2">Refonte web</span></div>
+    <h1 class="detail-page-title reveal" data-i18n="proj.frac.hero.title">FRAC Franche-Comté, la création contemporaine en partage</h1>
+    <p class="detail-page-accroche reveal" data-i18n="proj.frac.hero.accroche">Refonte du site d'un Fonds régional d'art contemporain : rendre l'art contemporain accessible au public le plus large, sans perdre l'exigence du lieu. Projet d'école en Master, de la recherche à la maquette Figma.</p>
   </div>
 </section>
 
 <div class="wrap">
-  <div class="detail-meta-bar reveal"><div><div class="ml">Contexte</div><div class="mv">Projet d'école, Master PSM</div></div><div><div class="ml">Cible</div><div class="mv">Public de l'art contemporain, curieux &amp; visiteurs occasionnels</div></div><div><div class="ml">Mon rôle</div><div class="mv">UX/UI design, recherche &amp; direction artistique</div></div><div><div class="ml">Statut</div><div class="mv">Maquette Figma finalisée</div></div></div>
+  <div class="detail-meta-bar reveal"><div><div class="ml" data-i18n="proj.meta.contexte">Contexte</div><div class="mv" data-i18n="proj.frac.meta.contexte.value">Projet d'école, Master PSM</div></div><div><div class="ml" data-i18n="proj.meta.cible">Cible</div><div class="mv" data-i18n="proj.frac.meta.cible.value">Public de l'art contemporain, curieux &amp; visiteurs occasionnels</div></div><div><div class="ml" data-i18n="proj.meta.role">Mon rôle</div><div class="mv" data-i18n="proj.frac.meta.role.value">UX/UI design, recherche &amp; direction artistique</div></div><div><div class="ml" data-i18n="proj.meta.statut">Statut</div><div class="mv" data-i18n="proj.frac.meta.statut.value">Maquette Figma finalisée</div></div></div>
 
   <article class="detail-story">
 
-    <h2 class="story-h2">Le brief</h2>
-    <p class="story-p">Le <strong>FRAC Franche-Comté</strong> (Fonds régional d'art contemporain) s'attache à rendre l'art contemporain accessible au public le plus large, tout en promouvant la création contemporaine. L'enjeu de la refonte : garder la crédibilité institutionnelle d'un lieu culturel exigeant, sans jamais devenir froid ou intimidant pour un visiteur qui découvre l'art contemporain pour la première fois.</p>
+    <h2 class="story-h2" data-i18n="proj.frac.s1.h2">Le brief</h2>
+    <p class="story-p" data-i18n-html="proj.frac.s1.p1">Le <strong>FRAC Franche-Comté</strong> (Fonds régional d'art contemporain) s'attache à rendre l'art contemporain accessible au public le plus large, tout en promouvant la création contemporaine. L'enjeu de la refonte : garder la crédibilité institutionnelle d'un lieu culturel exigeant, sans jamais devenir froid ou intimidant pour un visiteur qui découvre l'art contemporain pour la première fois.</p>
 
-    <h2 class="story-h2">Avant / Après</h2>
-    <p class="story-p">Le site existant (frac-franche-comte.fr) repose sur une navigation en colonne étroite, une typographie mono un peu datée et un contenu principal compressé dans une bande centrale, alors que la moitié de l'écran reste vide. Ma refonte garde l'identité graphique du FRAC (le logo, le noir &amp; blanc) mais ouvre la mise en page en pleine largeur, avec une hiérarchie visuelle plus claire et des visuels d'œuvres qui prennent enfin de la place.</p>
+    <h2 class="story-h2" data-i18n="proj.frac.s2.h2">Avant / Après</h2>
+    <p class="story-p" data-i18n-html="proj.frac.s2.p1">Le site existant (frac-franche-comte.fr) repose sur une navigation en colonne étroite, une typographie mono un peu datée et un contenu principal compressé dans une bande centrale, alors que la moitié de l'écran reste vide. Ma refonte garde l'identité graphique du FRAC (le logo, le noir &amp; blanc) mais ouvre la mise en page en pleine largeur, avec une hiérarchie visuelle plus claire et des visuels d'œuvres qui prennent enfin de la place.</p>
 
     <div class="compare-grid reveal">
       <div class="compare-col">
-        <span class="compare-label avant">Avant</span>
+        <span class="compare-label avant" data-i18n="proj.frac.compare.avant">Avant</span>
         <img src="assets/images/projects/frac/avant-site-reel.jpg" alt="Site actuel du FRAC Franche-Comté (frac-franche-comte.fr)">
       </div>
       <div class="compare-col">
-        <span class="compare-label apres">Après</span>
+        <span class="compare-label apres" data-i18n="proj.frac.compare.apres">Après</span>
         <img src="assets/images/projects/frac/apres-redesign.jpg" alt="Ma refonte de la page d'accueil du FRAC Franche-Comté">
       </div>
     </div>
@@ -1145,11 +1145,11 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
         </div>
         <div class="laptop-base"></div>
       </div>
-      <p class="story-shot-cap">Accueil : la création contemporaine en partage</p>
+      <p class="story-shot-cap" data-i18n="proj.frac.laptop1.cap">Accueil : la création contemporaine en partage</p>
     </div>
 
-    <h2 class="story-h2">Rencontres, ateliers, à la une</h2>
-    <p class="story-p">Dès l'accueil, la page met en avant la vie du lieu plutôt qu'une simple vitrine d'expositions : les <strong>rencontres</strong> avec des artistes, les <strong>ateliers</strong> pour les familles pendant les vacances scolaires, et une sélection <strong>« à la une »</strong> qui donne un aperçu concret de ce qui s'y passe vraiment.</p>
+    <h2 class="story-h2" data-i18n="proj.frac.s3.h2">Rencontres, ateliers, à la une</h2>
+    <p class="story-p" data-i18n-html="proj.frac.s3.p1">Dès l'accueil, la page met en avant la vie du lieu plutôt qu'une simple vitrine d'expositions : les <strong>rencontres</strong> avec des artistes, les <strong>ateliers</strong> pour les familles pendant les vacances scolaires, et une sélection <strong>« à la une »</strong> qui donne un aperçu concret de ce qui s'y passe vraiment.</p>
 
     <div class="laptop-wrap reveal">
       <div class="laptop">
@@ -1161,11 +1161,11 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
         </div>
         <div class="laptop-base"></div>
       </div>
-      <p class="story-shot-cap">Expositions : à venir, en ce moment, passées</p>
+      <p class="story-shot-cap" data-i18n="proj.frac.laptop2.cap">Expositions : à venir, en ce moment, passées</p>
     </div>
 
-    <h2 class="story-h2">Explorer les expositions passées</h2>
-    <p class="story-p">Une page dédiée aux expositions passées permet de garder une trace du travail du FRAC dans le temps, filtrable par type (exposition collective, monographique, focus sur la collection). Chaque exposition ouvre une fiche détaillée sur l'artiste et son œuvre.</p>
+    <h2 class="story-h2" data-i18n="proj.frac.s4.h2">Explorer les expositions passées</h2>
+    <p class="story-p" data-i18n="proj.frac.s4.p1">Une page dédiée aux expositions passées permet de garder une trace du travail du FRAC dans le temps, filtrable par type (exposition collective, monographique, focus sur la collection). Chaque exposition ouvre une fiche détaillée sur l'artiste et son œuvre.</p>
 
     <div class="laptop-wrap reveal">
       <div class="laptop">
@@ -1177,40 +1177,40 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
         </div>
         <div class="laptop-base"></div>
       </div>
-      <p class="story-shot-cap">Expositions passées, filtrables par type</p>
+      <p class="story-shot-cap" data-i18n="proj.frac.laptop3.cap">Expositions passées, filtrables par type</p>
     </div>
 
     <div class="story-shot reveal" style="max-width:380px; margin-left:auto; margin-right:auto;">
       <img src="assets/images/projects/frac/frac_carolina.jpg" alt="Fiche artiste : Carolina Fonseca, je rumeur, nous vacarme">
-      <p class="story-shot-cap">Fiche artiste, Carolina Fonseca</p>
+      <p class="story-shot-cap" data-i18n="proj.frac.shot1.cap">Fiche artiste, Carolina Fonseca</p>
     </div>
 
-    <h2 class="story-h2">Direction artistique</h2>
-    <p class="story-p">Une base <strong>noir &amp; blanc</strong>, typographie bâton et grille stricte, pour l'autorité institutionnelle du lieu, réchauffée par des <strong>photographies d'œuvres en pleine largeur</strong> et des à-plats de couleur ponctuels (orange, pêche) qui accompagnent chaque exposition. Le logo « frac » minimal, ligné, pose le ton dès le premier regard.</p>
+    <h2 class="story-h2" data-i18n="proj.frac.s5.h2">Direction artistique</h2>
+    <p class="story-p" data-i18n-html="proj.frac.s5.p1">Une base <strong>noir &amp; blanc</strong>, typographie bâton et grille stricte, pour l'autorité institutionnelle du lieu, réchauffée par des <strong>photographies d'œuvres en pleine largeur</strong> et des à-plats de couleur ponctuels (orange, pêche) qui accompagnent chaque exposition. Le logo « frac » minimal, ligné, pose le ton dès le premier regard.</p>
 
-    <h2 class="story-h2">Démo interactive</h2>
-    <p class="story-p">La maquette complète est consultable directement ci-dessous : navigue dans les pages, zoome, explore les détails. Le fichier est partagé en lecture seule, aucune modification n'est possible depuis cette prévisualisation.</p>
+    <h2 class="story-h2" data-i18n="proj.frac.s6.h2">Démo interactive</h2>
+    <p class="story-p" data-i18n="proj.frac.s6.p1">La maquette complète est consultable directement ci-dessous : navigue dans les pages, zoome, explore les détails. Le fichier est partagé en lecture seule, aucune modification n'est possible depuis cette prévisualisation.</p>
 
     <div class="figma-embed-wrap reveal">
       <div class="figma-embed-frame">
         <iframe src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fdesign%2Fz3g50fXyYWnm9Psmkli6Ge%2FFRAC" allowfullscreen loading="lazy" title="Maquette Figma FRAC Franche-Comté"></iframe>
       </div>
-      <p class="figma-embed-note">Aperçu en lecture seule &middot; clique sur « Voir sur Figma » ci-dessous pour l'ouvrir en plein écran</p>
+      <p class="figma-embed-note" data-i18n-html="proj.frac.figma.note">Aperçu en lecture seule &middot; clique sur « Voir sur Figma » ci-dessous pour l'ouvrir en plein écran</p>
     </div>
 
-    <div class="story-quote">« Rendre l'art contemporain accessible au public le plus large. »</div>
+    <div class="story-quote" data-i18n="proj.frac.quote">« Rendre l'art contemporain accessible au public le plus large. »</div>
 
     <div class="story-chips">
       <span class="stage-result-chip">UX Research</span>
       <span class="stage-result-chip">Figma</span>
-      <span class="stage-result-chip">Refonte institutionnelle</span>
-      <span class="stage-result-chip">Direction artistique</span>
+      <span class="stage-result-chip" data-i18n="proj.frac.chip1">Refonte institutionnelle</span>
+      <span class="stage-result-chip" data-i18n="proj.frac.chip2">Direction artistique</span>
     </div>
 
     <div class="cta-buttons reveal">
       <a href="https://www.figma.com/design/z3g50fXyYWnm9Psmkli6Ge/FRAC?node-id=0-1&t=XOT27Hxzmi60mAxq-1" target="_blank" rel="noopener" class="btn btn-solid">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 24c2.208 0 4-1.792 4-4v-4H8c-2.208 0-4 1.792-4 4s1.792 4 4 4zM4 12c0-2.208 1.792-4 4-4h4v8H8c-2.208 0-4-1.792-4-4zM4 4c0-2.208 1.792-4 4-4h4v8H8C5.792 8 4 6.208 4 4zM12 0h4c2.208 0 4 1.792 4 4s-1.792 4-4 4h-4V0zM20 12c0 2.208-1.792 4-4 4s-4-1.792-4-4 1.792-4 4-4 4 1.792 4 4z"/></svg>
-        <span>Voir sur Figma</span>
+        <span data-i18n="proj.frac.cta.figma">Voir sur Figma</span>
       </a>
     </div>
   </article>

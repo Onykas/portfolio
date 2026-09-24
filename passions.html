@@ -1003,19 +1003,19 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <div class="chat-panel" id="chatPanel">
   <div class="chat-head">
     <span class="dot-live"></span>
-    <div><strong>Assistant Olga</strong><span>Questions sur mon profil</span></div>
+    <div><strong data-i18n="homep2.chat.title">Assistant Olga</strong><span data-i18n="homep2.chat.subtitle">Questions sur mon profil</span></div>
   </div>
   <div class="chat-body" id="chatBody">
-    <div class="chat-msg bot">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
+    <div class="chat-msg bot" data-i18n="homep2.chat.greeting">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
   </div>
   <div class="chat-suggestions">
-    <button type="button" class="chat-chip" data-q="competences">Compétences ?</button>
-    <button type="button" class="chat-chip" data-q="disponibilite">Disponibilité ?</button>
-    <button type="button" class="chat-chip" data-q="contact">Contact ?</button>
-    <button type="button" class="chat-chip" data-q="projets">Projets ?</button>
+    <button type="button" class="chat-chip" data-q="competences" data-i18n="homep2.chat.chip.competences">Compétences ?</button>
+    <button type="button" class="chat-chip" data-q="disponibilite" data-i18n="homep2.chat.chip.disponibilite">Disponibilité ?</button>
+    <button type="button" class="chat-chip" data-q="contact" data-i18n="homep2.chat.chip.contact">Contact ?</button>
+    <button type="button" class="chat-chip" data-q="projets" data-i18n="homep2.chat.chip.projets">Projets ?</button>
   </div>
   <div class="chat-input-row">
-    <input type="text" id="chatInput" placeholder="Ecris ta question...">
+    <input type="text" id="chatInput" placeholder="Ecris ta question..." data-i18n-placeholder="homep2.chat.input_placeholder">
     <button type="button" id="chatSend" aria-label="Envoyer"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
   </div>
 </div>
@@ -1063,14 +1063,14 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><path d="M19 7l-5.5 1.5L12 7l-1.5 1.5L5 7M12 8.5V13m0 0l-3 8m3-8l3 8"/></svg>
         </button>
         <div class="a11y-panel" id="a11yPanel">
-          <h4>Accessibilité</h4>
-          <div class="a11y-row"><span>Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
-          <div class="a11y-row"><span>Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
-          <div class="a11y-row"><span>Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
-          <div class="a11y-row"><span>Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
-          <div class="a11y-row"><span>Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
+          <h4 data-i18n="a11y.title">Accessibilité</h4>
+          <div class="a11y-row"><span data-i18n="a11y.dyslexic">Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.contrast">Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.colorblind">Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.underline">Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.reduce_motion">Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
           <div class="a11y-row">
-            <span>Taille du texte</span>
+            <span data-i18n="a11y.text_size">Taille du texte</span>
             <div class="a11y-textsize-group">
               <button type="button" data-textsize="">A</button>
               <button type="button" data-textsize="lg">A+</button>
@@ -1118,68 +1118,68 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
     <canvas class="hero-canvas" id="passionsCanvas" style="position:absolute;inset:0;z-index:0;pointer-events:none;" aria-hidden="true"></canvas>
     <div class="pp-hero-content">
       <h1 class="page-title-hero passions-hero-title reveal">
-        <span class="word">Mes</span>
-        <span class="word accent">Passions</span>
+        <span class="word" data-i18n="passions.hero.word1">Mes</span>
+        <span class="word accent" data-i18n="passions.hero.word2">Passions</span>
       </h1>
       <p class="hero-subtitle reveal" data-i18n="passions.lede">L'autre version de moi</p>
-      <p class="pp-hero-hint">Faites glisser ou utilisez les flèches →</p>
+      <p class="pp-hero-hint" data-i18n="passions.hero.hint">Faites glisser ou utilisez les flèches →</p>
     </div>
   </div>
 
   <!-- PAGE 1 : MON UNIVERS -->
   <div class="passion-page pp-univers">
     <div class="wrap">
-      <h2 class="section-title section-title-center reveal">Mon univers</h2>
-      <p class="section-sub-center">Ce qui m'anime en dehors du code</p>
+      <h2 class="section-title section-title-center reveal" data-i18n="passions.univers.h2">Mon univers</h2>
+      <p class="section-sub-center" data-i18n="passions.univers.sub">Ce qui m'anime en dehors du code</p>
 
       <div class="magazine-grid">
         <a href="#" class="magazine-card-large mag-clickable reveal" data-goto="2">
           <div class="mag-image"><div class="mag-image-visual"></div><img class="mag-photo" src="assets/images/paysages/p07.jpg" alt="" loading="lazy"><span class="mag-icon">📷</span></div>
           <div class="mag-body">
-            <span class="mag-category">Photographie</span>
-            <h3>Photographie &amp; Paysages</h3>
-            <p>Capturer un instant, un lieu, une lumière, au fil des voyages et du quotidien.</p>
-            <span class="mag-cta">Voir la galerie →</span>
+            <span class="mag-category" data-i18n="passions.cat.photo">Photographie</span>
+            <h3 data-i18n-html="passions.card1.h3">Photographie &amp; Paysages</h3>
+            <p data-i18n="passions.card1.p">Capturer un instant, un lieu, une lumière, au fil des voyages et du quotidien.</p>
+            <span class="mag-cta" data-i18n="passions.card1.cta">Voir la galerie →</span>
           </div>
         </a>
 
         <a href="#" class="magazine-card-small mag-clickable reveal" data-goto="3">
           <div class="mag-image"><div class="mag-image-visual"></div><img class="mag-photo" src="assets/images/design/d11.jpg" alt="" loading="lazy"><span class="mag-icon">🎨</span></div>
           <div class="mag-body">
-            <span class="mag-category">Création visuelle</span>
-            <h3>Design graphique</h3>
-            <p>Créer des affiches, des posts et des visuels : composition, couleur et message.</p>
-            <span class="mag-cta">Voir mes créations →</span>
+            <span class="mag-category" data-i18n="passions.cat.creation">Création visuelle</span>
+            <h3 data-i18n="passions.card2.h3">Design graphique</h3>
+            <p data-i18n="passions.card2.p">Créer des affiches, des posts et des visuels : composition, couleur et message.</p>
+            <span class="mag-cta" data-i18n="passions.card2.cta">Voir mes créations →</span>
           </div>
         </a>
 
         <a href="#" class="magazine-card-medium mag-clickable reveal" data-goto="5">
           <div class="mag-image"><div class="mag-image-visual"></div><video class="mag-video" src="assets/videos/v09.mp4" poster="assets/videos/posters/v09.jpg" muted loop autoplay playsinline preload="auto"></video><span class="mag-icon">🎬</span></div>
           <div class="mag-body">
-            <span class="mag-category">Création visuelle</span>
-            <h3>Montage vidéo</h3>
-            <p>Monter des vidéos, du cadrage au rythme final.</p>
-            <span class="mag-cta">Voir mes montages →</span>
+            <span class="mag-category" data-i18n="passions.cat.creation">Création visuelle</span>
+            <h3 data-i18n="passions.card3.h3">Montage vidéo</h3>
+            <p data-i18n="passions.card3.p">Monter des vidéos, du cadrage au rythme final.</p>
+            <span class="mag-cta" data-i18n="passions.card3.cta">Voir mes montages →</span>
           </div>
         </a>
 
         <a href="#" class="magazine-card-medium mag-clickable reveal" data-goto="4">
           <div class="mag-image"><div class="mag-image-visual"></div><img class="mag-photo" src="assets/images/benevolat/b03.jpg" alt="" loading="lazy"><span class="mag-icon">🤝</span></div>
           <div class="mag-body">
-            <span class="mag-category">Engagement</span>
-            <h3>Activité sociale &amp; Bénévolat</h3>
-            <p>Participer à des événements, s'engager bénévolement au service de sa communauté.</p>
-            <span class="mag-cta">Voir quelques clichés →</span>
+            <span class="mag-category" data-i18n="passions.cat.engagement">Engagement</span>
+            <h3 data-i18n-html="passions.card4.h3">Activité sociale &amp; Bénévolat</h3>
+            <p data-i18n="passions.card4.p">Participer à des événements, s'engager bénévolement au service de sa communauté.</p>
+            <span class="mag-cta" data-i18n="passions.card4.cta">Voir quelques clichés →</span>
           </div>
         </a>
 
         <a href="#" class="magazine-card-large mag-clickable reveal" data-goto="6">
           <div class="mag-image"><div class="mag-image-visual"></div><img class="mag-photo" src="assets/images/events/e03.jpg" alt="" loading="lazy"><span class="mag-icon">🎉</span></div>
           <div class="mag-body">
-            <span class="mag-category">Engagement</span>
-            <h3>Événements &amp; Rencontres</h3>
-            <p>Conférences, tables rondes et rencontres, entre deux TP.</p>
-            <span class="mag-cta">Voir les événements →</span>
+            <span class="mag-category" data-i18n="passions.cat.engagement">Engagement</span>
+            <h3 data-i18n-html="passions.card5.h3">Événements &amp; Rencontres</h3>
+            <p data-i18n="passions.card5.p">Conférences, tables rondes et rencontres, entre deux TP.</p>
+            <span class="mag-cta" data-i18n="passions.card5.cta">Voir les événements →</span>
           </div>
         </a>
       </div>
@@ -1190,8 +1190,8 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
   <div class="passion-page pp-photo">
     <div class="art-gallery-section">
       <div class="wrap">
-        <h2 class="section-title section-title-center reveal">Mon univers créatif</h2>
-        <p class="section-sub-center">Photographie &amp; paysages, entre deux TP réseau</p>
+        <h2 class="section-title section-title-center reveal" data-i18n="passions.photo.h2">Mon univers créatif</h2>
+        <p class="section-sub-center" data-i18n="passions.photo.sub">Photographie &amp; paysages, entre deux TP réseau</p>
       </div>
 
       <div class="art-band-wrapper">
@@ -1262,8 +1262,8 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
   <!-- PAGE 3 : DESIGN GRAPHIQUE — Pile style Compétences -->
   <div class="passion-page pp-design">
     <div class="wrap">
-      <h2 class="section-title section-title-center reveal">Design graphique</h2>
-      <p class="section-sub-center">Affiches et visuels, clique pour voir</p>
+      <h2 class="section-title section-title-center reveal" data-i18n="passions.design.h2">Design graphique</h2>
+      <p class="section-sub-center" data-i18n="passions.design.sub">Affiches et visuels, clique pour voir</p>
 
       <div class="cuisine-deck-section">
         <div class="cuisine-deck-container" id="designDeck">
@@ -1291,7 +1291,7 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
           <div class="cuisine-deck-card"><img class="cuisine-card-img" src="assets/images/design/d30.jpg" alt=""></div>
           <div class="cuisine-deck-card"><img class="cuisine-card-img" src="assets/images/design/d31.jpg" alt=""></div>
         </div>
-        <p class="cuisine-scroll-hint">Cliquez ou faites défiler pour changer de carte</p>
+        <p class="cuisine-scroll-hint" data-i18n="passions.design.hint">Cliquez ou faites défiler pour changer de carte</p>
       </div>
     </div>
   </div>
@@ -1299,8 +1299,8 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
   <!-- PAGE 4 : ACTIVITÉ SOCIALE & BÉNÉVOLAT — Grille masonry -->
   <div class="passion-page pp-engagement">
     <div class="wrap">
-      <h2 class="section-title section-title-center reveal">Quelques clichés</h2>
-      <p class="section-sub-center">Événements, rencontres et engagement associatif</p>
+      <h2 class="section-title section-title-center reveal" data-i18n="passions.engagement.h2">Quelques clichés</h2>
+      <p class="section-sub-center" data-i18n="passions.engagement.sub">Événements, rencontres et engagement associatif</p>
 
       <div class="masonry-gallery">
         <div class="masonry-item masonry-tall has-photo"><div class="masonry-visual"><img src="assets/images/benevolat/b17.jpg" alt="" loading="lazy"></div></div>
@@ -1326,8 +1326,8 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
   <!-- PAGE 5 : MONTAGE VIDÉO — Feed vertical façon TikTok -->
   <div class="passion-page pp-video">
     <div class="wrap">
-      <h2 class="section-title section-title-center reveal">Montage vidéo</h2>
-      <p class="section-sub-center">Quelques montages, cliquez pour visionner</p>
+      <h2 class="section-title section-title-center reveal" data-i18n="passions.video.h2">Montage vidéo</h2>
+      <p class="section-sub-center" data-i18n="passions.video.sub">Quelques montages, cliquez pour visionner</p>
     </div>
 
     <div class="video-grid">
@@ -1410,8 +1410,8 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
   <div class="passion-page pp-events">
     <div class="art-gallery-section">
       <div class="wrap">
-        <h2 class="section-title section-title-center reveal">Événements et rencontres</h2>
-        <p class="section-sub-center">Conférences, tables rondes et rencontres, clique pour voir</p>
+        <h2 class="section-title section-title-center reveal" data-i18n="passions.events.h2">Événements et rencontres</h2>
+        <p class="section-sub-center" data-i18n="passions.events.sub">Conférences, tables rondes et rencontres, clique pour voir</p>
       </div>
       <div class="ev-wrap">
         <div class="ev-grid">

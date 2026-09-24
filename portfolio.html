@@ -883,19 +883,19 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <div class="chat-panel" id="chatPanel">
   <div class="chat-head">
     <span class="dot-live"></span>
-    <div><strong>Assistant Olga</strong><span>Questions sur mon profil</span></div>
+    <div><strong data-i18n="homep2.chat.title">Assistant Olga</strong><span data-i18n="homep2.chat.subtitle">Questions sur mon profil</span></div>
   </div>
   <div class="chat-body" id="chatBody">
-    <div class="chat-msg bot">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
+    <div class="chat-msg bot" data-i18n="homep2.chat.greeting">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
   </div>
   <div class="chat-suggestions">
-    <button type="button" class="chat-chip" data-q="competences">Compétences ?</button>
-    <button type="button" class="chat-chip" data-q="disponibilite">Disponibilité ?</button>
-    <button type="button" class="chat-chip" data-q="contact">Contact ?</button>
-    <button type="button" class="chat-chip" data-q="projets">Projets ?</button>
+    <button type="button" class="chat-chip" data-q="competences" data-i18n="homep2.chat.chip.competences">Compétences ?</button>
+    <button type="button" class="chat-chip" data-q="disponibilite" data-i18n="homep2.chat.chip.disponibilite">Disponibilité ?</button>
+    <button type="button" class="chat-chip" data-q="contact" data-i18n="homep2.chat.chip.contact">Contact ?</button>
+    <button type="button" class="chat-chip" data-q="projets" data-i18n="homep2.chat.chip.projets">Projets ?</button>
   </div>
   <div class="chat-input-row">
-    <input type="text" id="chatInput" placeholder="Ecris ta question...">
+    <input type="text" id="chatInput" placeholder="Ecris ta question..." data-i18n-placeholder="homep2.chat.input_placeholder">
     <button type="button" id="chatSend" aria-label="Envoyer"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
   </div>
 </div>
@@ -943,14 +943,14 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><path d="M19 7l-5.5 1.5L12 7l-1.5 1.5L5 7M12 8.5V13m0 0l-3 8m3-8l3 8"/></svg>
         </button>
         <div class="a11y-panel" id="a11yPanel">
-          <h4>Accessibilité</h4>
-          <div class="a11y-row"><span>Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
-          <div class="a11y-row"><span>Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
-          <div class="a11y-row"><span>Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
-          <div class="a11y-row"><span>Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
-          <div class="a11y-row"><span>Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
+          <h4 data-i18n="a11y.title">Accessibilité</h4>
+          <div class="a11y-row"><span data-i18n="a11y.dyslexic">Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.contrast">Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.colorblind">Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.underline">Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.reduce_motion">Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
           <div class="a11y-row">
-            <span>Taille du texte</span>
+            <span data-i18n="a11y.text_size">Taille du texte</span>
             <div class="a11y-textsize-group">
               <button type="button" data-textsize="">A</button>
               <button type="button" data-textsize="lg">A+</button>
@@ -1006,7 +1006,7 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
   <canvas class="hero-canvas" id="portfolioCanvas" aria-hidden="true"></canvas>
   <div class="portfolio-hero-content">
     <h1 class="page-title-hero reveal">
-      <span class="word">Mes</span> <span class="word accent">Réalisations</span>
+      <span class="word" data-i18n="portp.hero.title.word1">Mes</span> <span class="word accent" data-i18n="portp.hero.title.word2">Réalisations</span>
     </h1>
     <p class="hero-subtitle reveal" data-i18n="portfolio.lede">Chaque projet répond à un cahier des charges réel, et chaque stage à un vrai terrain professionnel.</p>
   </div>
@@ -1017,7 +1017,7 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
   <div class="wrap">
     <div class="section-header-center">
       <h2 class="section-title section-title-center reveal" data-i18n="nav.portfolio.projets">Projets</h2>
-      <p class="section-sub">Chaque projet raconte une histoire technique</p>
+      <p class="section-sub" data-i18n="portp.projects.sub">Chaque projet raconte une histoire technique</p>
     </div>
 
     <div class="portfolio-filters-bar">
@@ -1031,102 +1031,102 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
     <div class="projects-grid2" id="projectsGrid">
 
       <a href="project-marketnayo.html" class="project-card-grid reveal" data-tags="mobile web" data-cursor="voir">
-        <div class="pcg-image"><img class="pcg-image-photo" src="assets/images/marketnayo-splash.jpg" alt="MarketNaYo"><div class="pcg-overlay"><span class="pcg-overlay-cta">Voir le projet →</span></div></div>
+        <div class="pcg-image"><img class="pcg-image-photo" src="assets/images/marketnayo-splash.jpg" alt="MarketNaYo"><div class="pcg-overlay"><span class="pcg-overlay-cta" data-i18n="portp.cta.view_project">Voir le projet →</span></div></div>
         <div class="pcg-body">
-          <div class="pcg-tags"><span class="pcg-tag dev">Mobile</span><span class="pcg-tag">Backend</span></div>
-          <h3 class="pcg-title">MarketNaYo, le marché version smart</h3>
-          <p class="pcg-desc">Marketplace mobile pour marchés locaux : paiement Orange Money, Wave et MTN Mobile Money, chat et prix en temps réel via WebSockets, authentification JWT + OTP SMS.</p>
+          <div class="pcg-tags"><span class="pcg-tag dev" data-i18n="portp.tag.mobile">Mobile</span><span class="pcg-tag" data-i18n="portp.tag.backend">Backend</span></div>
+          <h3 class="pcg-title" data-i18n="portp.proj.marketnayo.title">MarketNaYo, le marché version smart</h3>
+          <p class="pcg-desc" data-i18n="portp.proj.marketnayo.desc">Marketplace mobile pour marchés locaux : paiement Orange Money, Wave et MTN Mobile Money, chat et prix en temps réel via WebSockets, authentification JWT + OTP SMS.</p>
           <div class="pcg-stack"><span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>KivyMD</span></div>
         </div>
       </a>
 
       <a href="project-nova.html" class="project-card-grid reveal" data-tags="mobile web" data-cursor="voir">
-        <div class="pcg-image"><div class="pcg-image-visual"></div><div class="pcg-overlay"><span class="pcg-overlay-cta">Voir le projet →</span></div></div>
+        <div class="pcg-image"><div class="pcg-image-visual"></div><div class="pcg-overlay"><span class="pcg-overlay-cta" data-i18n="portp.cta.view_project">Voir le projet →</span></div></div>
         <div class="pcg-body">
-          <div class="pcg-tags"><span class="pcg-tag dev">Mobile</span><span class="pcg-tag">Backend</span></div>
-          <h3 class="pcg-title">NOVA, Marketplace Boutiques × Clients</h3>
-          <p class="pcg-desc">Application mobile mettant en relation boutiques et clients : panier, paiement Stripe, chat en temps réel, et réservation obligatoire d'une séance photo produit avant publication.</p>
+          <div class="pcg-tags"><span class="pcg-tag dev" data-i18n="portp.tag.mobile">Mobile</span><span class="pcg-tag" data-i18n="portp.tag.backend">Backend</span></div>
+          <h3 class="pcg-title" data-i18n="portp.proj.nova.title">NOVA, Marketplace Boutiques × Clients</h3>
+          <p class="pcg-desc" data-i18n="portp.proj.nova.desc">Application mobile mettant en relation boutiques et clients : panier, paiement Stripe, chat en temps réel, et réservation obligatoire d'une séance photo produit avant publication.</p>
           <div class="pcg-stack"><span>React Native</span><span>Expo</span><span>Node.js</span><span>Prisma</span><span>Stripe</span></div>
         </div>
       </a>
 
       <a href="project-nexus-jeunesses.html" class="project-card-grid reveal" data-tags="uxui web" data-cursor="voir">
-        <div class="pcg-image"><img class="pcg-image-photo" src="assets/images/nexus-jeunesses-accueil.jpg" alt="Nexus Jeunesses"><div class="pcg-overlay"><span class="pcg-overlay-cta">Voir le projet →</span></div></div>
+        <div class="pcg-image"><img class="pcg-image-photo" src="assets/images/nexus-jeunesses-accueil.jpg" alt="Nexus Jeunesses"><div class="pcg-overlay"><span class="pcg-overlay-cta" data-i18n="portp.cta.view_project">Voir le projet →</span></div></div>
         <div class="pcg-body">
-          <div class="pcg-tags"><span class="pcg-tag iot">UX/UI</span><span class="pcg-tag dev">Web</span></div>
-          <h3 class="pcg-title">Nexus Jeunesses, plateforme du sommet jeunesse</h3>
-          <p class="pcg-desc">Plateforme en ligne (nexusjeunesses.org) pour un sommet international de jeunesse : comptes utilisateurs, inscriptions multi-profils, upload de vidéos de candidature et back-office admin. Conçue et développée de A à Z.</p>
+          <div class="pcg-tags"><span class="pcg-tag iot">UX/UI</span><span class="pcg-tag dev" data-i18n="portp.tag.web">Web</span></div>
+          <h3 class="pcg-title" data-i18n="portp.proj.nexus.title">Nexus Jeunesses, plateforme du sommet jeunesse</h3>
+          <p class="pcg-desc" data-i18n="portp.proj.nexus.desc">Plateforme en ligne (nexusjeunesses.org) pour un sommet international de jeunesse : comptes utilisateurs, inscriptions multi-profils, upload de vidéos de candidature et back-office admin. Conçue et développée de A à Z.</p>
           <div class="pcg-stack"><span>Next.js</span><span>TypeScript</span><span>Prisma</span><span>Supabase</span></div>
         </div>
       </a>
 
       <a href="project-frac.html" class="project-card-grid reveal" data-tags="uxui web" data-cursor="voir">
-        <div class="pcg-image"><img class="pcg-image-photo" src="assets/images/projects/frac/card-photo.jpg" alt="FRAC Franche-Comté"><div class="pcg-overlay"><span class="pcg-overlay-cta">Voir le projet →</span></div></div>
+        <div class="pcg-image"><img class="pcg-image-photo" src="assets/images/projects/frac/card-photo.jpg" alt="FRAC Franche-Comté"><div class="pcg-overlay"><span class="pcg-overlay-cta" data-i18n="portp.cta.view_project">Voir le projet →</span></div></div>
         <div class="pcg-body">
-          <div class="pcg-tags"><span class="pcg-tag iot">UX/UI</span><span class="pcg-tag">Refonte web</span></div>
-          <h3 class="pcg-title">FRAC Franche-Comté, la création contemporaine en partage</h3>
-          <p class="pcg-desc">Refonte du site d'un Fonds régional d'art contemporain : accueil, expositions et fiches artistes. Projet d'école en Master : recherche, direction artistique et maquette Figma complète.</p>
-          <div class="pcg-stack"><span>Figma</span><span>UX Research</span><span>Direction artistique</span></div>
+          <div class="pcg-tags"><span class="pcg-tag iot">UX/UI</span><span class="pcg-tag" data-i18n="portp.tag.refonte_web">Refonte web</span></div>
+          <h3 class="pcg-title" data-i18n="portp.proj.frac.title">FRAC Franche-Comté, la création contemporaine en partage</h3>
+          <p class="pcg-desc" data-i18n="portp.proj.frac.desc">Refonte du site d'un Fonds régional d'art contemporain : accueil, expositions et fiches artistes. Projet d'école en Master : recherche, direction artistique et maquette Figma complète.</p>
+          <div class="pcg-stack"><span>Figma</span><span>UX Research</span><span data-i18n="portp.tag.direction_artistique">Direction artistique</span></div>
         </div>
       </a>
 
       <a href="project-mouvprint.html" class="project-card-grid reveal" data-tags="uxui" data-cursor="voir">
-        <div class="pcg-image"><img class="pcg-image-photo" src="assets/images/projects/mouvprint/logo.png" alt="Mouv'Print" style="object-position:center;"><div class="pcg-overlay"><span class="pcg-overlay-cta">Voir le projet →</span></div></div>
+        <div class="pcg-image"><img class="pcg-image-photo" src="assets/images/projects/mouvprint/logo.png" alt="Mouv'Print" style="object-position:center;"><div class="pcg-overlay"><span class="pcg-overlay-cta" data-i18n="portp.cta.view_project">Voir le projet →</span></div></div>
         <div class="pcg-body">
-          <div class="pcg-tags"><span class="pcg-tag iot">UX/UI</span><span class="pcg-tag">Design graphique</span></div>
-          <h3 class="pcg-title">Mouv'Print, voyager dans le temps en un regard</h3>
-          <p class="pcg-desc">Concept de lunettes à réalité augmentée pour explorer une ville à travers passé, présent et futur. Projet de groupe en Master 1 : identité visuelle, affiches et flyer réalisés par mes soins, vidéo de démonstration à l'appui.</p>
-          <div class="pcg-stack"><span>Identité visuelle</span><span>Affiches</span><span>Flyer</span><span>Vidéo démo</span></div>
+          <div class="pcg-tags"><span class="pcg-tag iot">UX/UI</span><span class="pcg-tag" data-i18n="portp.tag.design_graphique">Design graphique</span></div>
+          <h3 class="pcg-title" data-i18n="portp.proj.mouvprint.title">Mouv'Print, voyager dans le temps en un regard</h3>
+          <p class="pcg-desc" data-i18n="portp.proj.mouvprint.desc">Concept de lunettes à réalité augmentée pour explorer une ville à travers passé, présent et futur. Projet de groupe en Master 1 : identité visuelle, affiches et flyer réalisés par mes soins, vidéo de démonstration à l'appui.</p>
+          <div class="pcg-stack"><span data-i18n="portp.tag.identite_visuelle">Identité visuelle</span><span data-i18n="portp.tag.affiches">Affiches</span><span data-i18n="portp.tag.flyer">Flyer</span><span data-i18n="portp.tag.video_demo">Vidéo démo</span></div>
         </div>
       </a>
 
       <a href="project-eventhub.html" class="project-card-grid reveal" data-tags="uxui" data-cursor="voir">
-        <div class="pcg-image"><img class="pcg-image-photo" src="assets/images/projects/eventhub/card-photo.jpg" alt="EventHub"><div class="pcg-overlay"><span class="pcg-overlay-cta">Voir le projet →</span></div></div>
+        <div class="pcg-image"><img class="pcg-image-photo" src="assets/images/projects/eventhub/card-photo.jpg" alt="EventHub"><div class="pcg-overlay"><span class="pcg-overlay-cta" data-i18n="portp.cta.view_project">Voir le projet →</span></div></div>
         <div class="pcg-body">
-          <div class="pcg-tags"><span class="pcg-tag iot">UX/UI</span><span class="pcg-tag">Éco-conception</span></div>
-          <h3 class="pcg-title">EventHub, découvrir les événements live sans se perdre</h3>
-          <p class="pcg-desc">Plateforme de découverte de concerts, festivals et expériences culturelles. Projet personnel en Master 1 : arborescence simplifiée, direction artistique néon/vaporwave et vraie démarche d'éco-conception numérique.</p>
-          <div class="pcg-stack"><span>Figma</span><span>UX Research</span><span>Éco-conception</span><span>Design System</span></div>
+          <div class="pcg-tags"><span class="pcg-tag iot">UX/UI</span><span class="pcg-tag" data-i18n="portp.tag.eco_conception">Éco-conception</span></div>
+          <h3 class="pcg-title" data-i18n="portp.proj.eventhub.title">EventHub, découvrir les événements live sans se perdre</h3>
+          <p class="pcg-desc" data-i18n="portp.proj.eventhub.desc">Plateforme de découverte de concerts, festivals et expériences culturelles. Projet personnel en Master 1 : arborescence simplifiée, direction artistique néon/vaporwave et vraie démarche d'éco-conception numérique.</p>
+          <div class="pcg-stack"><span>Figma</span><span>UX Research</span><span data-i18n="portp.tag.eco_conception">Éco-conception</span><span>Design System</span></div>
         </div>
       </a>
 
       <a href="project-lostfound.html" class="project-card-grid reveal" data-tags="mobile" data-cursor="voir">
-        <div class="pcg-image"><img class="pcg-image-photo" src="assets/images/projects/lostfound/card-photo.jpg" alt="Lost &amp; Found" style="object-position:center;"><div class="pcg-overlay"><span class="pcg-overlay-cta">Voir le projet →</span></div></div>
+        <div class="pcg-image"><img class="pcg-image-photo" src="assets/images/projects/lostfound/card-photo.jpg" alt="Lost &amp; Found" style="object-position:center;"><div class="pcg-overlay"><span class="pcg-overlay-cta" data-i18n="portp.cta.view_project">Voir le projet →</span></div></div>
         <div class="pcg-body">
-          <div class="pcg-tags"><span class="pcg-tag dev">Mobile</span><span class="pcg-tag">Flutter</span></div>
-          <h3 class="pcg-title">Lost &amp; Found, les objets perdus du campus</h3>
-          <p class="pcg-desc">Application Flutter pour signaler et retrouver les objets perdus ou trouvés sur le campus, avec fonctionnement hors ligne et stockage local. Projet de groupe en Master 1.</p>
-          <div class="pcg-stack"><span>Flutter</span><span>Hors ligne</span><span>Stockage local</span></div>
+          <div class="pcg-tags"><span class="pcg-tag dev" data-i18n="portp.tag.mobile">Mobile</span><span class="pcg-tag">Flutter</span></div>
+          <h3 class="pcg-title" data-i18n="portp.proj.lostfound.title">Lost &amp; Found, les objets perdus du campus</h3>
+          <p class="pcg-desc" data-i18n="portp.proj.lostfound.desc">Application Flutter pour signaler et retrouver les objets perdus ou trouvés sur le campus, avec fonctionnement hors ligne et stockage local. Projet de groupe en Master 1.</p>
+          <div class="pcg-stack"><span>Flutter</span><span data-i18n="portp.tag.hors_ligne">Hors ligne</span><span data-i18n="portp.tag.stockage_local">Stockage local</span></div>
         </div>
       </a>
 
       <a href="project-classmemo.html" class="project-card-grid reveal" data-tags="web" data-cursor="voir">
-        <div class="pcg-image" style="background:rgb(19,66,49);"><img class="pcg-image-photo" src="assets/images/projects/classmemo/logo.png" alt="ClassMemo" style="object-fit:contain; object-position:center;"><div class="pcg-overlay"><span class="pcg-overlay-cta">Voir le projet →</span></div></div>
+        <div class="pcg-image" style="background:rgb(19,66,49);"><img class="pcg-image-photo" src="assets/images/projects/classmemo/logo.png" alt="ClassMemo" style="object-fit:contain; object-position:center;"><div class="pcg-overlay"><span class="pcg-overlay-cta" data-i18n="portp.cta.view_project">Voir le projet →</span></div></div>
         <div class="pcg-body">
-          <div class="pcg-tags"><span class="pcg-tag dev">Web</span><span class="pcg-tag">Full-stack</span></div>
-          <h3 class="pcg-title">ClassMemo, réviser en petite tablée</h3>
-          <p class="pcg-desc">Compagnon de révision collaborative : dépôt de notes manuscrites, résumé et flashcards générés par IA, vie de groupe en temps réel. Conçu et développé de A à Z.</p>
+          <div class="pcg-tags"><span class="pcg-tag dev" data-i18n="portp.tag.web">Web</span><span class="pcg-tag" data-i18n="portp.tag.fullstack">Full-stack</span></div>
+          <h3 class="pcg-title" data-i18n="portp.proj.classmemo.title">ClassMemo, réviser en petite tablée</h3>
+          <p class="pcg-desc" data-i18n="portp.proj.classmemo.desc">Compagnon de révision collaborative : dépôt de notes manuscrites, résumé et flashcards générés par IA, vie de groupe en temps réel. Conçu et développé de A à Z.</p>
           <div class="pcg-stack"><span>React</span><span>Node.js</span><span>Socket.IO</span><span>API Claude</span></div>
         </div>
       </a>
 
       <a href="project-neuroapp.html" class="project-card-grid reveal" data-tags="mobile" data-cursor="voir">
-        <div class="pcg-image"><img class="pcg-image-photo" src="assets/images/projects/neuroapp/card-banner.jpg" alt="NeuroApp"><div class="pcg-overlay"><span class="pcg-overlay-cta">Voir le projet →</span></div></div>
+        <div class="pcg-image"><img class="pcg-image-photo" src="assets/images/projects/neuroapp/card-banner.jpg" alt="NeuroApp"><div class="pcg-overlay"><span class="pcg-overlay-cta" data-i18n="portp.cta.view_project">Voir le projet →</span></div></div>
         <div class="pcg-body">
-          <div class="pcg-tags"><span class="pcg-tag dev">Mobile</span><span class="pcg-tag">Flutter</span></div>
-          <h3 class="pcg-title">NeuroApp, évaluations neuropsychologiques</h3>
-          <p class="pcg-desc">Application mobile pour faire passer des tests neuropsychologiques standardisés (mémoire, fardeau de l'aidant, dépistage) et centraliser les dossiers patients.</p>
+          <div class="pcg-tags"><span class="pcg-tag dev" data-i18n="portp.tag.mobile">Mobile</span><span class="pcg-tag">Flutter</span></div>
+          <h3 class="pcg-title" data-i18n="portp.proj.neuroapp.title">NeuroApp, évaluations neuropsychologiques</h3>
+          <p class="pcg-desc" data-i18n="portp.proj.neuroapp.desc">Application mobile pour faire passer des tests neuropsychologiques standardisés (mémoire, fardeau de l'aidant, dépistage) et centraliser les dossiers patients.</p>
           <div class="pcg-stack"><span>Flutter</span><span>Firebase</span><span>Firestore</span></div>
         </div>
       </a>
 
       <a href="project-microclimat.html" class="project-card-grid reveal" data-tags="recherche" data-cursor="voir">
-        <div class="pcg-image"><img class="pcg-image-photo" src="assets/images/projects/microclimat/schema-cablage-1.jpg" alt="Serre intelligente" style="object-position:center;"><div class="pcg-overlay"><span class="pcg-overlay-cta">Voir le projet →</span></div></div>
+        <div class="pcg-image"><img class="pcg-image-photo" src="assets/images/projects/microclimat/schema-cablage-1.jpg" alt="Serre intelligente" style="object-position:center;"><div class="pcg-overlay"><span class="pcg-overlay-cta" data-i18n="portp.cta.view_project">Voir le projet →</span></div></div>
         <div class="pcg-body">
-          <div class="pcg-tags"><span class="pcg-tag systeme">Recherche</span><span class="pcg-tag">Arduino</span></div>
-          <h3 class="pcg-title">Serre intelligente, réguler un microclimat</h3>
-          <p class="pcg-desc">Mémoire de fin d'études : système embarqué à base d'Arduino UNO pour recréer le microclimat de cultures du Kivu dans une serre prototype, via capteurs, actionneurs et régulation tout ou rien.</p>
-          <div class="pcg-stack"><span>Arduino UNO</span><span>Capteurs</span><span>Régulation TOR</span></div>
+          <div class="pcg-tags"><span class="pcg-tag systeme" data-i18n="portp.tag.recherche">Recherche</span><span class="pcg-tag">Arduino</span></div>
+          <h3 class="pcg-title" data-i18n="portp.proj.microclimat.title">Serre intelligente, réguler un microclimat</h3>
+          <p class="pcg-desc" data-i18n="portp.proj.microclimat.desc">Mémoire de fin d'études : système embarqué à base d'Arduino UNO pour recréer le microclimat de cultures du Kivu dans une serre prototype, via capteurs, actionneurs et régulation tout ou rien.</p>
+          <div class="pcg-stack"><span>Arduino UNO</span><span data-i18n="portp.tag.capteurs">Capteurs</span><span data-i18n="portp.tag.regulation_tor">Régulation TOR</span></div>
         </div>
       </a>
 
@@ -1150,11 +1150,11 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
             <span class="exp-card-date-badge">2025</span>
           </div>
           <div class="exp-card-body">
-            <div class="exp-card-header-row"><span class="exp-card-type t-blue">Stage recherche</span></div>
-            <h3 class="exp-card-title">Stagiaire chercheuse UX/UI Design</h3>
-            <p class="exp-card-summary">Études utilisateurs, prototypage Figma et recherche appliquée en interaction homme-machine.</p>
-            <div class="exp-card-tags"><span>Figma</span><span>UX Research</span><span>IHM</span></div>
-            <div class="exp-card-cta"><span>Lire l'expérience complète</span> →</div>
+            <div class="exp-card-header-row"><span class="exp-card-type t-blue" data-i18n="portp.stage.ucc.type">Stage recherche</span></div>
+            <h3 class="exp-card-title" data-i18n="portp.stage.ucc.title">Stagiaire chercheuse UX/UI Design</h3>
+            <p class="exp-card-summary" data-i18n="portp.stage.ucc.summary">Études utilisateurs, prototypage Figma et recherche appliquée en interaction homme-machine.</p>
+            <div class="exp-card-tags"><span>Figma</span><span>UX Research</span><span data-i18n="portp.tag.ihm">IHM</span></div>
+            <div class="exp-card-cta"><span data-i18n="portp.cta.read_full">Lire l'expérience complète</span> →</div>
           </div>
         </div>
       </a>
@@ -1166,11 +1166,11 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
             <span class="exp-card-date-badge">2024</span>
           </div>
           <div class="exp-card-body">
-            <div class="exp-card-header-row"><span class="exp-card-type t-gold">Stage informatique</span></div>
-            <h3 class="exp-card-title">Stagiaire informatique</h3>
-            <p class="exp-card-summary">Déploiement de solutions numériques et support technique de premier niveau à la SNEL (RDC).</p>
-            <div class="exp-card-tags"><span>Support technique</span><span>Veille techno</span></div>
-            <div class="exp-card-cta"><span>Lire l'expérience complète</span> →</div>
+            <div class="exp-card-header-row"><span class="exp-card-type t-gold" data-i18n="portp.stage.snel.type">Stage informatique</span></div>
+            <h3 class="exp-card-title" data-i18n="portp.stage.snel.title">Stagiaire informatique</h3>
+            <p class="exp-card-summary" data-i18n="portp.stage.snel.summary">Déploiement de solutions numériques et support technique de premier niveau à la SNEL (RDC).</p>
+            <div class="exp-card-tags"><span data-i18n="portp.tag.support_technique">Support technique</span><span data-i18n="portp.tag.veille_techno">Veille techno</span></div>
+            <div class="exp-card-cta"><span data-i18n="portp.cta.read_full">Lire l'expérience complète</span> →</div>
           </div>
         </div>
       </a>
@@ -1187,11 +1187,11 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
             <span class="exp-card-date-badge">2024</span>
           </div>
           <div class="exp-card-body">
-            <div class="exp-card-header-row"><span class="exp-card-type t-violet">Stage pédagogique</span></div>
-            <h3 class="exp-card-title">Stagiaire enseignante en informatique</h3>
-            <p class="exp-card-summary">Animation de séances d'initiation à l'informatique et conception de supports pédagogiques pour une classe de Terminale.</p>
-            <div class="exp-card-tags"><span>Pédagogie</span><span>Informatique</span></div>
-            <div class="exp-card-cta"><span>Lire l'expérience complète</span> →</div>
+            <div class="exp-card-header-row"><span class="exp-card-type t-violet" data-i18n="portp.stage.enseignante.type">Stage pédagogique</span></div>
+            <h3 class="exp-card-title" data-i18n="portp.stage.enseignante.title">Stagiaire enseignante en informatique</h3>
+            <p class="exp-card-summary" data-i18n="portp.stage.enseignante.summary">Animation de séances d'initiation à l'informatique et conception de supports pédagogiques pour une classe de Terminale.</p>
+            <div class="exp-card-tags"><span data-i18n="portp.tag.pedagogie">Pédagogie</span><span data-i18n="portp.tag.informatique">Informatique</span></div>
+            <div class="exp-card-cta"><span data-i18n="portp.cta.read_full">Lire l'expérience complète</span> →</div>
           </div>
         </div>
       </a>

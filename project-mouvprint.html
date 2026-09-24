@@ -985,19 +985,19 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <div class="chat-panel" id="chatPanel">
   <div class="chat-head">
     <span class="dot-live"></span>
-    <div><strong>Assistant Olga</strong><span>Questions sur mon profil</span></div>
+    <div><strong data-i18n="homep2.chat.title">Assistant Olga</strong><span data-i18n="homep2.chat.subtitle">Questions sur mon profil</span></div>
   </div>
   <div class="chat-body" id="chatBody">
-    <div class="chat-msg bot">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
+    <div class="chat-msg bot" data-i18n="homep2.chat.greeting">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
   </div>
   <div class="chat-suggestions">
-    <button type="button" class="chat-chip" data-q="competences">Compétences ?</button>
-    <button type="button" class="chat-chip" data-q="disponibilite">Disponibilité ?</button>
-    <button type="button" class="chat-chip" data-q="contact">Contact ?</button>
-    <button type="button" class="chat-chip" data-q="projets">Projets ?</button>
+    <button type="button" class="chat-chip" data-q="competences" data-i18n="homep2.chat.chip.competences">Compétences ?</button>
+    <button type="button" class="chat-chip" data-q="disponibilite" data-i18n="homep2.chat.chip.disponibilite">Disponibilité ?</button>
+    <button type="button" class="chat-chip" data-q="contact" data-i18n="homep2.chat.chip.contact">Contact ?</button>
+    <button type="button" class="chat-chip" data-q="projets" data-i18n="homep2.chat.chip.projets">Projets ?</button>
   </div>
   <div class="chat-input-row">
-    <input type="text" id="chatInput" placeholder="Ecris ta question...">
+    <input type="text" id="chatInput" placeholder="Ecris ta question..." data-i18n-placeholder="homep2.chat.input_placeholder">
     <button type="button" id="chatSend" aria-label="Envoyer"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
   </div>
 </div>
@@ -1045,14 +1045,14 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><path d="M19 7l-5.5 1.5L12 7l-1.5 1.5L5 7M12 8.5V13m0 0l-3 8m3-8l3 8"/></svg>
         </button>
         <div class="a11y-panel" id="a11yPanel">
-          <h4>Accessibilité</h4>
-          <div class="a11y-row"><span>Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
-          <div class="a11y-row"><span>Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
-          <div class="a11y-row"><span>Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
-          <div class="a11y-row"><span>Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
-          <div class="a11y-row"><span>Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
+          <h4 data-i18n="a11y.title">Accessibilité</h4>
+          <div class="a11y-row"><span data-i18n="a11y.dyslexic">Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.contrast">Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.colorblind">Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.underline">Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.reduce_motion">Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
           <div class="a11y-row">
-            <span>Taille du texte</span>
+            <span data-i18n="a11y.text_size">Taille du texte</span>
             <div class="a11y-textsize-group">
               <button type="button" data-textsize="">A</button>
               <button type="button" data-textsize="lg">A+</button>
@@ -1095,27 +1095,27 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <section class="detail-hero-banner">
   <div class="detail-hero-bg"></div>
   <div class="wrap detail-hero-content">
-    <nav class="detail-breadcrumb"><a href="portfolio.html">Portfolio</a><span class="sep">/</span><span>Mouv'Print</span></nav>
-    <div class="detail-tags"><span class="detail-tag iot">UX/UI</span><span class="detail-tag">Design graphique</span></div>
-    <h1 class="detail-page-title reveal">Mouv'Print, voyager dans le temps en un regard</h1>
-    <p class="detail-page-accroche reveal">Un concept de lunettes à réalité augmentée pour explorer une ville à travers trois époques, passé, présent et futur. Projet de groupe en Master 1, identité visuelle et supports de communication réalisés par mes soins.</p>
+    <nav class="detail-breadcrumb"><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a><span class="sep">/</span><span>Mouv'Print</span></nav>
+    <div class="detail-tags"><span class="detail-tag iot" data-i18n="proj.mouvprint.hero.tag1">UX/UI</span><span class="detail-tag" data-i18n="proj.mouvprint.hero.tag2">Design graphique</span></div>
+    <h1 class="detail-page-title reveal" data-i18n="proj.mouvprint.hero.title">Mouv'Print, voyager dans le temps en un regard</h1>
+    <p class="detail-page-accroche reveal" data-i18n="proj.mouvprint.hero.accroche">Un concept de lunettes à réalité augmentée pour explorer une ville à travers trois époques, passé, présent et futur. Projet de groupe en Master 1, identité visuelle et supports de communication réalisés par mes soins.</p>
   </div>
 </section>
 
 <div class="wrap">
-  <div class="detail-meta-bar reveal"><div><div class="ml">Contexte</div><div class="mv">Projet de groupe, Master 1 PSM</div></div><div><div class="ml">Équipe</div><div class="mv">4 étudiants : concept, design &amp; développement</div></div><div><div class="ml">Mon rôle</div><div class="mv">Identité visuelle, affiches &amp; flyer</div></div><div><div class="ml">Statut</div><div class="mv">Concept académique, vidéo de démonstration</div></div></div>
+  <div class="detail-meta-bar reveal"><div><div class="ml" data-i18n="proj.meta.contexte">Contexte</div><div class="mv" data-i18n="proj.mouvprint.meta.contexte.value">Projet de groupe, Master 1 PSM</div></div><div><div class="ml" data-i18n="proj.meta.equipe">Équipe</div><div class="mv" data-i18n="proj.mouvprint.meta.equipe.value">4 étudiants : concept, design &amp; développement</div></div><div><div class="ml" data-i18n="proj.meta.role">Mon rôle</div><div class="mv" data-i18n="proj.mouvprint.meta.role.value">Identité visuelle, affiches &amp; flyer</div></div><div><div class="ml" data-i18n="proj.meta.statut">Statut</div><div class="mv" data-i18n="proj.mouvprint.meta.statut.value">Concept académique, vidéo de démonstration</div></div></div>
 
   <article class="detail-story">
     
-    <p class="story-p"><strong>Mouv'Print</strong> : un concept de lunettes à <strong>réalité augmentée</strong> pour explorer une ville à travers trois époques, passé, présent et futur, en un seul regard. Projet de groupe en Master 1 PSM.</p>
+    <p class="story-p" data-i18n-html="proj.mouvprint.p1"><strong>Mouv'Print</strong> : un concept de lunettes à <strong>réalité augmentée</strong> pour explorer une ville à travers trois époques, passé, présent et futur, en un seul regard. Projet de groupe en Master 1 PSM.</p>
 
     <div class="mv-video-wrap reveal">
       <video src="assets/videos/mouvprint-demo.mp4" poster="assets/images/projects/mouvprint-poster.jpg" controls playsinline preload="metadata"></video>
-      <p class="story-shot-cap">Démo de réalité augmentée, filmée dans les rues de Montbéliard</p>
+      <p class="story-shot-cap" data-i18n="proj.mouvprint.video.cap">Démo de réalité augmentée, filmée dans les rues de Montbéliard</p>
     </div>
 
-    <h2 class="story-h2">Mon rôle</h2>
-    <p class="story-p">Identité visuelle du projet : affiches et flyer recto/verso.</p>
+    <h2 class="story-h2" data-i18n="proj.mouvprint.s1.h2">Mon rôle</h2>
+    <p class="story-p" data-i18n="proj.mouvprint.s1.p1">Identité visuelle du projet : affiches et flyer recto/verso.</p>
 
     <div class="story-shot-grid">
       <div class="story-shot"><img src="assets/images/projects/mouvprint/affiche5.jpg" alt="Affiche Mouv'Print : Montbéliard à travers le temps"></div>
@@ -1131,20 +1131,20 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
     </div>
 
     <div class="story-chips">
-      <span class="stage-result-chip">Réalité augmentée</span>
-      <span class="stage-result-chip">Identité visuelle</span>
-      <span class="stage-result-chip">5 affiches</span>
-      <span class="stage-result-chip">Flyer recto/verso</span>
+      <span class="stage-result-chip" data-i18n="proj.mouvprint.chip1">Réalité augmentée</span>
+      <span class="stage-result-chip" data-i18n="proj.mouvprint.chip2">Identité visuelle</span>
+      <span class="stage-result-chip" data-i18n="proj.mouvprint.chip3">5 affiches</span>
+      <span class="stage-result-chip" data-i18n="proj.mouvprint.chip4">Flyer recto/verso</span>
     </div>
 
     <div class="cta-buttons reveal">
       <a href="https://celiahouessou-star.github.io/site-mouvprint/" target="_blank" rel="noopener" class="btn btn-solid">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        <span>Voir le site vitrine</span>
+        <span data-i18n="proj.mouvprint.cta.site">Voir le site vitrine</span>
       </a>
       <a href="https://www.instagram.com/mouv_print/" target="_blank" rel="noopener" class="btn btn-outline">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s.02-3.58.07-4.85c.15-3.23 1.67-4.77 4.92-4.92 1.27-.06 1.65-.07 4.85-.07zm0-2.16c-3.26 0-3.67.01-4.95.07-4.35.2-6.78 2.62-6.98 6.98-.06 1.28-.07 1.69-.07 4.95s.01 3.67.07 4.95c.2 4.35 2.62 6.78 6.98 6.98 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98-1.28-.06-1.69-.07-4.95-.07zM12 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zm0 10.16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-10.4a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"/></svg>
-        <span>Voir sur Instagram</span>
+        <span data-i18n="proj.mouvprint.cta.instagram">Voir sur Instagram</span>
       </a>
     </div>
   </article>

@@ -985,19 +985,19 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <div class="chat-panel" id="chatPanel">
   <div class="chat-head">
     <span class="dot-live"></span>
-    <div><strong>Assistant Olga</strong><span>Questions sur mon profil</span></div>
+    <div><strong data-i18n="homep2.chat.title">Assistant Olga</strong><span data-i18n="homep2.chat.subtitle">Questions sur mon profil</span></div>
   </div>
   <div class="chat-body" id="chatBody">
-    <div class="chat-msg bot">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
+    <div class="chat-msg bot" data-i18n="homep2.chat.greeting">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
   </div>
   <div class="chat-suggestions">
-    <button type="button" class="chat-chip" data-q="competences">Compétences ?</button>
-    <button type="button" class="chat-chip" data-q="disponibilite">Disponibilité ?</button>
-    <button type="button" class="chat-chip" data-q="contact">Contact ?</button>
-    <button type="button" class="chat-chip" data-q="projets">Projets ?</button>
+    <button type="button" class="chat-chip" data-q="competences" data-i18n="homep2.chat.chip.competences">Compétences ?</button>
+    <button type="button" class="chat-chip" data-q="disponibilite" data-i18n="homep2.chat.chip.disponibilite">Disponibilité ?</button>
+    <button type="button" class="chat-chip" data-q="contact" data-i18n="homep2.chat.chip.contact">Contact ?</button>
+    <button type="button" class="chat-chip" data-q="projets" data-i18n="homep2.chat.chip.projets">Projets ?</button>
   </div>
   <div class="chat-input-row">
-    <input type="text" id="chatInput" placeholder="Ecris ta question...">
+    <input type="text" id="chatInput" placeholder="Ecris ta question..." data-i18n-placeholder="homep2.chat.input_placeholder">
     <button type="button" id="chatSend" aria-label="Envoyer"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
   </div>
 </div>
@@ -1045,14 +1045,14 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><path d="M19 7l-5.5 1.5L12 7l-1.5 1.5L5 7M12 8.5V13m0 0l-3 8m3-8l3 8"/></svg>
         </button>
         <div class="a11y-panel" id="a11yPanel">
-          <h4>Accessibilité</h4>
-          <div class="a11y-row"><span>Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
-          <div class="a11y-row"><span>Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
-          <div class="a11y-row"><span>Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
-          <div class="a11y-row"><span>Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
-          <div class="a11y-row"><span>Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
+          <h4 data-i18n="a11y.title">Accessibilité</h4>
+          <div class="a11y-row"><span data-i18n="a11y.dyslexic">Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.contrast">Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.colorblind">Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.underline">Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.reduce_motion">Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
           <div class="a11y-row">
-            <span>Taille du texte</span>
+            <span data-i18n="a11y.text_size">Taille du texte</span>
             <div class="a11y-textsize-group">
               <button type="button" data-textsize="">A</button>
               <button type="button" data-textsize="lg">A+</button>
@@ -1095,20 +1095,20 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <section class="detail-hero-banner">
   <div class="detail-hero-bg"></div>
   <div class="wrap detail-hero-content">
-    <nav class="detail-breadcrumb"><a href="portfolio.html">Portfolio</a><span class="sep">/</span><span>Nexus Jeunesses</span></nav>
-    <div class="detail-tags"><span class="detail-tag iot">UX/UI</span><span class="detail-tag dev">Web</span></div>
-    <h1 class="detail-page-title reveal">Nexus Jeunesses, plateforme du sommet jeunesse</h1>
-    <p class="detail-page-accroche reveal">Une plateforme complète pour un sommet international de jeunesse : comptes utilisateurs, inscriptions, upload de vidéos de candidature et back-office admin. Conçue, développée et mise en ligne de A à Z.</p>
+    <nav class="detail-breadcrumb"><a href="portfolio.html" data-i18n="proj.nexus.breadcrumb.portfolio">Portfolio</a><span class="sep">/</span><span>Nexus Jeunesses</span></nav>
+    <div class="detail-tags"><span class="detail-tag iot" data-i18n="proj.nexus.tag1">UX/UI</span><span class="detail-tag dev" data-i18n="proj.nexus.tag2">Web</span></div>
+    <h1 class="detail-page-title reveal" data-i18n="proj.nexus.hero.title">Nexus Jeunesses, plateforme du sommet jeunesse</h1>
+    <p class="detail-page-accroche reveal" data-i18n="proj.nexus.hero.accroche">Une plateforme complète pour un sommet international de jeunesse : comptes utilisateurs, inscriptions, upload de vidéos de candidature et back-office admin. Conçue, développée et mise en ligne de A à Z.</p>
   </div>
 </section>
 
 <div class="wrap">
-  <div class="detail-meta-bar reveal"><div><div class="ml">Contexte</div><div class="mv">Application complète, de A à Z</div></div><div><div class="ml">Cible</div><div class="mv">Jeunes leaders &amp; décideurs institutionnels</div></div><div><div class="ml">Mon rôle</div><div class="mv">Conception, design &amp; développement full-stack</div></div><div><div class="ml">Statut</div><div class="mv">En ligne : nexusjeunesses.org</div></div></div>
+  <div class="detail-meta-bar reveal"><div><div class="ml" data-i18n="proj.meta.contexte">Contexte</div><div class="mv" data-i18n="proj.nexus.meta.contexte.value">Application complète, de A à Z</div></div><div><div class="ml" data-i18n="proj.meta.cible">Cible</div><div class="mv" data-i18n="proj.nexus.meta.cible.value">Jeunes leaders &amp; décideurs institutionnels</div></div><div><div class="ml" data-i18n="proj.meta.role">Mon rôle</div><div class="mv" data-i18n="proj.nexus.meta.role.value">Conception, design &amp; développement full-stack</div></div><div><div class="ml" data-i18n="proj.meta.statut">Statut</div><div class="mv" data-i18n="proj.nexus.meta.statut.value">En ligne : nexusjeunesses.org</div></div></div>
 
   <article class="detail-story">
     
-    <h2 class="story-h2">Le brief</h2>
-    <p class="story-p"><strong>Nexus Jeunesses</strong> rassemble les leaders de demain et les décideurs d'aujourd'hui autour d'un sommet international. Ce n'est pas seulement une interface : j'ai porté le projet de bout en bout, <strong>conception, système de design, développement des pages et mise en ligne</strong>, pour donner à une plateforme pensée pour la jeunesse une crédibilité institutionnelle forte, sans perdre son énergie.</p>
+    <h2 class="story-h2" data-i18n="proj.nexus.s1.h2">Le brief</h2>
+    <p class="story-p" data-i18n-html="proj.nexus.s1.p1"><strong>Nexus Jeunesses</strong> rassemble les leaders de demain et les décideurs d'aujourd'hui autour d'un sommet international. Ce n'est pas seulement une interface : j'ai porté le projet de bout en bout, <strong>conception, système de design, développement des pages et mise en ligne</strong>, pour donner à une plateforme pensée pour la jeunesse une crédibilité institutionnelle forte, sans perdre son énergie.</p>
     <div class="laptop-wrap reveal">
       <div class="laptop">
         <div class="laptop-glow"></div>
@@ -1119,55 +1119,55 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
         </div>
         <div class="laptop-base"></div>
       </div>
-      <p class="story-shot-cap">Page d'accueil du site Nexus Jeunesses</p>
+      <p class="story-shot-cap" data-i18n="proj.nexus.shot1.cap">Page d'accueil du site Nexus Jeunesses</p>
     </div>
-    <h2 class="story-h2">Une vraie plateforme, pas qu'un site vitrine</h2>
-    <p class="story-p">Derrière l'habillage institutionnel, Nexus Jeunesses est une plateforme applicative complète avec <strong>création de compte et connexion</strong>, <strong>récupération de mot de passe</strong>, et un parcours d'<strong>inscription</strong> qui couvre chaque profil de participant : candidat au concours d'éloquence (14 thématiques), spectateur, bénévole, partenaire ou média.</p>
-    <p class="story-p">Les candidats au concours peuvent <strong>uploader leur vidéo de candidature</strong> directement depuis leur compte.</p>
-    <h2 class="story-h2">Espace d'administration</h2>
-    <p class="story-p">Un site événementiel comme celui-ci ne s'arrête pas à la partie visible : j'ai construit un <strong>back-office dédié aux organisateurs</strong>, accessible uniquement en connexion admin, pour piloter l'événement sans jamais toucher au code.</p>
-    <p class="story-p">Depuis cet espace, l'équipe Nexus peut <strong>consulter et valider les inscriptions</strong> reçues pour chaque profil (candidats, spectateurs, bénévoles, partenaires, média), <strong>visionner les vidéos de candidature</strong> envoyées par les participants au concours, et <strong>mettre à jour le contenu</strong> publié sur les différentes pages de l'événement (Spectacle, Média, Olympiques, Rapport, Dîner) au fil de l'organisation.</p>
+    <h2 class="story-h2" data-i18n="proj.nexus.s2.h2">Une vraie plateforme, pas qu'un site vitrine</h2>
+    <p class="story-p" data-i18n-html="proj.nexus.s2.p1">Derrière l'habillage institutionnel, Nexus Jeunesses est une plateforme applicative complète avec <strong>création de compte et connexion</strong>, <strong>récupération de mot de passe</strong>, et un parcours d'<strong>inscription</strong> qui couvre chaque profil de participant : candidat au concours d'éloquence (14 thématiques), spectateur, bénévole, partenaire ou média.</p>
+    <p class="story-p" data-i18n-html="proj.nexus.s2.p2">Les candidats au concours peuvent <strong>uploader leur vidéo de candidature</strong> directement depuis leur compte.</p>
+    <h2 class="story-h2" data-i18n="proj.nexus.s3.h2">Espace d'administration</h2>
+    <p class="story-p" data-i18n-html="proj.nexus.s3.p1">Un site événementiel comme celui-ci ne s'arrête pas à la partie visible : j'ai construit un <strong>back-office dédié aux organisateurs</strong>, accessible uniquement en connexion admin, pour piloter l'événement sans jamais toucher au code.</p>
+    <p class="story-p" data-i18n-html="proj.nexus.s3.p2">Depuis cet espace, l'équipe Nexus peut <strong>consulter et valider les inscriptions</strong> reçues pour chaque profil (candidats, spectateurs, bénévoles, partenaires, média), <strong>visionner les vidéos de candidature</strong> envoyées par les participants au concours, et <strong>mettre à jour le contenu</strong> publié sur les différentes pages de l'événement (Spectacle, Média, Olympiques, Rapport, Dîner) au fil de l'organisation.</p>
     <div class="story-shot-grid">
       <div class="story-shot">
         <img src="assets/images/nexus-admin-dashboard.jpg" alt="Tableau de bord admin Nexus Jeunesses">
-        <p class="story-shot-cap">Tableau de bord</p>
+        <p class="story-shot-cap" data-i18n="proj.nexus.shot2.cap">Tableau de bord</p>
       </div>
       <div class="story-shot">
         <img src="assets/images/nexus-admin-inscriptions.jpg" alt="Gestion des inscriptions">
-        <p class="story-shot-cap">Gestion des inscriptions</p>
+        <p class="story-shot-cap" data-i18n="proj.nexus.shot3.cap">Gestion des inscriptions</p>
       </div>
       <div class="story-shot">
         <img src="assets/images/nexus-admin-emails.jpg" alt="Envoi d'emails groupés">
-        <p class="story-shot-cap">Emails &amp; rappels automatiques</p>
+        <p class="story-shot-cap" data-i18n="proj.nexus.shot4.cap">Emails &amp; rappels automatiques</p>
       </div>
     </div>
-    <h2 class="story-h2">Direction artistique</h2>
-    <p class="story-p">Le style s'inspire de forums internationaux comme <strong>TED</strong> ou <strong>Davos</strong> pour l'autorité institutionnelle, tout en gardant l'énergie créative d'un sommet comme <strong>SXSW</strong>. La palette s'ancre sur un bleu marine institutionnel, avec des accents rouge, vert et orange pour incarner passion, croissance et créativité.</p>
-    <p class="story-p">La typographie combine <strong>Montserrat</strong> pour l'impact des titres, <strong>Raleway</strong> pour les sous-titres éditoriaux, et <strong>Inter</strong> pour la lisibilité du contenu long.</p>
-    <h2 class="story-h2">Six parcours, du design au code</h2>
-    <p class="story-p">La plateforme se déploie sur six pages pensées pour chaque temps fort de l'événement : <strong>Accueil, Spectacle, Média, Olympiques, Rapport et Dîner</strong>. J'ai conçu chaque page puis développé l'application complète, déclinée en version desktop et mobile, jusqu'à la mise en ligne.</p>
-    <div class="story-quote">« La jeunesse ne subit plus. Elle éclaire. »</div>
-    <h2 class="story-h2">Stack technique</h2>
-    <p class="story-p">L'application est développée en <strong>Next.js</strong> (React, TypeScript), avec <strong>Prisma</strong> comme ORM sur une base <strong>Supabase</strong>. L'authentification utilise <strong>bcrypt</strong> pour le hachage des mots de passe, les formulaires sont validés avec <strong>React Hook Form + Zod</strong>, et l'interface s'appuie sur les composants accessibles de <strong>Radix UI</strong> animés avec <strong>Framer Motion</strong>.</p>
-    <p class="story-p">Les emails (confirmation d'inscription, rappels J-1, envois aux candidats) passent par <strong>Nodemailer</strong> et <strong>Resend</strong>. Le back-office permet aussi d'<strong>exporter la liste complète des inscrits au format Excel</strong> (xlsx) pour l'équipe organisatrice. Le site est déployé sur <strong>Vercel</strong>.</p>
-    <h2 class="story-h2">En ligne</h2>
-    <p class="story-p">Le site que j'ai conçu et développé est déployé et accessible publiquement sur <strong>nexusjeunesses.org</strong>, avec son premier événement, NEXUS Spectacle, prévu le 11 juillet 2026 au Théâtre INSMAC à Rabat.</p>
+    <h2 class="story-h2" data-i18n="proj.nexus.s4.h2">Direction artistique</h2>
+    <p class="story-p" data-i18n-html="proj.nexus.s4.p1">Le style s'inspire de forums internationaux comme <strong>TED</strong> ou <strong>Davos</strong> pour l'autorité institutionnelle, tout en gardant l'énergie créative d'un sommet comme <strong>SXSW</strong>. La palette s'ancre sur un bleu marine institutionnel, avec des accents rouge, vert et orange pour incarner passion, croissance et créativité.</p>
+    <p class="story-p" data-i18n-html="proj.nexus.s4.p2">La typographie combine <strong>Montserrat</strong> pour l'impact des titres, <strong>Raleway</strong> pour les sous-titres éditoriaux, et <strong>Inter</strong> pour la lisibilité du contenu long.</p>
+    <h2 class="story-h2" data-i18n="proj.nexus.s5.h2">Six parcours, du design au code</h2>
+    <p class="story-p" data-i18n-html="proj.nexus.s5.p1">La plateforme se déploie sur six pages pensées pour chaque temps fort de l'événement : <strong>Accueil, Spectacle, Média, Olympiques, Rapport et Dîner</strong>. J'ai conçu chaque page puis développé l'application complète, déclinée en version desktop et mobile, jusqu'à la mise en ligne.</p>
+    <div class="story-quote" data-i18n="proj.nexus.quote">« La jeunesse ne subit plus. Elle éclaire. »</div>
+    <h2 class="story-h2" data-i18n="proj.nexus.s6.h2">Stack technique</h2>
+    <p class="story-p" data-i18n-html="proj.nexus.s6.p1">L'application est développée en <strong>Next.js</strong> (React, TypeScript), avec <strong>Prisma</strong> comme ORM sur une base <strong>Supabase</strong>. L'authentification utilise <strong>bcrypt</strong> pour le hachage des mots de passe, les formulaires sont validés avec <strong>React Hook Form + Zod</strong>, et l'interface s'appuie sur les composants accessibles de <strong>Radix UI</strong> animés avec <strong>Framer Motion</strong>.</p>
+    <p class="story-p" data-i18n-html="proj.nexus.s6.p2">Les emails (confirmation d'inscription, rappels J-1, envois aux candidats) passent par <strong>Nodemailer</strong> et <strong>Resend</strong>. Le back-office permet aussi d'<strong>exporter la liste complète des inscrits au format Excel</strong> (xlsx) pour l'équipe organisatrice. Le site est déployé sur <strong>Vercel</strong>.</p>
+    <h2 class="story-h2" data-i18n="proj.nexus.s7.h2">En ligne</h2>
+    <p class="story-p" data-i18n-html="proj.nexus.s7.p1">Le site que j'ai conçu et développé est déployé et accessible publiquement sur <strong>nexusjeunesses.org</strong>, avec son premier événement, NEXUS Spectacle, prévu le 11 juillet 2026 au Théâtre INSMAC à Rabat.</p>
     <div class="story-chips">
-      <span class="stage-result-chip">Next.js &amp; TypeScript</span>
-      <span class="stage-result-chip">Prisma &amp; Supabase</span>
-      <span class="stage-result-chip">Comptes &amp; authentification</span>
-      <span class="stage-result-chip">Upload vidéo candidats</span>
-      <span class="stage-result-chip">Back-office &amp; export Excel</span>
-      <span class="stage-result-chip">Déployé sur Vercel</span>
+      <span class="stage-result-chip" data-i18n="proj.nexus.chip1">Next.js &amp; TypeScript</span>
+      <span class="stage-result-chip" data-i18n="proj.nexus.chip2">Prisma &amp; Supabase</span>
+      <span class="stage-result-chip" data-i18n="proj.nexus.chip3">Comptes &amp; authentification</span>
+      <span class="stage-result-chip" data-i18n="proj.nexus.chip4">Upload vidéo candidats</span>
+      <span class="stage-result-chip" data-i18n="proj.nexus.chip5">Back-office &amp; export Excel</span>
+      <span class="stage-result-chip" data-i18n="proj.nexus.chip6">Déployé sur Vercel</span>
     </div>
     <div class="cta-buttons reveal">
       <a href="https://nexusjeunesses.org" target="_blank" rel="noopener" class="btn btn-solid">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        <span>Voir le site en ligne</span>
+        <span data-i18n="proj.nexus.cta.site">Voir le site en ligne</span>
       </a>
       <a href="https://github.com/Onykas/nexus-jeunesses" target="_blank" rel="noopener" class="btn btn-outline">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="flex-shrink:0;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-        <span>Voir sur GitHub</span>
+        <span data-i18n="proj.nexus.cta.github">Voir sur GitHub</span>
       </a>
     </div>
   </article>

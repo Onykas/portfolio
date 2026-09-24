@@ -989,19 +989,19 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <div class="chat-panel" id="chatPanel">
   <div class="chat-head">
     <span class="dot-live"></span>
-    <div><strong>Assistant Olga</strong><span>Questions sur mon profil</span></div>
+    <div><strong data-i18n="homep2.chat.title">Assistant Olga</strong><span data-i18n="homep2.chat.subtitle">Questions sur mon profil</span></div>
   </div>
   <div class="chat-body" id="chatBody">
-    <div class="chat-msg bot">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
+    <div class="chat-msg bot" data-i18n="homep2.chat.greeting">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
   </div>
   <div class="chat-suggestions">
-    <button type="button" class="chat-chip" data-q="competences">Compétences ?</button>
-    <button type="button" class="chat-chip" data-q="disponibilite">Disponibilité ?</button>
-    <button type="button" class="chat-chip" data-q="contact">Contact ?</button>
-    <button type="button" class="chat-chip" data-q="projets">Projets ?</button>
+    <button type="button" class="chat-chip" data-q="competences" data-i18n="homep2.chat.chip.competences">Compétences ?</button>
+    <button type="button" class="chat-chip" data-q="disponibilite" data-i18n="homep2.chat.chip.disponibilite">Disponibilité ?</button>
+    <button type="button" class="chat-chip" data-q="contact" data-i18n="homep2.chat.chip.contact">Contact ?</button>
+    <button type="button" class="chat-chip" data-q="projets" data-i18n="homep2.chat.chip.projets">Projets ?</button>
   </div>
   <div class="chat-input-row">
-    <input type="text" id="chatInput" placeholder="Ecris ta question...">
+    <input type="text" id="chatInput" placeholder="Ecris ta question..." data-i18n-placeholder="homep2.chat.input_placeholder">
     <button type="button" id="chatSend" aria-label="Envoyer"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
   </div>
 </div>
@@ -1049,14 +1049,14 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><path d="M19 7l-5.5 1.5L12 7l-1.5 1.5L5 7M12 8.5V13m0 0l-3 8m3-8l3 8"/></svg>
         </button>
         <div class="a11y-panel" id="a11yPanel">
-          <h4>Accessibilité</h4>
-          <div class="a11y-row"><span>Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
-          <div class="a11y-row"><span>Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
-          <div class="a11y-row"><span>Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
-          <div class="a11y-row"><span>Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
-          <div class="a11y-row"><span>Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
+          <h4 data-i18n="a11y.title">Accessibilité</h4>
+          <div class="a11y-row"><span data-i18n="a11y.dyslexic">Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.contrast">Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.colorblind">Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.underline">Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.reduce_motion">Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
           <div class="a11y-row">
-            <span>Taille du texte</span>
+            <span data-i18n="a11y.text_size">Taille du texte</span>
             <div class="a11y-textsize-group">
               <button type="button" data-textsize="">A</button>
               <button type="button" data-textsize="lg">A+</button>
@@ -1100,22 +1100,22 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
   <div class="detail-hero-bg"></div>
   <div class="wrap detail-hero-content">
     <nav class="detail-breadcrumb"><a href="portfolio.html">Portfolio</a><span class="sep">/</span><span>EventHub</span></nav>
-    <div class="detail-tags"><span class="detail-tag iot">UX/UI</span><span class="detail-tag">Éco-conception</span></div>
-    <h1 class="detail-page-title reveal">EventHub, découvrir les événements live sans se perdre</h1>
-    <p class="detail-page-accroche reveal">Une plateforme de découverte de concerts, festivals et expériences culturelles, pensée pour aller droit au but. Projet personnel en Master 1 PSM, avec une vraie démarche d'éco-conception numérique.</p>
+    <div class="detail-tags"><span class="detail-tag iot" data-i18n="proj.eventhub.hero.tag1">UX/UI</span><span class="detail-tag" data-i18n="proj.eventhub.hero.tag2">Éco-conception</span></div>
+    <h1 class="detail-page-title reveal" data-i18n="proj.eventhub.hero.title">EventHub, découvrir les événements live sans se perdre</h1>
+    <p class="detail-page-accroche reveal" data-i18n="proj.eventhub.hero.accroche">Une plateforme de découverte de concerts, festivals et expériences culturelles, pensée pour aller droit au but. Projet personnel en Master 1 PSM, avec une vraie démarche d'éco-conception numérique.</p>
   </div>
 </section>
 
 <div class="wrap">
-  <div class="detail-meta-bar reveal"><div><div class="ml">Contexte</div><div class="mv">Projet personnel, Master 1 PSM</div></div><div><div class="ml">Cible</div><div class="mv">Jeunes adultes, étudiants, amateurs de musique &amp; culture</div></div><div><div class="ml">Mon rôle</div><div class="mv">UX/UI design &amp; éco-conception</div></div><div><div class="ml">Statut</div><div class="mv">Maquette Figma finalisée</div></div></div>
+  <div class="detail-meta-bar reveal"><div><div class="ml" data-i18n="proj.meta.contexte">Contexte</div><div class="mv" data-i18n="proj.eventhub.meta.contexte.value">Projet personnel, Master 1 PSM</div></div><div><div class="ml" data-i18n="proj.meta.cible">Cible</div><div class="mv" data-i18n="proj.eventhub.meta.cible.value">Jeunes adultes, étudiants, amateurs de musique &amp; culture</div></div><div><div class="ml" data-i18n="proj.meta.role">Mon rôle</div><div class="mv" data-i18n="proj.eventhub.meta.role.value">UX/UI design &amp; éco-conception</div></div><div><div class="ml" data-i18n="proj.meta.statut">Statut</div><div class="mv" data-i18n="proj.eventhub.meta.statut.value">Maquette Figma finalisée</div></div></div>
 
   <article class="detail-story">
 
-    <h2 class="story-h2">Le concept</h2>
-    <p class="story-p"><strong>EventHub</strong> est une plateforme dédiée à la découverte d'événements live : concerts, festivals, rencontres artistiques et expériences culturelles. L'idée derrière ce projet est simple : permettre à n'importe quel utilisateur de trouver rapidement un événement pertinent, sans se perdre dans des informations inutiles ou des interfaces surchargées. L'unité fonctionnelle principale est de trouver un événement et d'accéder aux informations nécessaires pour y participer.</p>
+    <h2 class="story-h2" data-i18n="proj.eventhub.s1.h2">Le concept</h2>
+    <p class="story-p" data-i18n-html="proj.eventhub.s1.p1"><strong>EventHub</strong> est une plateforme dédiée à la découverte d'événements live : concerts, festivals, rencontres artistiques et expériences culturelles. L'idée derrière ce projet est simple : permettre à n'importe quel utilisateur de trouver rapidement un événement pertinent, sans se perdre dans des informations inutiles ou des interfaces surchargées. L'unité fonctionnelle principale est de trouver un événement et d'accéder aux informations nécessaires pour y participer.</p>
 
-    <h2 class="story-h2">Aperçu des interfaces</h2>
-    <p class="story-p">Cinq pages principales, pensées pour un accès rapide à l'essentiel : l'accueil avec un visuel immersif, la liste des événements filtrable par catégorie, la fiche à propos, le contact et l'authentification.</p>
+    <h2 class="story-h2" data-i18n="proj.eventhub.s2.h2">Aperçu des interfaces</h2>
+    <p class="story-p" data-i18n="proj.eventhub.s2.p1">Cinq pages principales, pensées pour un accès rapide à l'essentiel : l'accueil avec un visuel immersif, la liste des événements filtrable par catégorie, la fiche à propos, le contact et l'authentification.</p>
 
     <div class="phone-wrap reveal">
       <div class="phone-frame lg">
@@ -1125,7 +1125,7 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
         <div class="phone-screen"><img src="assets/images/projects/eventhub/accueil.jpg" alt="Page d'accueil EventHub"></div>
         <div class="home-bar"></div>
       </div>
-      <p class="story-shot-cap">Accueil, trouver rapidement son prochain événement</p>
+      <p class="story-shot-cap" data-i18n="proj.eventhub.phone1.cap">Accueil, trouver rapidement son prochain événement</p>
     </div>
 
     <div class="phone-shot-grid reveal">
@@ -1137,7 +1137,7 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
           <div class="phone-screen"><img src="assets/images/projects/eventhub/evenement.jpg" alt="Liste de tous les événements"></div>
           <div class="home-bar"></div>
         </div>
-        <p class="story-shot-cap">Tous les événements</p>
+        <p class="story-shot-cap" data-i18n="proj.eventhub.phone2.cap">Tous les événements</p>
       </div>
       <div class="phone-wrap">
         <div class="phone-frame sm">
@@ -1147,7 +1147,7 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
           <div class="phone-screen"><img src="assets/images/projects/eventhub/connexion.jpg" alt="Page de connexion EventHub"></div>
           <div class="home-bar"></div>
         </div>
-        <p class="story-shot-cap">Connexion</p>
+        <p class="story-shot-cap" data-i18n="proj.eventhub.phone3.cap">Connexion</p>
       </div>
       <div class="phone-wrap">
         <div class="phone-frame sm">
@@ -1157,60 +1157,60 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
           <div class="phone-screen"><img src="assets/images/projects/eventhub/contact.jpg" alt="Page de contact EventHub"></div>
           <div class="home-bar"></div>
         </div>
-        <p class="story-shot-cap">Contact</p>
+        <p class="story-shot-cap" data-i18n="proj.eventhub.phone4.cap">Contact</p>
       </div>
     </div>
 
-    <h2 class="story-h2">Démo interactive</h2>
-    <p class="story-p">La maquette complète est consultable directement ci-dessous : navigue dans les pages, zoome, explore les détails. Le fichier est partagé en lecture seule, aucune modification n'est possible depuis cette prévisualisation.</p>
+    <h2 class="story-h2" data-i18n="proj.eventhub.s3.h2">Démo interactive</h2>
+    <p class="story-p" data-i18n="proj.eventhub.s3.p1">La maquette complète est consultable directement ci-dessous : navigue dans les pages, zoome, explore les détails. Le fichier est partagé en lecture seule, aucune modification n'est possible depuis cette prévisualisation.</p>
 
     <div class="figma-embed-wrap reveal">
       <div class="figma-embed-frame">
         <iframe src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fdesign%2F1N0DWhSBwWCiwu6xAyava7%2FUntitled" allowfullscreen loading="lazy" title="Maquette Figma EventHub"></iframe>
       </div>
-      <p class="figma-embed-note">Aperçu en lecture seule &middot; clique sur « Voir sur Figma » ci-dessous pour l'ouvrir en plein écran</p>
+      <p class="figma-embed-note" data-i18n="proj.eventhub.figma.note">Aperçu en lecture seule &middot; clique sur « Voir sur Figma » ci-dessous pour l'ouvrir en plein écran</p>
     </div>
 
-    <h2 class="story-h2">Arborescence et parcours utilisateur</h2>
-    <p class="story-p">Pour garantir une navigation simple, j'ai porté mon choix sur une structure claire et directe : Accueil, Événements, À propos, Contact, Connexion/Inscription. Le parcours reste volontairement court : arrivée sur un visuel immersif, consultation de la liste ou recherche par catégorie, sélection d'un événement, accès à une fiche détaillée, puis réservation, contact ou partage.</p>
+    <h2 class="story-h2" data-i18n="proj.eventhub.s4.h2">Arborescence et parcours utilisateur</h2>
+    <p class="story-p" data-i18n="proj.eventhub.s4.p1">Pour garantir une navigation simple, j'ai porté mon choix sur une structure claire et directe : Accueil, Événements, À propos, Contact, Connexion/Inscription. Le parcours reste volontairement court : arrivée sur un visuel immersif, consultation de la liste ou recherche par catégorie, sélection d'un événement, accès à une fiche détaillée, puis réservation, contact ou partage.</p>
 
     <div class="story-shot reveal" style="max-width:640px; margin-left:auto; margin-right:auto;">
       <img src="assets/images/projects/eventhub/p1-arborescence.jpeg" alt="Arborescence du site EventHub">
-      <p class="story-shot-cap">Arborescence simplifiée : Accueil → Événements / À propos / Connexion</p>
+      <p class="story-shot-cap" data-i18n="proj.eventhub.shot1.cap">Arborescence simplifiée : Accueil → Événements / À propos / Connexion</p>
     </div>
 
-    <h2 class="story-h2">Direction artistique</h2>
-    <p class="story-p">La direction artistique s'inspire de trois univers : une <strong>esthétique néon &amp; vaporwave</strong> (violets et roses lumineux, ambiance nocturne des concerts), un <strong>UI design contemporain</strong> (cartes arrondies, ombres douces, sections aérées) et l'<strong>univers visuel des festivals</strong> (photos de scènes lumineuses, foules en mouvement). Ces inspirations ont été adaptées avec sobriété pour garder lisibilité et confort visuel.</p>
+    <h2 class="story-h2" data-i18n="proj.eventhub.s5.h2">Direction artistique</h2>
+    <p class="story-p" data-i18n-html="proj.eventhub.s5.p1">La direction artistique s'inspire de trois univers : une <strong>esthétique néon &amp; vaporwave</strong> (violets et roses lumineux, ambiance nocturne des concerts), un <strong>UI design contemporain</strong> (cartes arrondies, ombres douces, sections aérées) et l'<strong>univers visuel des festivals</strong> (photos de scènes lumineuses, foules en mouvement). Ces inspirations ont été adaptées avec sobriété pour garder lisibilité et confort visuel.</p>
 
-    <h2 class="story-h2">Une vraie démarche d'éco-conception</h2>
-    <p class="story-p">Au-delà de l'interface, EventHub applique des principes de sobriété numérique : images compressées et adaptées, palette limitée à trois couleurs principales, une seule typographie pour limiter les requêtes externes, navigation courte à peu de niveaux, et des animations minimalistes réduites aux micro-interactions utiles.</p>
+    <h2 class="story-h2" data-i18n="proj.eventhub.s6.h2">Une vraie démarche d'éco-conception</h2>
+    <p class="story-p" data-i18n="proj.eventhub.s6.p1">Au-delà de l'interface, EventHub applique des principes de sobriété numérique : images compressées et adaptées, palette limitée à trois couleurs principales, une seule typographie pour limiter les requêtes externes, navigation courte à peu de niveaux, et des animations minimalistes réduites aux micro-interactions utiles.</p>
 
     <div class="story-shot-grid">
       <div class="story-shot"><img src="assets/images/projects/eventhub/p3-eco-architecture.jpeg" alt="Réduction de l'arborescence : -50% de pages, -43% de fichiers HTML"></div>
       <div class="story-shot"><img src="assets/images/projects/eventhub/p6-image-optim.jpeg" alt="Optimisation des images : -70% de poids, WebP à la place du PNG"></div>
     </div>
 
-    <h2 class="story-h2">Design system</h2>
-    <p class="story-p">Une palette de marque resserrée (violet principal, bleu nuit, neutres) et une seule famille de police pour des fichiers plus légers et un rendu cohérent sur toutes les pages.</p>
+    <h2 class="story-h2" data-i18n="proj.eventhub.s7.h2">Design system</h2>
+    <p class="story-p" data-i18n="proj.eventhub.s7.p1">Une palette de marque resserrée (violet principal, bleu nuit, neutres) et une seule famille de police pour des fichiers plus légers et un rendu cohérent sur toutes les pages.</p>
 
     <div class="story-shot-grid">
       <div class="story-shot"><img src="assets/images/projects/eventhub/p5-color-palette.jpeg" alt="Palette de couleurs et système de design EventHub"></div>
       <div class="story-shot"><img src="assets/images/projects/eventhub/p5-typography.jpeg" alt="Réduction des typographies : une seule font-family"></div>
     </div>
 
-    <div class="story-quote">« Mêler réflexion, créativité et responsabilité : une approche du design centrée sur l'utilisateur, et respectueuse des enjeux du numérique durable. »</div>
+    <div class="story-quote" data-i18n="proj.eventhub.quote">« Mêler réflexion, créativité et responsabilité : une approche du design centrée sur l'utilisateur, et respectueuse des enjeux du numérique durable. »</div>
 
     <div class="story-chips">
-      <span class="stage-result-chip">UX Research</span>
-      <span class="stage-result-chip">Figma</span>
-      <span class="stage-result-chip">Éco-conception</span>
-      <span class="stage-result-chip">Design System</span>
+      <span class="stage-result-chip" data-i18n="proj.eventhub.chip1">UX Research</span>
+      <span class="stage-result-chip" data-i18n="proj.eventhub.chip2">Figma</span>
+      <span class="stage-result-chip" data-i18n="proj.eventhub.chip3">Éco-conception</span>
+      <span class="stage-result-chip" data-i18n="proj.eventhub.chip4">Design System</span>
     </div>
 
     <div class="cta-buttons reveal">
       <a href="https://www.figma.com/design/1N0DWhSBwWCiwu6xAyava7/Untitled?node-id=1-2&t=MzT8RXkZJR2atBhn-1" target="_blank" rel="noopener" class="btn btn-solid">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 24c2.208 0 4-1.792 4-4v-4H8c-2.208 0-4 1.792-4 4s1.792 4 4 4zM4 12c0-2.208 1.792-4 4-4h4v8H8c-2.208 0-4-1.792-4-4zM4 4c0-2.208 1.792-4 4-4h4v8H8C5.792 8 4 6.208 4 4zM12 0h4c2.208 0 4 1.792 4 4s-1.792 4-4 4h-4V0zM20 12c0 2.208-1.792 4-4 4s-4-1.792-4-4 1.792-4 4-4 4 1.792 4 4z"/></svg>
-        <span>Voir sur Figma</span>
+        <span data-i18n="proj.eventhub.cta.figma">Voir sur Figma</span>
       </a>
     </div>
   </article>

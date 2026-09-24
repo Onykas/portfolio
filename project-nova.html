@@ -944,19 +944,19 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <div class="chat-panel" id="chatPanel">
   <div class="chat-head">
     <span class="dot-live"></span>
-    <div><strong>Assistant Olga</strong><span>Questions sur mon profil</span></div>
+    <div><strong data-i18n="homep2.chat.title">Assistant Olga</strong><span data-i18n="homep2.chat.subtitle">Questions sur mon profil</span></div>
   </div>
   <div class="chat-body" id="chatBody">
-    <div class="chat-msg bot">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
+    <div class="chat-msg bot" data-i18n="homep2.chat.greeting">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
   </div>
   <div class="chat-suggestions">
-    <button type="button" class="chat-chip" data-q="competences">Compétences ?</button>
-    <button type="button" class="chat-chip" data-q="disponibilite">Disponibilité ?</button>
-    <button type="button" class="chat-chip" data-q="contact">Contact ?</button>
-    <button type="button" class="chat-chip" data-q="projets">Projets ?</button>
+    <button type="button" class="chat-chip" data-q="competences" data-i18n="homep2.chat.chip.competences">Compétences ?</button>
+    <button type="button" class="chat-chip" data-q="disponibilite" data-i18n="homep2.chat.chip.disponibilite">Disponibilité ?</button>
+    <button type="button" class="chat-chip" data-q="contact" data-i18n="homep2.chat.chip.contact">Contact ?</button>
+    <button type="button" class="chat-chip" data-q="projets" data-i18n="homep2.chat.chip.projets">Projets ?</button>
   </div>
   <div class="chat-input-row">
-    <input type="text" id="chatInput" placeholder="Ecris ta question...">
+    <input type="text" id="chatInput" placeholder="Ecris ta question..." data-i18n-placeholder="homep2.chat.input_placeholder">
     <button type="button" id="chatSend" aria-label="Envoyer"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
   </div>
 </div>
@@ -1004,14 +1004,14 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><path d="M19 7l-5.5 1.5L12 7l-1.5 1.5L5 7M12 8.5V13m0 0l-3 8m3-8l3 8"/></svg>
         </button>
         <div class="a11y-panel" id="a11yPanel">
-          <h4>Accessibilité</h4>
-          <div class="a11y-row"><span>Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
-          <div class="a11y-row"><span>Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
-          <div class="a11y-row"><span>Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
-          <div class="a11y-row"><span>Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
-          <div class="a11y-row"><span>Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
+          <h4 data-i18n="a11y.title">Accessibilité</h4>
+          <div class="a11y-row"><span data-i18n="a11y.dyslexic">Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.contrast">Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.colorblind">Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.underline">Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.reduce_motion">Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
           <div class="a11y-row">
-            <span>Taille du texte</span>
+            <span data-i18n="a11y.text_size">Taille du texte</span>
             <div class="a11y-textsize-group">
               <button type="button" data-textsize="">A</button>
               <button type="button" data-textsize="lg">A+</button>
@@ -1055,29 +1055,29 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
   <div class="detail-hero-bg"></div>
   <div class="wrap detail-hero-content">
     <nav class="detail-breadcrumb"><a href="portfolio.html">Portfolio</a><span class="sep">/</span><span>NOVA</span></nav>
-    <div class="detail-tags"><span class="detail-tag dev">Mobile</span><span class="detail-tag">Backend</span></div>
-    <h1 class="detail-page-title reveal">NOVA, Marketplace Boutiques &times; Clients</h1>
-    <p class="detail-page-accroche reveal">Application mobile de mise en relation entre boutiques et clients, avec paiement Stripe et chat temps réel.</p>
+    <div class="detail-tags"><span class="detail-tag dev" data-i18n="proj.nova.hero.tag1">Mobile</span><span class="detail-tag" data-i18n="proj.nova.hero.tag2">Backend</span></div>
+    <h1 class="detail-page-title reveal" data-i18n="proj.nova.hero.title">NOVA, Marketplace Boutiques &times; Clients</h1>
+    <p class="detail-page-accroche reveal" data-i18n="proj.nova.hero.accroche">Application mobile de mise en relation entre boutiques et clients, avec paiement Stripe et chat temps réel.</p>
   </div>
 </section>
 
 <div class="wrap">
-  <div class="detail-meta-bar reveal"><div><div class="ml">Contexte</div><div class="mv">Projet personnel</div></div><div><div class="ml">Cible</div><div class="mv">Boutiques &amp; clients</div></div><div><div class="ml">Mon rôle</div><div class="mv">Conception full-stack (mobile + backend)</div></div><div><div class="ml">Statut</div><div class="mv">En développement</div></div></div>
+  <div class="detail-meta-bar reveal"><div><div class="ml" data-i18n="proj.meta.contexte">Contexte</div><div class="mv" data-i18n="proj.nova.meta.contexte">Projet personnel</div></div><div><div class="ml" data-i18n="proj.meta.cible">Cible</div><div class="mv" data-i18n="proj.nova.meta.cible">Boutiques &amp; clients</div></div><div><div class="ml" data-i18n="proj.meta.role">Mon rôle</div><div class="mv" data-i18n="proj.nova.meta.role">Conception full-stack (mobile + backend)</div></div><div><div class="ml" data-i18n="proj.meta.statut">Statut</div><div class="mv" data-i18n="proj.nova.meta.statut">En développement</div></div></div>
 
   <article class="detail-story">
     
-    <h2 class="story-h2">Le concept</h2>
-    <p class="story-p"><strong>NOVA</strong> met en relation des boutiques (vendeurs) et des clients sur une seule application, avec deux profils distincts au même login : <strong>client</strong> et <strong>boutique</strong>. Le client parcourt, ajoute au panier et paie ; la boutique gère son catalogue et ses commandes.</p>
-    <h2 class="story-h2">Une règle métier volontairement contraignante</h2>
-    <p class="story-p">Avant de pouvoir publier un produit, une boutique doit obligatoirement <strong>réserver une séance photo produit</strong>. Cette contrainte, pensée dès la conception, garantit un niveau minimal de qualité visuelle sur toute la marketplace plutôt que de laisser chaque boutique publier des photos inégales.</p>
-    <h2 class="story-h2">Stack technique</h2>
-    <p class="story-p">Le mobile est développé en <strong>React Native</strong> via <strong>Expo</strong>, avec React Navigation et une gestion d'état par Context API. Le paiement passe par <strong>Stripe</strong>, et le chat en temps réel par <strong>Socket.io</strong>.</p>
-    <p class="story-p">Côté backend : <strong>Node.js / Express</strong>, avec <strong>Prisma</strong> comme ORM sur PostgreSQL, et une authentification via Firebase.</p>
-    <div class="story-quote">« Aucune boutique ne publie sans avoir réservé sa séance photo. »</div>
+    <h2 class="story-h2" data-i18n="proj.nova.s1.h2">Le concept</h2>
+    <p class="story-p" data-i18n-html="proj.nova.s1.p1"><strong>NOVA</strong> met en relation des boutiques (vendeurs) et des clients sur une seule application, avec deux profils distincts au même login : <strong>client</strong> et <strong>boutique</strong>. Le client parcourt, ajoute au panier et paie ; la boutique gère son catalogue et ses commandes.</p>
+    <h2 class="story-h2" data-i18n="proj.nova.s2.h2">Une règle métier volontairement contraignante</h2>
+    <p class="story-p" data-i18n-html="proj.nova.s2.p1">Avant de pouvoir publier un produit, une boutique doit obligatoirement <strong>réserver une séance photo produit</strong>. Cette contrainte, pensée dès la conception, garantit un niveau minimal de qualité visuelle sur toute la marketplace plutôt que de laisser chaque boutique publier des photos inégales.</p>
+    <h2 class="story-h2" data-i18n="proj.nova.s3.h2">Stack technique</h2>
+    <p class="story-p" data-i18n-html="proj.nova.s3.p1">Le mobile est développé en <strong>React Native</strong> via <strong>Expo</strong>, avec React Navigation et une gestion d'état par Context API. Le paiement passe par <strong>Stripe</strong>, et le chat en temps réel par <strong>Socket.io</strong>.</p>
+    <p class="story-p" data-i18n-html="proj.nova.s3.p2">Côté backend : <strong>Node.js / Express</strong>, avec <strong>Prisma</strong> comme ORM sur PostgreSQL, et une authentification via Firebase.</p>
+    <div class="story-quote" data-i18n="proj.nova.quote">« Aucune boutique ne publie sans avoir réservé sa séance photo. »</div>
     <div class="story-chips">
-      <span class="stage-result-chip">Deux profils, un seul login</span>
-      <span class="stage-result-chip">Paiement Stripe</span>
-      <span class="stage-result-chip">Chat temps réel Socket.io</span>
+      <span class="stage-result-chip" data-i18n="proj.nova.chip1">Deux profils, un seul login</span>
+      <span class="stage-result-chip" data-i18n="proj.nova.chip2">Paiement Stripe</span>
+      <span class="stage-result-chip" data-i18n="proj.nova.chip3">Chat temps réel Socket.io</span>
     </div>
     
     

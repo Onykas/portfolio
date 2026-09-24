@@ -806,19 +806,19 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <div class="chat-panel" id="chatPanel">
   <div class="chat-head">
     <span class="dot-live"></span>
-    <div><strong>Assistant Olga</strong><span>Questions sur mon profil</span></div>
+    <div><strong data-i18n="homep2.chat.title">Assistant Olga</strong><span data-i18n="homep2.chat.subtitle">Questions sur mon profil</span></div>
   </div>
   <div class="chat-body" id="chatBody">
-    <div class="chat-msg bot">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
+    <div class="chat-msg bot" data-i18n="homep2.chat.greeting">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
   </div>
   <div class="chat-suggestions">
-    <button type="button" class="chat-chip" data-q="competences">Compétences ?</button>
-    <button type="button" class="chat-chip" data-q="disponibilite">Disponibilité ?</button>
-    <button type="button" class="chat-chip" data-q="contact">Contact ?</button>
-    <button type="button" class="chat-chip" data-q="projets">Projets ?</button>
+    <button type="button" class="chat-chip" data-q="competences" data-i18n="homep2.chat.chip.competences">Compétences ?</button>
+    <button type="button" class="chat-chip" data-q="disponibilite" data-i18n="homep2.chat.chip.disponibilite">Disponibilité ?</button>
+    <button type="button" class="chat-chip" data-q="contact" data-i18n="homep2.chat.chip.contact">Contact ?</button>
+    <button type="button" class="chat-chip" data-q="projets" data-i18n="homep2.chat.chip.projets">Projets ?</button>
   </div>
   <div class="chat-input-row">
-    <input type="text" id="chatInput" placeholder="Ecris ta question...">
+    <input type="text" id="chatInput" placeholder="Ecris ta question..." data-i18n-placeholder="homep2.chat.input_placeholder">
     <button type="button" id="chatSend" aria-label="Envoyer"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
   </div>
 </div>
@@ -866,14 +866,14 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><path d="M19 7l-5.5 1.5L12 7l-1.5 1.5L5 7M12 8.5V13m0 0l-3 8m3-8l3 8"/></svg>
         </button>
         <div class="a11y-panel" id="a11yPanel">
-          <h4>Accessibilité</h4>
-          <div class="a11y-row"><span>Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
-          <div class="a11y-row"><span>Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
-          <div class="a11y-row"><span>Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
-          <div class="a11y-row"><span>Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
-          <div class="a11y-row"><span>Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
+          <h4 data-i18n="a11y.title">Accessibilité</h4>
+          <div class="a11y-row"><span data-i18n="a11y.dyslexic">Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.contrast">Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.colorblind">Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.underline">Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.reduce_motion">Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
           <div class="a11y-row">
-            <span>Taille du texte</span>
+            <span data-i18n="a11y.text_size">Taille du texte</span>
             <div class="a11y-textsize-group">
               <button type="button" data-textsize="">A</button>
               <button type="button" data-textsize="lg">A+</button>
@@ -917,7 +917,7 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
   <canvas class="hero-canvas" id="contactCanvas" aria-hidden="true"></canvas>
   <div class="contact-hero-content">
     <h1 class="page-title-hero reveal">
-      <span class="word">Me</span> <span class="word accent">Contacter</span>
+      <span class="word" data-i18n="contact.hero.word1">Me</span> <span class="word accent" data-i18n="contact.hero.word2">Contacter</span>
     </h1>
     <p class="hero-subtitle reveal" data-i18n="contact.lede">Disponible pour un stage à partir de janvier 2027.</p>
   </div>
@@ -976,7 +976,7 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
       </div>
 
       <div class="availability-card reveal">
-        <h3>Disponibilité</h3>
+        <h3 data-i18n="contact.avail.heading">Disponibilité</h3>
         <p><span class="availability-dot"></span><strong data-i18n="contact.avail.title">Disponible pour un stage de Master</strong></p>
         <p><span data-i18n="contact.avail.from">À partir de</span> <strong data-i18n="contact.avail.date">janvier 2027</strong></p>
       </div>
@@ -1105,10 +1105,18 @@ if (isFinePointer && !reduceMotion) {
   const btnLabel = btn.querySelector('span[data-i18n]');
   const defaultLabel = btnLabel ? btnLabel.textContent : 'Envoyer le message';
 
+  function t(key){
+    var lang = 'fr';
+    try { lang = localStorage.getItem('lf-lang') || 'fr'; } catch(e){}
+    var dict = (window.LF_I18N && window.LF_I18N[lang]) || {};
+    var fallback = (window.LF_I18N && window.LF_I18N.fr) || {};
+    return dict[key] !== undefined ? dict[key] : fallback[key];
+  }
+
   form.addEventListener('submit', function(e){
     e.preventDefault();
     btn.disabled = true;
-    if (btnLabel) btnLabel.textContent = 'Envoi en cours...';
+    if (btnLabel) btnLabel.textContent = t('contact.form.sending') || 'Envoi en cours...';
     statusEl.textContent = '';
     statusEl.style.color = '';
 
@@ -1118,18 +1126,18 @@ if (isFinePointer && !reduceMotion) {
       headers: { 'Accept': 'application/json' }
     }).then(response => {
       if (response.ok) {
-        statusEl.textContent = 'Message envoyé, merci ! Je réponds au plus vite.';
+        statusEl.textContent = t('contact.form.success') || 'Message envoyé, merci ! Je réponds au plus vite.';
         statusEl.style.color = '#4ade80';
         form.reset();
       } else {
         return response.json().then(data => {
           const msg = (data && data.errors) ? data.errors.map(er => er.message).join(', ') : null;
-          statusEl.textContent = msg || "Une erreur est survenue, réessaie ou écris-moi directement par email.";
+          statusEl.textContent = msg || t('contact.form.error') || "Une erreur est survenue, réessaie ou écris-moi directement par email.";
           statusEl.style.color = '#f87171';
         });
       }
     }).catch(() => {
-      statusEl.textContent = "Connexion impossible, réessaie ou écris-moi directement par email.";
+      statusEl.textContent = t('contact.form.network_error') || "Connexion impossible, réessaie ou écris-moi directement par email.";
       statusEl.style.color = '#f87171';
     }).finally(() => {
       btn.disabled = false;

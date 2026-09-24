@@ -982,19 +982,19 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <div class="chat-panel" id="chatPanel">
   <div class="chat-head">
     <span class="dot-live"></span>
-    <div><strong>Assistant Olga</strong><span>Questions sur mon profil</span></div>
+    <div><strong data-i18n="homep2.chat.title">Assistant Olga</strong><span data-i18n="homep2.chat.subtitle">Questions sur mon profil</span></div>
   </div>
   <div class="chat-body" id="chatBody">
-    <div class="chat-msg bot">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
+    <div class="chat-msg bot" data-i18n="homep2.chat.greeting">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
   </div>
   <div class="chat-suggestions">
-    <button type="button" class="chat-chip" data-q="competences">Compétences ?</button>
-    <button type="button" class="chat-chip" data-q="disponibilite">Disponibilité ?</button>
-    <button type="button" class="chat-chip" data-q="contact">Contact ?</button>
-    <button type="button" class="chat-chip" data-q="projets">Projets ?</button>
+    <button type="button" class="chat-chip" data-q="competences" data-i18n="homep2.chat.chip.competences">Compétences ?</button>
+    <button type="button" class="chat-chip" data-q="disponibilite" data-i18n="homep2.chat.chip.disponibilite">Disponibilité ?</button>
+    <button type="button" class="chat-chip" data-q="contact" data-i18n="homep2.chat.chip.contact">Contact ?</button>
+    <button type="button" class="chat-chip" data-q="projets" data-i18n="homep2.chat.chip.projets">Projets ?</button>
   </div>
   <div class="chat-input-row">
-    <input type="text" id="chatInput" placeholder="Ecris ta question...">
+    <input type="text" id="chatInput" placeholder="Ecris ta question..." data-i18n-placeholder="homep2.chat.input_placeholder">
     <button type="button" id="chatSend" aria-label="Envoyer"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
   </div>
 </div>
@@ -1042,14 +1042,14 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><path d="M19 7l-5.5 1.5L12 7l-1.5 1.5L5 7M12 8.5V13m0 0l-3 8m3-8l3 8"/></svg>
         </button>
         <div class="a11y-panel" id="a11yPanel">
-          <h4>Accessibilité</h4>
-          <div class="a11y-row"><span>Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
-          <div class="a11y-row"><span>Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
-          <div class="a11y-row"><span>Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
-          <div class="a11y-row"><span>Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
-          <div class="a11y-row"><span>Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
+          <h4 data-i18n="a11y.title">Accessibilité</h4>
+          <div class="a11y-row"><span data-i18n="a11y.dyslexic">Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.contrast">Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.colorblind">Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.underline">Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.reduce_motion">Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
           <div class="a11y-row">
-            <span>Taille du texte</span>
+            <span data-i18n="a11y.text_size">Taille du texte</span>
             <div class="a11y-textsize-group">
               <button type="button" data-textsize="">A</button>
               <button type="button" data-textsize="lg">A+</button>
@@ -1093,19 +1093,19 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
   <div class="detail-hero-bg"></div>
   <div class="wrap detail-hero-content">
     <nav class="detail-breadcrumb"><a href="portfolio.html">Portfolio</a><span class="sep">/</span><span>ClassMemo</span></nav>
-    <div class="detail-tags"><span class="detail-tag dev">Web</span><span class="detail-tag">Full-stack</span></div>
-    <h1 class="detail-page-title reveal">ClassMemo, réviser en petite tablée</h1>
-    <p class="detail-page-accroche reveal">Compagnon de révision collaborative pour petits groupes d'étude : dépôt de notes manuscrites, résumé par IA, flashcards et vie de groupe en temps réel.</p>
+    <div class="detail-tags"><span class="detail-tag dev" data-i18n="proj.classmemo.hero.tag1">Web</span><span class="detail-tag" data-i18n="proj.classmemo.hero.tag2">Full-stack</span></div>
+    <h1 class="detail-page-title reveal" data-i18n="proj.classmemo.hero.title">ClassMemo, réviser en petite tablée</h1>
+    <p class="detail-page-accroche reveal" data-i18n="proj.classmemo.hero.accroche">Compagnon de révision collaborative pour petits groupes d'étude : dépôt de notes manuscrites, résumé par IA, flashcards et vie de groupe en temps réel.</p>
   </div>
 </section>
 
 <div class="wrap">
-  <div class="detail-meta-bar reveal"><div><div class="ml">Contexte</div><div class="mv">Projet personnel</div></div><div><div class="ml">Cible</div><div class="mv">Petits groupes d'étude (3 à 4 personnes)</div></div><div><div class="ml">Mon rôle</div><div class="mv">Conception full-stack, frontend, backend &amp; IA</div></div><div><div class="ml">Statut</div><div class="mv">Fonctionnel, déploiement en cours</div></div></div>
+  <div class="detail-meta-bar reveal"><div><div class="ml" data-i18n="proj.meta.contexte">Contexte</div><div class="mv" data-i18n="proj.classmemo.meta.contexte.value">Projet personnel</div></div><div><div class="ml" data-i18n="proj.meta.cible">Cible</div><div class="mv" data-i18n="proj.classmemo.meta.cible.value">Petits groupes d'étude (3 à 4 personnes)</div></div><div><div class="ml" data-i18n="proj.meta.role">Mon rôle</div><div class="mv" data-i18n="proj.classmemo.meta.role.value">Conception full-stack, frontend, backend &amp; IA</div></div><div><div class="ml" data-i18n="proj.meta.statut">Statut</div><div class="mv" data-i18n="proj.classmemo.meta.statut.value">Fonctionnel, déploiement en cours</div></div></div>
 
   <article class="detail-story">
     
-    <h2 class="story-h2">Le besoin</h2>
-    <p class="story-p">Réviser en petit groupe demande souvent de repasser derrière : recopier des notes, refaire des résumés, se souvenir de qui a couvert quel cours. <strong>ClassMemo</strong> digitalise cette "tablée d'étude" : chacun dépose ses notes manuscrites, l'IA en tire un support de révision exploitable, et le groupe révise ensemble.</p>
+    <h2 class="story-h2" data-i18n="proj.classmemo.s1.h2">Le besoin</h2>
+    <p class="story-p" data-i18n-html="proj.classmemo.s1.p1">Réviser en petit groupe demande souvent de repasser derrière : recopier des notes, refaire des résumés, se souvenir de qui a couvert quel cours. <strong>ClassMemo</strong> digitalise cette "tablée d'étude" : chacun dépose ses notes manuscrites, l'IA en tire un support de révision exploitable, et le groupe révise ensemble.</p>
     <div class="phone-wrap">
       <div class="phone-frame lg">
         <div class="phone-glow"></div>
@@ -1114,37 +1114,37 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
         <div class="phone-screen"><img src="assets/images/projects/classmemo/home.jpg" alt="Accueil de ClassMemo : cours récents et carte à réviser aujourd'hui"></div>
         <div class="home-bar"></div>
       </div>
-      <p class="story-shot-cap">Accueil : cours récents et carte à réviser aujourd'hui</p>
+      <p class="story-shot-cap" data-i18n="proj.classmemo.phone1.cap">Accueil : cours récents et carte à réviser aujourd'hui</p>
     </div>
-    <h2 class="story-h2">Des notes manuscrites à la carte de révision</h2>
-    <p class="story-p">Une photo des feuillets suffit : l'OCR (<strong>tesseract.js</strong>) en extrait le texte directement dans le navigateur, puis l'<strong>API Claude</strong> génère un résumé, une analogie, des flashcards et un quiz QCM. Chaque proposition reste éditable avant d'être publiée au groupe.</p>
+    <h2 class="story-h2" data-i18n="proj.classmemo.s2.h2">Des notes manuscrites à la carte de révision</h2>
+    <p class="story-p" data-i18n-html="proj.classmemo.s2.p1">Une photo des feuillets suffit : l'OCR (<strong>tesseract.js</strong>) en extrait le texte directement dans le navigateur, puis l'<strong>API Claude</strong> génère un résumé, une analogie, des flashcards et un quiz QCM. Chaque proposition reste éditable avant d'être publiée au groupe.</p>
     <div class="story-shot-grid">
       <div class="story-shot">
         <img src="assets/images/projects/classmemo/subjects.jpg" alt="Mes matières dans ClassMemo, cours suivis par la tablée">
-        <p class="story-shot-cap">Mes matières</p>
+        <p class="story-shot-cap" data-i18n="proj.classmemo.shot1.cap">Mes matières</p>
       </div>
       <div class="story-shot">
         <img src="assets/images/projects/classmemo/calendar.jpg" alt="Calendrier partagé dans ClassMemo">
-        <p class="story-shot-cap">Calendrier partagé</p>
+        <p class="story-shot-cap" data-i18n="proj.classmemo.shot2.cap">Calendrier partagé</p>
       </div>
       <div class="story-shot">
         <img src="assets/images/projects/classmemo/profile.jpg" alt="Ma tablée d'étude privée dans ClassMemo">
-        <p class="story-shot-cap">Ma tablée d'étude</p>
+        <p class="story-shot-cap" data-i18n="proj.classmemo.shot3.cap">Ma tablée d'étude</p>
       </div>
     </div>
-    <h2 class="story-h2">Vie de groupe</h2>
-    <p class="story-p">Présence en temps réel, chat multi-fils, calendrier partagé avec attribution du "scribe", écran <strong>Qu'est-ce que j'ai raté</strong>, et rappels push matin et soir pour une flashcard due ou un cours récent.</p>
-    <h2 class="story-h2">Architecture technique</h2>
-    <p class="story-p">Le front est développé en <strong>React 18 + Vite + Tailwind</strong> (PWA installable), le backend en <strong>Node.js / Express</strong> avec <strong>Socket.IO</strong> pour le temps réel, sur une base <strong>PostgreSQL</strong> (PGlite en local). L'authentification passe par JWT, et l'analyse des notes par l'<strong>API Claude</strong>, avec un repli heuristique local si aucune clé n'est fournie.</p>
-    <div class="story-quote">« Le sanctuaire d'étude bienveillant de ta petite tablée. »</div>
+    <h2 class="story-h2" data-i18n="proj.classmemo.s3.h2">Vie de groupe</h2>
+    <p class="story-p" data-i18n-html="proj.classmemo.s3.p1">Présence en temps réel, chat multi-fils, calendrier partagé avec attribution du "scribe", écran <strong>Qu'est-ce que j'ai raté</strong>, et rappels push matin et soir pour une flashcard due ou un cours récent.</p>
+    <h2 class="story-h2" data-i18n="proj.classmemo.s4.h2">Architecture technique</h2>
+    <p class="story-p" data-i18n-html="proj.classmemo.s4.p1">Le front est développé en <strong>React 18 + Vite + Tailwind</strong> (PWA installable), le backend en <strong>Node.js / Express</strong> avec <strong>Socket.IO</strong> pour le temps réel, sur une base <strong>PostgreSQL</strong> (PGlite en local). L'authentification passe par JWT, et l'analyse des notes par l'<strong>API Claude</strong>, avec un repli heuristique local si aucune clé n'est fournie.</p>
+    <div class="story-quote" data-i18n="proj.classmemo.quote">« Le sanctuaire d'étude bienveillant de ta petite tablée. »</div>
     <div class="story-chips">
-      <span class="stage-result-chip">OCR dans le navigateur</span>
-      <span class="stage-result-chip">Résumés générés par IA</span>
-      <span class="stage-result-chip">Flashcards en répétition espacée</span>
-      <span class="stage-result-chip">Temps réel Socket.IO</span>
+      <span class="stage-result-chip" data-i18n="proj.classmemo.chip1">OCR dans le navigateur</span>
+      <span class="stage-result-chip" data-i18n="proj.classmemo.chip2">Résumés générés par IA</span>
+      <span class="stage-result-chip" data-i18n="proj.classmemo.chip3">Flashcards en répétition espacée</span>
+      <span class="stage-result-chip" data-i18n="proj.classmemo.chip4">Temps réel Socket.IO</span>
     </div>
 
-    <div class="cta-buttons reveal"><a href="https://github.com/Onykas/classmemo" target="_blank" rel="noopener" class="btn btn-solid"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="flex-shrink:0;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg><span>Voir sur GitHub</span></a></div>
+    <div class="cta-buttons reveal"><a href="https://github.com/Onykas/classmemo" target="_blank" rel="noopener" class="btn btn-solid"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="flex-shrink:0;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg><span data-i18n="proj.classmemo.cta.github">Voir sur GitHub</span></a></div>
   </article>
 </div>
 

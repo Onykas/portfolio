@@ -958,19 +958,19 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <div class="chat-panel" id="chatPanel">
   <div class="chat-head">
     <span class="dot-live"></span>
-    <div><strong>Assistant Olga</strong><span>Questions sur mon profil</span></div>
+    <div><strong data-i18n="homep2.chat.title">Assistant Olga</strong><span data-i18n="homep2.chat.subtitle">Questions sur mon profil</span></div>
   </div>
   <div class="chat-body" id="chatBody">
-    <div class="chat-msg bot">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
+    <div class="chat-msg bot" data-i18n="homep2.chat.greeting">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
   </div>
   <div class="chat-suggestions">
-    <button type="button" class="chat-chip" data-q="competences">Compétences ?</button>
-    <button type="button" class="chat-chip" data-q="disponibilite">Disponibilité ?</button>
-    <button type="button" class="chat-chip" data-q="contact">Contact ?</button>
-    <button type="button" class="chat-chip" data-q="projets">Projets ?</button>
+    <button type="button" class="chat-chip" data-q="competences" data-i18n="homep2.chat.chip.competences">Compétences ?</button>
+    <button type="button" class="chat-chip" data-q="disponibilite" data-i18n="homep2.chat.chip.disponibilite">Disponibilité ?</button>
+    <button type="button" class="chat-chip" data-q="contact" data-i18n="homep2.chat.chip.contact">Contact ?</button>
+    <button type="button" class="chat-chip" data-q="projets" data-i18n="homep2.chat.chip.projets">Projets ?</button>
   </div>
   <div class="chat-input-row">
-    <input type="text" id="chatInput" placeholder="Ecris ta question...">
+    <input type="text" id="chatInput" placeholder="Ecris ta question..." data-i18n-placeholder="homep2.chat.input_placeholder">
     <button type="button" id="chatSend" aria-label="Envoyer"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
   </div>
 </div>
@@ -1018,14 +1018,14 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><path d="M19 7l-5.5 1.5L12 7l-1.5 1.5L5 7M12 8.5V13m0 0l-3 8m3-8l3 8"/></svg>
         </button>
         <div class="a11y-panel" id="a11yPanel">
-          <h4>Accessibilité</h4>
-          <div class="a11y-row"><span>Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
-          <div class="a11y-row"><span>Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
-          <div class="a11y-row"><span>Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
-          <div class="a11y-row"><span>Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
-          <div class="a11y-row"><span>Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
+          <h4 data-i18n="a11y.title">Accessibilité</h4>
+          <div class="a11y-row"><span data-i18n="a11y.dyslexic">Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.contrast">Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.colorblind">Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.underline">Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.reduce_motion">Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
           <div class="a11y-row">
-            <span>Taille du texte</span>
+            <span data-i18n="a11y.text_size">Taille du texte</span>
             <div class="a11y-textsize-group">
               <button type="button" data-textsize="">A</button>
               <button type="button" data-textsize="lg">A+</button>
@@ -1083,7 +1083,7 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <section class="about-hero">
   <canvas class="hero-canvas" id="aboutCanvas" aria-hidden="true"></canvas>
   <div class="about-hero-content">
-    <h1 class="page-title-hero reveal">
+    <h1 class="page-title-hero reveal" data-i18n-html="aboutp2.hero.title">
       <span class="word">À</span> <span class="word">propos</span> <span class="word accent">de moi</span>
     </h1>
   </div>
@@ -1097,16 +1097,16 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
       <img src="assets/images/lea-portrait.png?v=3" alt="Olga Sangupamba Nika">
     </div>
     <div class="story-block" style="position:relative;">
-      <h3 class="profil-heading reveal">Qui suis-je ?</h3>
-      <p class="about-lede reveal" style="margin-top:18px;">Je m'appelle <em>Olga Sangupamba Nika</em>, étudiante en Master 2 NTIC (Nouvelles Technologies de l'Information et de la Communication). Je suis passionnée par le développement web, mobile et logiciel, je conçois notamment des applications web, mobiles et logicielles de bout en bout, autant que par la recherche appliquée et le design UX/UI.</p>
+      <h3 class="profil-heading reveal" data-i18n="aboutp2.qui.heading">Qui suis-je ?</h3>
+      <p class="about-lede reveal" style="margin-top:18px;" data-i18n-html="aboutp2.qui.lede">Je m'appelle <em>Olga Sangupamba Nika</em>, étudiante en Master 2 NTIC (Nouvelles Technologies de l'Information et de la Communication). Je suis passionnée par le développement web, mobile et logiciel, je conçois notamment des applications web, mobiles et logicielles de bout en bout, autant que par la recherche appliquée et le design UX/UI.</p>
       <div class="about-body reveal">
-        <p>Ce qui me porte, c'est une démarche presque scientifique au quotidien : observer un problème, le comprendre en profondeur, formuler des pistes de solution, prototyper, tester auprès d'utilisateurs réels, itérer et documenter chaque étape.</p>
-        <p>Curieuse et exigeante, j'aime transformer une question de recherche en solution numérique concrète, pensée pour être à la fois utile et simple.</p>
+        <p data-i18n="aboutp2.qui.p1">Ce qui me porte, c'est une démarche presque scientifique au quotidien : observer un problème, le comprendre en profondeur, formuler des pistes de solution, prototyper, tester auprès d'utilisateurs réels, itérer et documenter chaque étape.</p>
+        <p data-i18n="aboutp2.qui.p2">Curieuse et exigeante, j'aime transformer une question de recherche en solution numérique concrète, pensée pour être à la fois utile et simple.</p>
       </div>
       <div class="intro-stats reveal">
-        <div class="intro-stat"><span class="intro-stat-number">5</span><span class="intro-stat-label">Années d'études</span></div>
-        <div class="intro-stat"><span class="intro-stat-number">10</span><span class="intro-stat-label">Projets réalisés</span></div>
-        <div class="intro-stat"><span class="intro-stat-number">3</span><span class="intro-stat-label">Stages effectués</span></div>
+        <div class="intro-stat"><span class="intro-stat-number">5</span><span class="intro-stat-label" data-i18n="aboutp2.stats.annees">Années d'études</span></div>
+        <div class="intro-stat"><span class="intro-stat-number">10</span><span class="intro-stat-label" data-i18n="aboutp2.stats.projets">Projets réalisés</span></div>
+        <div class="intro-stat"><span class="intro-stat-number">3</span><span class="intro-stat-label" data-i18n="aboutp2.stats.stages">Stages effectués</span></div>
       </div>
     </div>
   </div>
@@ -1115,40 +1115,40 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <!-- PARCOURS -->
 <section class="section" id="parcours">
   <div class="wrap">
-    <h2 class="section-title section-title-center reveal">Mon Parcours</h2>
+    <h2 class="section-title section-title-center reveal" data-i18n="aboutp2.parcours.title">Mon Parcours</h2>
     <div class="timeline-interactive" id="timeline">
       <div class="tl-item reveal">
-        <div class="tl-content-left"><div class="tl-content2"><span class="tl-date2">2025 à 2027</span><span class="tl-type2 formation">Formation</span><h3>Master 2 NTIC, parcours Produits &amp; Services Multimédia</h3><p class="tl-school">Université de Franche-Comté, Montbéliard</p><p class="tl-desc2">Ergonomie &amp; design numérique, développement web/mobile/IoT, gestion de projet et création de services multimédias innovants.</p><div class="tl-tags2"><span class="tl-tag2">UX/UI</span><span class="tl-tag2">Dev Mobile</span><span class="tl-tag2">Multimédia</span><span class="tl-tag2">Gestion de projet</span></div></div></div>
+        <div class="tl-content-left"><div class="tl-content2"><span class="tl-date2" data-i18n="aboutp2.parcours.date.2025_2027">2025 à 2027</span><span class="tl-type2 formation" data-i18n="aboutp2.parcours.type.formation">Formation</span><h3 data-i18n="aboutp2.parcours.1.title">Master 2 NTIC, parcours Produits &amp; Services Multimédia</h3><p class="tl-school" data-i18n="aboutp2.school.ufc_montbeliard">Université de Franche-Comté, Montbéliard</p><p class="tl-desc2" data-i18n="aboutp2.parcours.1.desc">Ergonomie &amp; design numérique, développement web/mobile/IoT, gestion de projet et création de services multimédias innovants.</p><div class="tl-tags2"><span class="tl-tag2">UX/UI</span><span class="tl-tag2" data-i18n="aboutp2.tag.dev_mobile">Dev Mobile</span><span class="tl-tag2" data-i18n="aboutp2.tag.multimedia">Multimédia</span><span class="tl-tag2" data-i18n="aboutp2.tag.gestion_projet">Gestion de projet</span></div></div></div>
         <div class="tl-dot-col"><div class="tl-dot"></div></div>
         <div class="tl-content-right"></div>
       </div>
       <div class="tl-item reveal">
         <div class="tl-content-left"></div>
         <div class="tl-dot-col"><div class="tl-dot"></div></div>
-        <div class="tl-content-right"><div class="tl-content2"><span class="tl-date2">2025</span><span class="tl-type2 stage">Stage</span><h3>Stagiaire chercheuse UX/UI Design</h3><p class="tl-school">Université Catholique du Congo</p><p class="tl-desc2">Études utilisateurs, prototypage sur Figma et contribution à un projet de recherche appliquée en interaction homme-machine.</p><div class="tl-tags2"><span class="tl-tag2">UX Research</span><span class="tl-tag2">Figma</span></div></div></div>
+        <div class="tl-content-right"><div class="tl-content2"><span class="tl-date2">2025</span><span class="tl-type2 stage" data-i18n="aboutp2.parcours.type.stage">Stage</span><h3 data-i18n="aboutp2.parcours.2.title">Stagiaire chercheuse UX/UI Design</h3><p class="tl-school" data-i18n="aboutp2.school.ucc">Université Catholique du Congo</p><p class="tl-desc2" data-i18n="aboutp2.parcours.2.desc">Études utilisateurs, prototypage sur Figma et contribution à un projet de recherche appliquée en interaction homme-machine.</p><div class="tl-tags2"><span class="tl-tag2">UX Research</span><span class="tl-tag2">Figma</span></div></div></div>
       </div>
       <div class="tl-item reveal">
-        <div class="tl-content-left"><div class="tl-content2"><span class="tl-date2">2024</span><span class="tl-type2 stage">Stage</span><h3>Stagiaire informatique</h3><p class="tl-school">Société Nationale d'Électricité (SNEL RDC)</p><p class="tl-desc2">Déploiement de solutions numériques et support technique de premier niveau.</p><div class="tl-tags2"><span class="tl-tag2">Support technique</span><span class="tl-tag2">Veille techno</span></div></div></div>
+        <div class="tl-content-left"><div class="tl-content2"><span class="tl-date2">2024</span><span class="tl-type2 stage" data-i18n="aboutp2.parcours.type.stage">Stage</span><h3 data-i18n="aboutp2.parcours.3.title">Stagiaire informatique</h3><p class="tl-school" data-i18n="aboutp2.school.snel">Société Nationale d'Électricité (SNEL RDC)</p><p class="tl-desc2" data-i18n="aboutp2.parcours.3.desc">Déploiement de solutions numériques et support technique de premier niveau.</p><div class="tl-tags2"><span class="tl-tag2" data-i18n="aboutp2.tag.support_technique">Support technique</span><span class="tl-tag2" data-i18n="aboutp2.tag.veille_techno">Veille techno</span></div></div></div>
         <div class="tl-dot-col"><div class="tl-dot"></div></div>
         <div class="tl-content-right"></div>
       </div>
       <div class="tl-item reveal">
         <div class="tl-content-left"></div>
         <div class="tl-dot-col"><div class="tl-dot"></div></div>
-        <div class="tl-content-right"><div class="tl-content2"><span class="tl-date2">2024</span><span class="tl-type2 stage">Stage</span><h3>Stagiaire enseignante en informatique</h3><p class="tl-school">Classe de Terminale</p><p class="tl-desc2">Animation de séances d'initiation à l'informatique et conception de supports pédagogiques.</p><div class="tl-tags2"><span class="tl-tag2">Pédagogie</span><span class="tl-tag2">Informatique</span></div></div></div>
+        <div class="tl-content-right"><div class="tl-content2"><span class="tl-date2">2024</span><span class="tl-type2 stage" data-i18n="aboutp2.parcours.type.stage">Stage</span><h3 data-i18n="aboutp2.parcours.4.title">Stagiaire enseignante en informatique</h3><p class="tl-school" data-i18n="aboutp2.school.terminale">Classe de Terminale</p><p class="tl-desc2" data-i18n="aboutp2.parcours.4.desc">Animation de séances d'initiation à l'informatique et conception de supports pédagogiques.</p><div class="tl-tags2"><span class="tl-tag2" data-i18n="aboutp2.tag.pedagogie">Pédagogie</span><span class="tl-tag2" data-i18n="aboutp2.tag.informatique">Informatique</span></div></div></div>
       </div>
       <div class="tl-item reveal">
-        <div class="tl-content-left"><div class="tl-content2"><span class="tl-date2">2023 à 2025</span><span class="tl-type2 formation">Formation</span><h3>Master Administration Réseaux</h3><p class="tl-school">Université Catholique du Congo</p><p class="tl-desc2">Gestion de projet, Internet des objets, administration des réseaux.</p><div class="tl-tags2"><span class="tl-tag2">Réseaux</span><span class="tl-tag2">IoT</span></div></div></div>
+        <div class="tl-content-left"><div class="tl-content2"><span class="tl-date2" data-i18n="aboutp2.parcours.date.2023_2025">2023 à 2025</span><span class="tl-type2 formation" data-i18n="aboutp2.parcours.type.formation">Formation</span><h3 data-i18n="aboutp2.parcours.5.title">Master Administration Réseaux</h3><p class="tl-school" data-i18n="aboutp2.school.ucc">Université Catholique du Congo</p><p class="tl-desc2" data-i18n="aboutp2.parcours.5.desc">Gestion de projet, Internet des objets, administration des réseaux.</p><div class="tl-tags2"><span class="tl-tag2" data-i18n="aboutp2.tag.reseaux">Réseaux</span><span class="tl-tag2">IoT</span></div></div></div>
         <div class="tl-dot-col"><div class="tl-dot"></div></div>
         <div class="tl-content-right"></div>
       </div>
       <div class="tl-item reveal">
         <div class="tl-content-left"></div>
         <div class="tl-dot-col"><div class="tl-dot"></div></div>
-        <div class="tl-content-right"><div class="tl-content2"><span class="tl-date2">2023 à 2025</span><span class="tl-type2 engagement">Engagement</span><h3>Chargée de communication</h3><p class="tl-school">Project Management Institute (PMI RDC)</p><p class="tl-desc2">Supports visuels, organisation d'événements et pilotage de la communication interne et externe.</p><div class="tl-tags2"><span class="tl-tag2">Communication</span><span class="tl-tag2">Design graphique</span></div></div></div>
+        <div class="tl-content-right"><div class="tl-content2"><span class="tl-date2" data-i18n="aboutp2.parcours.date.2023_2025">2023 à 2025</span><span class="tl-type2 engagement" data-i18n="aboutp2.parcours.type.engagement">Engagement</span><h3 data-i18n="aboutp2.parcours.6.title">Chargée de communication</h3><p class="tl-school" data-i18n="aboutp2.school.pmi">Project Management Institute (PMI RDC)</p><p class="tl-desc2" data-i18n="aboutp2.parcours.6.desc">Supports visuels, organisation d'événements et pilotage de la communication interne et externe.</p><div class="tl-tags2"><span class="tl-tag2" data-i18n="aboutp2.tag.communication">Communication</span><span class="tl-tag2" data-i18n="aboutp2.tag.design_graphique">Design graphique</span></div></div></div>
       </div>
       <div class="tl-item reveal">
-        <div class="tl-content-left"><div class="tl-content2"><span class="tl-date2">2021 à 2023</span><span class="tl-type2 formation">Formation</span><h3>Licence en Informatique</h3><p class="tl-school">Université Catholique du Congo</p><p class="tl-desc2">Développement web, systèmes d'information, cybersécurité.</p><div class="tl-tags2"><span class="tl-tag2">Développement</span><span class="tl-tag2">Cybersécurité</span></div></div></div>
+        <div class="tl-content-left"><div class="tl-content2"><span class="tl-date2" data-i18n="aboutp2.parcours.date.2021_2023">2021 à 2023</span><span class="tl-type2 formation" data-i18n="aboutp2.parcours.type.formation">Formation</span><h3 data-i18n="aboutp2.parcours.7.title">Licence en Informatique</h3><p class="tl-school" data-i18n="aboutp2.school.ucc">Université Catholique du Congo</p><p class="tl-desc2" data-i18n="aboutp2.parcours.7.desc">Développement web, systèmes d'information, cybersécurité.</p><div class="tl-tags2"><span class="tl-tag2" data-i18n="aboutp2.tag.developpement">Développement</span><span class="tl-tag2" data-i18n="aboutp2.tag.cybersecurite">Cybersécurité</span></div></div></div>
         <div class="tl-dot-col"><div class="tl-dot"></div></div>
         <div class="tl-content-right"></div>
       </div>
@@ -1159,34 +1159,34 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <!-- COMPETENCES -->
 <section class="section" id="competences">
   <div class="wrap">
-    <h2 class="section-title section-title-center reveal">Compétences Techniques</h2>
+    <h2 class="section-title section-title-center reveal" data-i18n="aboutp2.competences.title">Compétences Techniques</h2>
     <div class="skills-filters">
-      <button class="filter-skill-btn" data-filter="all">Toutes</button>
-      <button class="filter-skill-btn" data-filter="fullstack">Full-Stack</button>
-      <button class="filter-skill-btn" data-filter="bdd">Bases de données</button>
-      <button class="filter-skill-btn" data-filter="uxui">UX/UI &amp; Recherche</button>
-      <button class="filter-skill-btn" data-filter="gestion">Gestion &amp; Création</button>
+      <button class="filter-skill-btn" data-filter="all" data-i18n="aboutp2.competences.filter.all">Toutes</button>
+      <button class="filter-skill-btn" data-filter="fullstack" data-i18n="aboutp2.competences.cat.fullstack">Full-Stack</button>
+      <button class="filter-skill-btn" data-filter="bdd" data-i18n="aboutp2.competences.cat.bdd">Bases de données</button>
+      <button class="filter-skill-btn" data-filter="uxui" data-i18n="aboutp2.competences.cat.uxui">UX/UI &amp; Recherche</button>
+      <button class="filter-skill-btn" data-filter="gestion" data-i18n="aboutp2.competences.cat.gestion">Gestion &amp; Création</button>
     </div>
     <div class="skills-cards-container">
       <div class="skill-category" data-category="fullstack">
         <div class="category-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-        <h3>Full-Stack</h3>
-        <ul class="skill-list2"><li>React, React Native, Node.js/Express</li><li>FastAPI, Python</li><li>Mobile : KivyMD, Flutter</li><li>HTML5, CSS3, JavaScript</li><li>Intégrations : Stripe, Firebase, WebSockets</li></ul>
+        <h3 data-i18n="aboutp2.competences.cat.fullstack">Full-Stack</h3>
+        <ul class="skill-list2"><li data-i18n="aboutp2.competences.fullstack.li1">React, React Native, Node.js/Express</li><li data-i18n="aboutp2.competences.fullstack.li2">FastAPI, Python</li><li data-i18n="aboutp2.competences.fullstack.li3">Mobile : KivyMD, Flutter</li><li data-i18n="aboutp2.competences.fullstack.li4">HTML5, CSS3, JavaScript</li><li data-i18n="aboutp2.competences.fullstack.li5">Intégrations : Stripe, Firebase, WebSockets</li></ul>
       </div>
       <div class="skill-category" data-category="bdd">
         <div class="category-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg></div>
-        <h3>Bases de données</h3>
-        <ul class="skill-list2"><li>PostgreSQL, SQLite, Redis</li><li>ORM : SQLAlchemy, Prisma</li><li>Modélisation de données (MCD)</li></ul>
+        <h3 data-i18n="aboutp2.competences.cat.bdd">Bases de données</h3>
+        <ul class="skill-list2"><li data-i18n="aboutp2.competences.bdd.li1">PostgreSQL, SQLite, Redis</li><li data-i18n="aboutp2.competences.bdd.li2">ORM : SQLAlchemy, Prisma</li><li data-i18n="aboutp2.competences.bdd.li3">Modélisation de données (MCD)</li></ul>
       </div>
       <div class="skill-category" data-category="uxui">
         <div class="category-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
-        <h3>UX/UI &amp; Recherche</h3>
-        <ul class="skill-list2"><li>Figma, prototypage</li><li>Accessibilité (RGAA, WCAG)</li><li>UX Research, recherche appliquée</li><li>Méthodologie de recherche &amp; innovation (théorie C-K)</li><li>Design thinking</li><li>Design responsive, internationalisation (i18n)</li></ul>
+        <h3 data-i18n="aboutp2.competences.cat.uxui">UX/UI &amp; Recherche</h3>
+        <ul class="skill-list2"><li data-i18n="aboutp2.competences.uxui.li1">Figma, prototypage</li><li data-i18n="aboutp2.competences.uxui.li2">Accessibilité (RGAA, WCAG)</li><li data-i18n="aboutp2.competences.uxui.li3">UX Research, recherche appliquée</li><li data-i18n="aboutp2.competences.uxui.li4">Méthodologie de recherche &amp; innovation (théorie C-K)</li><li data-i18n="aboutp2.competences.uxui.li5">Design thinking</li><li data-i18n="aboutp2.competences.uxui.li6">Design responsive, internationalisation (i18n)</li></ul>
       </div>
       <div class="skill-category" data-category="gestion">
         <div class="category-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></div>
-        <h3>Gestion &amp; Création</h3>
-        <ul class="skill-list2"><li>Gestion de projet digital</li><li>Git, déploiement cloud (Render)</li><li>Création graphique</li><li>Montage vidéo</li></ul>
+        <h3 data-i18n="aboutp2.competences.cat.gestion">Gestion &amp; Création</h3>
+        <ul class="skill-list2"><li data-i18n="aboutp2.competences.gestion.li1">Gestion de projet digital</li><li data-i18n="aboutp2.competences.gestion.li2">Git, déploiement cloud (Render)</li><li data-i18n="aboutp2.competences.gestion.li3">Création graphique</li><li data-i18n="aboutp2.competences.gestion.li4">Montage vidéo</li></ul>
       </div>
     </div>
   </div>
@@ -1195,42 +1195,42 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <!-- EXPERIENCES -->
 <section class="section" id="experiences">
   <div class="wrap">
-    <h2 class="section-title section-title-center reveal">Expériences marquantes</h2>
+    <h2 class="section-title section-title-center reveal" data-i18n="aboutp2.experiences.title">Expériences marquantes</h2>
     <div class="breves-carousel-wrapper" data-carousel>
       <div class="breves-track" data-carousel-track>
         <div class="breve-slide">
           <div class="exp-card">
-            <div class="exp-card-image"><div class="exp-card-date-badge">Avr à Juin 2026</div></div>
+            <div class="exp-card-image"><div class="exp-card-date-badge" data-i18n="aboutp2.experiences.1.date">Avr à Juin 2026</div></div>
             <div class="exp-card-body">
-              <span class="exp-card-type">Stage · BUT 3</span>
-              <h3 class="exp-card-title">Plateforme d'acquisition d'images multi-caméras</h3>
-              <p class="exp-card-summary">Python contrôlant deux caméras pour constituer un dataset d'apprentissage automatique, de la planification à la mise en production.</p>
+              <span class="exp-card-type" data-i18n="aboutp2.experiences.type.but3">Stage · BUT 3</span>
+              <h3 class="exp-card-title" data-i18n="aboutp2.experiences.1.title">Plateforme d'acquisition d'images multi-caméras</h3>
+              <p class="exp-card-summary" data-i18n="aboutp2.experiences.1.desc">Python contrôlant deux caméras pour constituer un dataset d'apprentissage automatique, de la planification à la mise en production.</p>
               <div class="exp-card-tags"><span>Python</span><span>OpenCV</span><span>ADB</span></div>
-              <div class="exp-card-cta">Lire l'expérience complète →</div>
+              <div class="exp-card-cta" data-i18n="aboutp2.experiences.cta">Lire l'expérience complète →</div>
             </div>
           </div>
         </div>
         <div class="breve-slide">
           <div class="exp-card">
-            <div class="exp-card-image"><div class="exp-card-date-badge">Fév à Avr 2026</div></div>
+            <div class="exp-card-image"><div class="exp-card-date-badge" data-i18n="aboutp2.experiences.2.date">Fév à Avr 2026</div></div>
             <div class="exp-card-body">
-              <span class="exp-card-type">Stage · BUT 3</span>
-              <h3 class="exp-card-title">Application mobile de secours</h3>
-              <p class="exp-card-summary">Balise radio urgence Android : suivi GPS, SOS Wi-Fi AP, recherche BLE, envoi de position. Un projet à fort enjeu terrain.</p>
+              <span class="exp-card-type" data-i18n="aboutp2.experiences.type.but3">Stage · BUT 3</span>
+              <h3 class="exp-card-title" data-i18n="aboutp2.experiences.2.title">Application mobile de secours</h3>
+              <p class="exp-card-summary" data-i18n="aboutp2.experiences.2.desc">Balise radio urgence Android : suivi GPS, SOS Wi-Fi AP, recherche BLE, envoi de position. Un projet à fort enjeu terrain.</p>
               <div class="exp-card-tags"><span>Kotlin</span><span>Firebase</span><span>BLE</span></div>
-              <div class="exp-card-cta">Lire l'expérience complète →</div>
+              <div class="exp-card-cta" data-i18n="aboutp2.experiences.cta">Lire l'expérience complète →</div>
             </div>
           </div>
         </div>
         <div class="breve-slide">
           <div class="exp-card">
-            <div class="exp-card-image"><div class="exp-card-date-badge">Avr à Juin 2025</div></div>
+            <div class="exp-card-image"><div class="exp-card-date-badge" data-i18n="aboutp2.experiences.3.date">Avr à Juin 2025</div></div>
             <div class="exp-card-body">
-              <span class="exp-card-type">Stage · BUT 2</span>
-              <h3 class="exp-card-title">Administration systèmes &amp; supervision</h3>
-              <p class="exp-card-summary">Déploiement d'une infrastructure de supervision et d'automatisation pour une PME d'infogérance, de zéro à la mise en production.</p>
+              <span class="exp-card-type" data-i18n="aboutp2.experiences.type.but2">Stage · BUT 2</span>
+              <h3 class="exp-card-title" data-i18n="aboutp2.experiences.3.title">Administration systèmes &amp; supervision</h3>
+              <p class="exp-card-summary" data-i18n="aboutp2.experiences.3.desc">Déploiement d'une infrastructure de supervision et d'automatisation pour une PME d'infogérance, de zéro à la mise en production.</p>
               <div class="exp-card-tags"><span>Proxmox VE</span><span>Ansible</span><span>Zabbix</span></div>
-              <div class="exp-card-cta">Lire l'expérience complète →</div>
+              <div class="exp-card-cta" data-i18n="aboutp2.experiences.cta">Lire l'expérience complète →</div>
             </div>
           </div>
         </div>
@@ -1248,25 +1248,25 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <!-- RECOMMANDATIONS -->
 <section class="section" id="recommandations">
   <div class="wrap">
-    <h2 class="section-title section-title-center reveal">Mes Références</h2>
+    <h2 class="section-title section-title-center reveal" data-i18n="aboutp2.reco.title">Mes Références</h2>
     <div class="reco-carousel" data-carousel>
       <div class="reco-track" data-carousel-track>
         <div class="reco-card2">
           <div class="inner">
-            <p class="reco-quote2">A encadré Olga durant son stage informatique à la Snel (Direction Régionale Kinshasa Sud) : fabrication de câbles réseau, installation de systèmes et de bases de données Oracle, maintenance de postes.</p>
-            <div class="reco-author2"><div><strong>Daniel Elumba</strong><span>Encadreur de stage, Snel RDC (Division Informatique Kinshasa Sud)</span></div></div>
+            <p class="reco-quote2" data-i18n="aboutp2.reco.1.quote">A encadré Olga durant son stage informatique à la Snel (Direction Régionale Kinshasa Sud) : fabrication de câbles réseau, installation de systèmes et de bases de données Oracle, maintenance de postes.</p>
+            <div class="reco-author2"><div><strong>Daniel Elumba</strong><span data-i18n="aboutp2.reco.1.role">Encadreur de stage, Snel RDC (Division Informatique Kinshasa Sud)</span></div></div>
           </div>
         </div>
         <div class="reco-card2">
           <div class="inner">
-            <p class="reco-quote2">Professeur de licence d'Olga en sciences informatiques à l'Université Catholique du Congo, où il enseigne la programmation et l'algorithmique.</p>
-            <div class="reco-author2"><div><strong>Efrem Mbaki Luzayisu, PhD</strong><span>Professeur, Faculté des Sciences Informatiques, UCC · <a href="https://be.linkedin.com/in/efrem-mbaki-luzayisu-phd-4312292b" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">LinkedIn</a></span></div></div>
+            <p class="reco-quote2" data-i18n="aboutp2.reco.2.quote">Professeur de licence d'Olga en sciences informatiques à l'Université Catholique du Congo, où il enseigne la programmation et l'algorithmique.</p>
+            <div class="reco-author2"><div><strong>Efrem Mbaki Luzayisu, PhD</strong><span data-i18n-html="aboutp2.reco.2.role">Professeur, Faculté des Sciences Informatiques, UCC · <a href="https://be.linkedin.com/in/efrem-mbaki-luzayisu-phd-4312292b" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">LinkedIn</a></span></div></div>
           </div>
         </div>
         <div class="reco-card2">
           <div class="inner">
-            <p class="reco-quote2">Directeur du mémoire de fin d'études d'Olga sur la régulation d'un microclimat par système embarqué, à l'Université Catholique du Congo.</p>
-            <div class="reco-author2"><div><strong>Pr. Dr. Kasengedia Motembe Pierre</strong><span>Directeur de mémoire, Professeur, UCC</span></div></div>
+            <p class="reco-quote2" data-i18n="aboutp2.reco.3.quote">Directeur du mémoire de fin d'études d'Olga sur la régulation d'un microclimat par système embarqué, à l'Université Catholique du Congo.</p>
+            <div class="reco-author2"><div><strong>Pr. Dr. Kasengedia Motembe Pierre</strong><span data-i18n="aboutp2.reco.3.role">Directeur de mémoire, Professeur, UCC</span></div></div>
           </div>
         </div>
       </div>
@@ -1282,32 +1282,32 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <!-- QUALITES PERSONNELLES -->
 <section class="section" id="qualites">
   <div class="wrap">
-    <h2 class="section-title section-title-center reveal">Qualités Personnelles</h2>
+    <h2 class="section-title section-title-center reveal" data-i18n="aboutp2.qualites.title">Qualités Personnelles</h2>
     <div class="soft-skills-grid">
       <div class="soft-skill-card">
         <div class="skill-icon2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3h6"/><path d="M10 3v6.5L4.5 19a1 1 0 0 0 .9 1.5h13.2a1 1 0 0 0 .9-1.5L14 9.5V3"/></svg></div>
-        <h3>Recherche</h3>
-        <p>Démarche presque scientifique : observer, comprendre en profondeur, tester, documenter.</p>
+        <h3 data-i18n="aboutp2.qualites.recherche.title">Recherche</h3>
+        <p data-i18n="aboutp2.qualites.recherche.desc">Démarche presque scientifique : observer, comprendre en profondeur, tester, documenter.</p>
       </div>
       <div class="soft-skill-card">
         <div class="skill-icon2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
-        <h3>Curiosité</h3>
-        <p>Veille technologique constante. Je creuse jusqu'à comprendre.</p>
+        <h3 data-i18n="aboutp2.qualites.curiosite.title">Curiosité</h3>
+        <p data-i18n="aboutp2.qualites.curiosite.desc">Veille technologique constante. Je creuse jusqu'à comprendre.</p>
       </div>
       <div class="soft-skill-card">
         <div class="skill-icon2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <h3>Esprit d'équipe</h3>
-        <p>Collaboration efficace. J'adapte ma communication à chaque interlocuteur.</p>
+        <h3 data-i18n="aboutp2.qualites.equipe.title">Esprit d'équipe</h3>
+        <p data-i18n="aboutp2.qualites.equipe.desc">Collaboration efficace. J'adapte ma communication à chaque interlocuteur.</p>
       </div>
       <div class="soft-skill-card">
         <div class="skill-icon2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
-        <h3>Résolution de problèmes</h3>
-        <p>Approche analytique méthodique. Je trouve et je documente la solution.</p>
+        <h3 data-i18n="aboutp2.qualites.resolution.title">Résolution de problèmes</h3>
+        <p data-i18n="aboutp2.qualites.resolution.desc">Approche analytique méthodique. Je trouve et je documente la solution.</p>
       </div>
       <div class="soft-skill-card">
         <div class="skill-icon2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
-        <h3>Apprendre</h3>
-        <p>Toujours envie d'apprendre un nouvel outil, un nouveau langage, une nouvelle méthode.</p>
+        <h3 data-i18n="aboutp2.qualites.apprendre.title">Apprendre</h3>
+        <p data-i18n="aboutp2.qualites.apprendre.desc">Toujours envie d'apprendre un nouvel outil, un nouveau langage, une nouvelle méthode.</p>
       </div>
     </div>
   </div>
@@ -1316,11 +1316,11 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <!-- CTA -->
 <section class="section about-cta-section">
   <div class="wrap">
-    <h2>Intéressé(e) par mon profil ?</h2>
-    <p>Je suis disponible pour une alternance en Master Réseaux &amp; Objets Connectés à partir de septembre 2026.</p>
+    <h2 data-i18n="aboutp2.cta.title">Intéressé(e) par mon profil ?</h2>
+    <p data-i18n="aboutp2.cta.lede">Je suis disponible pour une alternance en Master Réseaux &amp; Objets Connectés à partir de septembre 2026.</p>
     <div class="hero-cta">
-      <a href="contact.html" class="btn btn-solid">Me contacter</a>
-      <a href="cv.html" class="btn btn-outline">Voir mon CV</a>
+      <a href="contact.html" class="btn btn-solid" data-i18n="aboutp2.cta.contact">Me contacter</a>
+      <a href="cv.html" class="btn btn-outline" data-i18n="aboutp2.cta.cv">Voir mon CV</a>
     </div>
   </div>
 </section>

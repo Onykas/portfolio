@@ -982,19 +982,19 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <div class="chat-panel" id="chatPanel">
   <div class="chat-head">
     <span class="dot-live"></span>
-    <div><strong>Assistant Olga</strong><span>Questions sur mon profil</span></div>
+    <div><strong data-i18n="homep2.chat.title">Assistant Olga</strong><span data-i18n="homep2.chat.subtitle">Questions sur mon profil</span></div>
   </div>
   <div class="chat-body" id="chatBody">
-    <div class="chat-msg bot">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
+    <div class="chat-msg bot" data-i18n="homep2.chat.greeting">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
   </div>
   <div class="chat-suggestions">
-    <button type="button" class="chat-chip" data-q="competences">Compétences ?</button>
-    <button type="button" class="chat-chip" data-q="disponibilite">Disponibilité ?</button>
-    <button type="button" class="chat-chip" data-q="contact">Contact ?</button>
-    <button type="button" class="chat-chip" data-q="projets">Projets ?</button>
+    <button type="button" class="chat-chip" data-q="competences" data-i18n="homep2.chat.chip.competences">Compétences ?</button>
+    <button type="button" class="chat-chip" data-q="disponibilite" data-i18n="homep2.chat.chip.disponibilite">Disponibilité ?</button>
+    <button type="button" class="chat-chip" data-q="contact" data-i18n="homep2.chat.chip.contact">Contact ?</button>
+    <button type="button" class="chat-chip" data-q="projets" data-i18n="homep2.chat.chip.projets">Projets ?</button>
   </div>
   <div class="chat-input-row">
-    <input type="text" id="chatInput" placeholder="Ecris ta question...">
+    <input type="text" id="chatInput" placeholder="Ecris ta question..." data-i18n-placeholder="homep2.chat.input_placeholder">
     <button type="button" id="chatSend" aria-label="Envoyer"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
   </div>
 </div>
@@ -1042,14 +1042,14 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><path d="M19 7l-5.5 1.5L12 7l-1.5 1.5L5 7M12 8.5V13m0 0l-3 8m3-8l3 8"/></svg>
         </button>
         <div class="a11y-panel" id="a11yPanel">
-          <h4>Accessibilité</h4>
-          <div class="a11y-row"><span>Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
-          <div class="a11y-row"><span>Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
-          <div class="a11y-row"><span>Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
-          <div class="a11y-row"><span>Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
-          <div class="a11y-row"><span>Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
+          <h4 data-i18n="a11y.title">Accessibilité</h4>
+          <div class="a11y-row"><span data-i18n="a11y.dyslexic">Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.contrast">Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.colorblind">Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.underline">Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.reduce_motion">Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
           <div class="a11y-row">
-            <span>Taille du texte</span>
+            <span data-i18n="a11y.text_size">Taille du texte</span>
             <div class="a11y-textsize-group">
               <button type="button" data-textsize="">A</button>
               <button type="button" data-textsize="lg">A+</button>
@@ -1092,20 +1092,20 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <section class="detail-hero-banner">
   <div class="detail-hero-bg"></div>
   <div class="wrap detail-hero-content">
-    <nav class="detail-breadcrumb"><a href="portfolio.html">Portfolio</a><span class="sep">/</span><span>Lost &amp; Found</span></nav>
-    <div class="detail-tags"><span class="detail-tag dev">Mobile</span><span class="detail-tag">Flutter</span></div>
-    <h1 class="detail-page-title reveal">Lost &amp; Found, les objets perdus du campus</h1>
-    <p class="detail-page-accroche reveal">Application mobile Flutter pour signaler et retrouver les objets perdus ou trouvés sur le campus, avec fonctionnement entièrement hors ligne.</p>
+    <nav class="detail-breadcrumb"><a href="portfolio.html" data-i18n="proj.lostfound.breadcrumb.portfolio">Portfolio</a><span class="sep">/</span><span>Lost &amp; Found</span></nav>
+    <div class="detail-tags"><span class="detail-tag dev" data-i18n="proj.lostfound.tag1">Mobile</span><span class="detail-tag" data-i18n="proj.lostfound.tag2">Flutter</span></div>
+    <h1 class="detail-page-title reveal" data-i18n="proj.lostfound.hero.title">Lost &amp; Found, les objets perdus du campus</h1>
+    <p class="detail-page-accroche reveal" data-i18n="proj.lostfound.hero.accroche">Application mobile Flutter pour signaler et retrouver les objets perdus ou trouvés sur le campus, avec fonctionnement entièrement hors ligne.</p>
   </div>
 </section>
 
 <div class="wrap">
-  <div class="detail-meta-bar reveal"><div><div class="ml">Contexte</div><div class="mv">Projet de groupe, Master 1 PSM</div></div><div><div class="ml">Équipe</div><div class="mv">2 étudiantes, avec Tania André</div></div><div><div class="ml">Mon rôle</div><div class="mv">Conception &amp; développement Flutter</div></div><div><div class="ml">Statut</div><div class="mv">Prototype fonctionnel</div></div></div>
+  <div class="detail-meta-bar reveal"><div><div class="ml" data-i18n="proj.meta.contexte">Contexte</div><div class="mv" data-i18n="proj.lostfound.meta.contexte.value">Projet de groupe, Master 1 PSM</div></div><div><div class="ml" data-i18n="proj.meta.equipe">Équipe</div><div class="mv" data-i18n="proj.lostfound.meta.equipe.value">2 étudiantes, avec Tania André</div></div><div><div class="ml" data-i18n="proj.meta.role">Mon rôle</div><div class="mv" data-i18n="proj.lostfound.meta.role.value">Conception &amp; développement Flutter</div></div><div><div class="ml" data-i18n="proj.meta.statut">Statut</div><div class="mv" data-i18n="proj.lostfound.meta.statut.value">Prototype fonctionnel</div></div></div>
 
   <article class="detail-story">
     
-    <h2 class="story-h2">Le besoin</h2>
-    <p class="story-p">Chaque année, des étudiants perdent des objets sur le campus (cartes étudiantes, clés, téléphones, chargeurs) sans moyen simple de les signaler ou de les retrouver. <strong>Lost &amp; Found Université</strong> permet de publier une annonce en quelques secondes, objet perdu ou trouvé, et de la retrouver via une liste filtrée ou une carte du campus. Projet mené en binôme avec Tania André.</p>
+    <h2 class="story-h2" data-i18n="proj.lostfound.s1.h2">Le besoin</h2>
+    <p class="story-p" data-i18n-html="proj.lostfound.s1.p1">Chaque année, des étudiants perdent des objets sur le campus (cartes étudiantes, clés, téléphones, chargeurs) sans moyen simple de les signaler ou de les retrouver. <strong>Lost &amp; Found Université</strong> permet de publier une annonce en quelques secondes, objet perdu ou trouvé, et de la retrouver via une liste filtrée ou une carte du campus. Projet mené en binôme avec Tania André.</p>
     <div class="phone-wrap">
       <div class="phone-frame lg">
         <div class="phone-glow"></div>
@@ -1114,47 +1114,47 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
         <div class="phone-screen"><img src="assets/images/projects/lostfound/home.jpg" alt="Accueil de l'application Lost &amp; Found : annonces récentes et carte du campus"></div>
         <div class="home-bar"></div>
       </div>
-      <p class="story-shot-cap">Accueil : annonces récentes et carte du campus</p>
+      <p class="story-shot-cap" data-i18n="proj.lostfound.phone1.cap">Accueil : annonces récentes et carte du campus</p>
     </div>
-    <h2 class="story-h2">Publier et retrouver une annonce</h2>
-    <p class="story-p">L'utilisateur choisit un statut, <strong>perdu</strong> ou <strong>trouvé</strong>, ajoute une photo, une description et un lieu. Les annonces sont ensuite listées et filtrables par type d'objet, avec un accès rapide au détail (contact, localisation, actions résolu ou supprimer).</p>
+    <h2 class="story-h2" data-i18n="proj.lostfound.s2.h2">Publier et retrouver une annonce</h2>
+    <p class="story-p" data-i18n-html="proj.lostfound.s2.p1">L'utilisateur choisit un statut, <strong>perdu</strong> ou <strong>trouvé</strong>, ajoute une photo, une description et un lieu. Les annonces sont ensuite listées et filtrables par type d'objet, avec un accès rapide au détail (contact, localisation, actions résolu ou supprimer).</p>
     <div class="story-shot-grid">
       <div class="story-shot">
         <img src="assets/images/projects/lostfound/lost-list.jpg" alt="Liste des objets perdus dans Lost &amp; Found">
-        <p class="story-shot-cap">Objets perdus</p>
+        <p class="story-shot-cap" data-i18n="proj.lostfound.shot1.cap">Objets perdus</p>
       </div>
       <div class="story-shot">
         <img src="assets/images/projects/lostfound/found-list.jpg" alt="Liste des objets trouvés dans Lost &amp; Found">
-        <p class="story-shot-cap">Objets trouvés</p>
+        <p class="story-shot-cap" data-i18n="proj.lostfound.shot2.cap">Objets trouvés</p>
       </div>
       <div class="story-shot">
         <img src="assets/images/projects/lostfound/item-detail.jpg" alt="Détail d'une annonce dans Lost &amp; Found">
-        <p class="story-shot-cap">Détail d'une annonce</p>
+        <p class="story-shot-cap" data-i18n="proj.lostfound.shot3.cap">Détail d'une annonce</p>
       </div>
     </div>
-    <h2 class="story-h2">Compte &amp; proximité</h2>
-    <p class="story-p">Un compte simple (connexion, inscription, mot de passe oublié) protège les annonces publiées. L'écran <strong>Près de moi</strong> affiche les objets signalés à proximité, pour retrouver plus vite ce qui a été perdu tout près.</p>
+    <h2 class="story-h2" data-i18n="proj.lostfound.s3.h2">Compte &amp; proximité</h2>
+    <p class="story-p" data-i18n-html="proj.lostfound.s3.p1">Un compte simple (connexion, inscription, mot de passe oublié) protège les annonces publiées. L'écran <strong>Près de moi</strong> affiche les objets signalés à proximité, pour retrouver plus vite ce qui a été perdu tout près.</p>
     <div class="story-shot-grid" style="max-width:420px;">
       <div class="story-shot">
         <img src="assets/images/projects/lostfound/signin.jpg" alt="Connexion à l'application Lost &amp; Found">
-        <p class="story-shot-cap">Connexion</p>
+        <p class="story-shot-cap" data-i18n="proj.lostfound.shot4.cap">Connexion</p>
       </div>
       <div class="story-shot">
         <img src="assets/images/projects/lostfound/near-me.jpg" alt="Objets signalés à proximité dans Lost &amp; Found">
-        <p class="story-shot-cap">Près de moi</p>
+        <p class="story-shot-cap" data-i18n="proj.lostfound.shot5.cap">Près de moi</p>
       </div>
     </div>
-    <h2 class="story-h2">Architecture technique</h2>
-    <p class="story-p">Développée en <strong>Flutter</strong> (Dart), l'application fonctionne intégralement <strong>hors ligne</strong> : toutes les annonces sont stockées localement, sans serveur ni base de données distante, pour rester utilisable même sans connexion sur le campus.</p>
-    <div class="story-quote">« Un problème fréquent, une solution simple. »</div>
+    <h2 class="story-h2" data-i18n="proj.lostfound.s4.h2">Architecture technique</h2>
+    <p class="story-p" data-i18n-html="proj.lostfound.s4.p1">Développée en <strong>Flutter</strong> (Dart), l'application fonctionne intégralement <strong>hors ligne</strong> : toutes les annonces sont stockées localement, sans serveur ni base de données distante, pour rester utilisable même sans connexion sur le campus.</p>
+    <div class="story-quote" data-i18n="proj.lostfound.quote">« Un problème fréquent, une solution simple. »</div>
     <div class="story-chips">
-      <span class="stage-result-chip">Fonctionnement hors ligne</span>
-      <span class="stage-result-chip">Stockage local</span>
-      <span class="stage-result-chip">Recherche par proximité</span>
-      <span class="stage-result-chip">Flutter</span>
+      <span class="stage-result-chip" data-i18n="proj.lostfound.chip1">Fonctionnement hors ligne</span>
+      <span class="stage-result-chip" data-i18n="proj.lostfound.chip2">Stockage local</span>
+      <span class="stage-result-chip" data-i18n="proj.lostfound.chip3">Recherche par proximité</span>
+      <span class="stage-result-chip" data-i18n="proj.lostfound.chip4">Flutter</span>
     </div>
 
-    <div class="cta-buttons reveal"><a href="https://github.com/Onykas/app-findly" target="_blank" rel="noopener" class="btn btn-solid"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="flex-shrink:0;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg><span>Voir sur GitHub</span></a></div>
+    <div class="cta-buttons reveal"><a href="https://github.com/Onykas/app-findly" target="_blank" rel="noopener" class="btn btn-solid"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="flex-shrink:0;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg><span data-i18n="proj.lostfound.cta.github">Voir sur GitHub</span></a></div>
   </article>
 </div>
 

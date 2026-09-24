@@ -995,19 +995,19 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <div class="chat-panel" id="chatPanel">
   <div class="chat-head">
     <span class="dot-live"></span>
-    <div><strong>Assistant Olga</strong><span>Questions sur mon profil</span></div>
+    <div><strong data-i18n="homep2.chat.title">Assistant Olga</strong><span data-i18n="homep2.chat.subtitle">Questions sur mon profil</span></div>
   </div>
   <div class="chat-body" id="chatBody">
-    <div class="chat-msg bot">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
+    <div class="chat-msg bot" data-i18n="homep2.chat.greeting">Bonjour ! Je peux répondre à quelques questions simples sur le profil d'Olga. Que veux-tu savoir ?</div>
   </div>
   <div class="chat-suggestions">
-    <button type="button" class="chat-chip" data-q="competences">Compétences ?</button>
-    <button type="button" class="chat-chip" data-q="disponibilite">Disponibilité ?</button>
-    <button type="button" class="chat-chip" data-q="contact">Contact ?</button>
-    <button type="button" class="chat-chip" data-q="projets">Projets ?</button>
+    <button type="button" class="chat-chip" data-q="competences" data-i18n="homep2.chat.chip.competences">Compétences ?</button>
+    <button type="button" class="chat-chip" data-q="disponibilite" data-i18n="homep2.chat.chip.disponibilite">Disponibilité ?</button>
+    <button type="button" class="chat-chip" data-q="contact" data-i18n="homep2.chat.chip.contact">Contact ?</button>
+    <button type="button" class="chat-chip" data-q="projets" data-i18n="homep2.chat.chip.projets">Projets ?</button>
   </div>
   <div class="chat-input-row">
-    <input type="text" id="chatInput" placeholder="Ecris ta question...">
+    <input type="text" id="chatInput" placeholder="Ecris ta question..." data-i18n-placeholder="homep2.chat.input_placeholder">
     <button type="button" id="chatSend" aria-label="Envoyer"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
   </div>
 </div>
@@ -1055,14 +1055,14 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4" r="2"/><path d="M19 7l-5.5 1.5L12 7l-1.5 1.5L5 7M12 8.5V13m0 0l-3 8m3-8l3 8"/></svg>
         </button>
         <div class="a11y-panel" id="a11yPanel">
-          <h4>Accessibilité</h4>
-          <div class="a11y-row"><span>Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
-          <div class="a11y-row"><span>Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
-          <div class="a11y-row"><span>Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
-          <div class="a11y-row"><span>Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
-          <div class="a11y-row"><span>Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
+          <h4 data-i18n="a11y.title">Accessibilité</h4>
+          <div class="a11y-row"><span data-i18n="a11y.dyslexic">Police de lecture facile</span><div class="a11y-switch" data-a11y="dyslexic"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.contrast">Contraste élevé</span><div class="a11y-switch" data-a11y="contrast"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.colorblind">Palette daltonien</span><div class="a11y-switch" data-a11y="colorblind"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.underline">Souligner les liens</span><div class="a11y-switch" data-a11y="underline"></div></div>
+          <div class="a11y-row"><span data-i18n="a11y.reduce_motion">Réduire les animations</span><div class="a11y-switch" data-a11y="reduceMotion"></div></div>
           <div class="a11y-row">
-            <span>Taille du texte</span>
+            <span data-i18n="a11y.text_size">Taille du texte</span>
             <div class="a11y-textsize-group">
               <button type="button" data-textsize="">A</button>
               <button type="button" data-textsize="lg">A+</button>
@@ -1105,20 +1105,20 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
 <section class="detail-hero-banner">
   <div class="detail-hero-bg"></div>
   <div class="wrap detail-hero-content">
-    <nav class="detail-breadcrumb"><a href="portfolio.html">Portfolio</a><span class="sep">/</span><span>NeuroApp</span></nav>
-    <div class="detail-tags"><span class="detail-tag dev">Mobile</span><span class="detail-tag">Flutter</span></div>
-    <h1 class="detail-page-title reveal">NeuroApp, évaluations neuropsychologiques sur le terrain</h1>
-    <p class="detail-page-accroche reveal">Application mobile pour faire passer et suivre des tests neuropsychologiques auprès de patients, avec dossier patient centralisé.</p>
+    <nav class="detail-breadcrumb"><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a><span class="sep">/</span><span>NeuroApp</span></nav>
+    <div class="detail-tags"><span class="detail-tag dev" data-i18n="proj.neuroapp.hero.tag1">Mobile</span><span class="detail-tag" data-i18n="proj.neuroapp.hero.tag2">Flutter</span></div>
+    <h1 class="detail-page-title reveal" data-i18n="proj.neuroapp.hero.title">NeuroApp, évaluations neuropsychologiques sur le terrain</h1>
+    <p class="detail-page-accroche reveal" data-i18n="proj.neuroapp.hero.accroche">Application mobile pour faire passer et suivre des tests neuropsychologiques auprès de patients, avec dossier patient centralisé.</p>
   </div>
 </section>
 
 <div class="wrap">
-  <div class="detail-meta-bar reveal"><div><div class="ml">Contexte</div><div class="mv">Projet personnel</div></div><div><div class="ml">Cible</div><div class="mv">Professionnels de santé &amp; aidants</div></div><div><div class="ml">Mon rôle</div><div class="mv">Conception &amp; développement Flutter</div></div><div><div class="ml">Statut</div><div class="mv">Prototype (Firebase)</div></div></div>
+  <div class="detail-meta-bar reveal"><div><div class="ml" data-i18n="proj.meta.contexte">Contexte</div><div class="mv" data-i18n="proj.neuroapp.meta.contexte.value">Projet personnel</div></div><div><div class="ml" data-i18n="proj.meta.cible">Cible</div><div class="mv" data-i18n="proj.neuroapp.meta.cible.value">Professionnels de santé &amp; aidants</div></div><div><div class="ml" data-i18n="proj.meta.role">Mon rôle</div><div class="mv" data-i18n="proj.neuroapp.meta.role.value">Conception &amp; développement Flutter</div></div><div><div class="ml" data-i18n="proj.meta.statut">Statut</div><div class="mv" data-i18n="proj.neuroapp.meta.statut.value">Prototype (Firebase)</div></div></div>
 
   <article class="detail-story">
-    
-    <h2 class="story-h2">Le concept</h2>
-    <p class="story-p"><strong>NeuroApp</strong> permet à un praticien de créer un dossier patient puis de lui faire passer, directement depuis le téléphone, une série de tests neuropsychologiques standardisés : le test <strong>ECoKin</strong> (mémoire, noté sur 30), l'<strong>échelle de Zarit</strong> (fardeau de l'aidant, sur 88), un <strong>questionnaire de dépistage Alzheimer</strong>, et une <strong>grille de fragilité</strong> en deux volets. Chaque test intègre un minuteur et calcule automatiquement le score et son interprétation.</p>
+
+    <h2 class="story-h2" data-i18n="proj.neuroapp.s1.h2">Le concept</h2>
+    <p class="story-p" data-i18n-html="proj.neuroapp.s1.p1"><strong>NeuroApp</strong> permet à un praticien de créer un dossier patient puis de lui faire passer, directement depuis le téléphone, une série de tests neuropsychologiques standardisés : le test <strong>ECoKin</strong> (mémoire, noté sur 30), l'<strong>échelle de Zarit</strong> (fardeau de l'aidant, sur 88), un <strong>questionnaire de dépistage Alzheimer</strong>, et une <strong>grille de fragilité</strong> en deux volets. Chaque test intègre un minuteur et calcule automatiquement le score et son interprétation.</p>
 
     <div class="tablet-wrap reveal">
       <div class="tablet-frame">
@@ -1127,36 +1127,36 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
         <div class="cam"></div>
         <div class="tablet-screen"><img src="assets/images/projects/neuroapp/login.jpg" alt="Connexion à NeuroApp"></div>
       </div>
-      <p class="story-shot-cap">Connexion, accès réservé au personnel autorisé</p>
+      <p class="story-shot-cap" data-i18n="proj.neuroapp.tablet1.cap">Connexion, accès réservé au personnel autorisé</p>
     </div>
 
-    <h2 class="story-h2">Un dossier patient centralisé</h2>
-    <p class="story-p">Depuis la fiche d'un patient, le praticien retrouve l'historique des sessions passées et peut lancer un nouveau test en quelques secondes. Les résultats sont interprétés automatiquement et conservés pour suivre l'évolution dans le temps.</p>
+    <h2 class="story-h2" data-i18n="proj.neuroapp.s2.h2">Un dossier patient centralisé</h2>
+    <p class="story-p" data-i18n="proj.neuroapp.s2.p1">Depuis la fiche d'un patient, le praticien retrouve l'historique des sessions passées et peut lancer un nouveau test en quelques secondes. Les résultats sont interprétés automatiquement et conservés pour suivre l'évolution dans le temps.</p>
     <div class="story-shot-grid">
       <div class="story-shot">
         <img src="assets/images/projects/neuroapp/patients.jpg" alt="Liste des patients dans NeuroApp">
-        <p class="story-shot-cap">Liste des patients</p>
+        <p class="story-shot-cap" data-i18n="proj.neuroapp.shot1.cap">Liste des patients</p>
       </div>
       <div class="story-shot">
         <img src="assets/images/projects/neuroapp/dossier.jpg" alt="Dossier patient et choix du test dans NeuroApp">
-        <p class="story-shot-cap">Dossier &amp; choix du test</p>
+        <p class="story-shot-cap" data-i18n-html="proj.neuroapp.shot2.cap">Dossier &amp; choix du test</p>
       </div>
       <div class="story-shot">
         <img src="assets/images/projects/neuroapp/test.jpg" alt="Test ECoKin en cours dans NeuroApp">
-        <p class="story-shot-cap">Test ECoKin en cours</p>
+        <p class="story-shot-cap" data-i18n="proj.neuroapp.shot3.cap">Test ECoKin en cours</p>
       </div>
     </div>
-    <h2 class="story-h2">Architecture technique</h2>
-    <p class="story-p">L'application est développée en <strong>Flutter</strong> (Dart), avec <strong>Firebase Authentication</strong> pour les comptes praticiens et <strong>Firestore</strong> comme base de données pour les patients et les sessions de test.</p>
-    <div class="story-quote">« Un test, un score, une interprétation, en quelques minutes. »</div>
+    <h2 class="story-h2" data-i18n="proj.neuroapp.s3.h2">Architecture technique</h2>
+    <p class="story-p" data-i18n-html="proj.neuroapp.s3.p1">L'application est développée en <strong>Flutter</strong> (Dart), avec <strong>Firebase Authentication</strong> pour les comptes praticiens et <strong>Firestore</strong> comme base de données pour les patients et les sessions de test.</p>
+    <div class="story-quote" data-i18n="proj.neuroapp.quote">« Un test, un score, une interprétation, en quelques minutes. »</div>
     <div class="story-chips">
-      <span class="stage-result-chip">4 tests standardisés</span>
-      <span class="stage-result-chip">Dossier patient</span>
-      <span class="stage-result-chip">Firebase Auth &amp; Firestore</span>
-      <span class="stage-result-chip">Minuteur intégré</span>
+      <span class="stage-result-chip" data-i18n="proj.neuroapp.chip1">4 tests standardisés</span>
+      <span class="stage-result-chip" data-i18n="proj.neuroapp.chip2">Dossier patient</span>
+      <span class="stage-result-chip" data-i18n-html="proj.neuroapp.chip3">Firebase Auth &amp; Firestore</span>
+      <span class="stage-result-chip" data-i18n="proj.neuroapp.chip4">Minuteur intégré</span>
     </div>
 
-    <div class="cta-buttons reveal"><a href="https://github.com/Onykas/neuroapp" target="_blank" rel="noopener" class="btn btn-solid"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="flex-shrink:0;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg><span>Voir sur GitHub</span></a></div>
+    <div class="cta-buttons reveal"><a href="https://github.com/Onykas/neuroapp" target="_blank" rel="noopener" class="btn btn-solid"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="flex-shrink:0;"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg><span data-i18n="proj.neuroapp.cta.github">Voir sur GitHub</span></a></div>
 
   </article>
 </div>
