@@ -798,6 +798,8 @@ footer{
 .exp-card{ background:var(--bg-alt); border:1px solid var(--line-strong); border-radius:22px; overflow:hidden; transition:all .3s ease; text-decoration:none; display:block; color:inherit; }
 .exp-card:hover{ border-color:var(--accent); box-shadow:0 16px 46px var(--accent-soft); transform:translateY(-4px); }
 .exp-card-image{ position:relative; height:170px; background:linear-gradient(135deg, var(--accent-soft), var(--accent-2-soft)); overflow:hidden; }
+.exp-card-image img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .6s ease; }
+.exp-card:hover .exp-card-image img{ transform:scale(1.06); }
 .exp-card-date-badge{ position:absolute; top:14px; right:14px; padding:5px 13px; background:var(--bg); border:1px solid color-mix(in srgb, var(--accent) 30%, transparent); border-radius:20px; font-family:var(--mono); font-size:10.5px; font-weight:600; color:var(--accent); }
 .exp-card-body{ padding:26px 28px; display:flex; flex-direction:column; gap:12px; }
 .exp-card-type{ display:inline-block; padding:4px 12px; border-radius:12px; font-family:var(--mono); font-size:9.5px; font-weight:700; text-transform:uppercase; letter-spacing:.07em; background:var(--accent-soft); color:var(--accent); width:fit-content; }
@@ -1199,40 +1201,40 @@ html.a11y-reduce-motion .hero-canvas, html.a11y-reduce-motion canvas{ display:no
     <div class="breves-carousel-wrapper" data-carousel>
       <div class="breves-track" data-carousel-track>
         <div class="breve-slide">
-          <div class="exp-card">
-            <div class="exp-card-image"><div class="exp-card-date-badge" data-i18n="aboutp2.experiences.1.date">Avr à Juin 2026</div></div>
+          <a class="exp-card" href="about.html#parcours">
+            <div class="exp-card-image"><img src="assets/images/paysages/p80.jpg" alt="Montbéliard, France"><div class="exp-card-date-badge" data-i18n="aboutp2.experiences.1.date">Depuis 2025</div></div>
             <div class="exp-card-body">
-              <span class="exp-card-type" data-i18n="aboutp2.experiences.type.but3">Stage · BUT 3</span>
-              <h3 class="exp-card-title" data-i18n="aboutp2.experiences.1.title">Plateforme d'acquisition d'images multi-caméras</h3>
-              <p class="exp-card-summary" data-i18n="aboutp2.experiences.1.desc">Python contrôlant deux caméras pour constituer un dataset d'apprentissage automatique, de la planification à la mise en production.</p>
-              <div class="exp-card-tags"><span>Python</span><span>OpenCV</span><span>ADB</span></div>
+              <span class="exp-card-type" data-i18n="aboutp2.experiences.type.parcours">Parcours</span>
+              <h3 class="exp-card-title" data-i18n="aboutp2.experiences.1.title">Parcours universitaire et mobilité internationale</h3>
+              <p class="exp-card-summary" data-i18n="aboutp2.experiences.1.desc">De la Licence en Informatique à l'Université Catholique du Congo (Kinshasa) au Master 2 NTIC à l'Université de Franche-Comté (Montbéliard, France) : un parcours qui m'a poussée à m'adapter à de nouveaux environnements académiques et à gagner en autonomie.</p>
+              <div class="exp-card-tags"><span data-i18n="aboutp2.experiences.1.tag1">Adaptation</span><span data-i18n="aboutp2.experiences.1.tag2">Autonomie</span><span data-i18n="aboutp2.experiences.1.tag3">Évolution académique</span></div>
               <div class="exp-card-cta" data-i18n="aboutp2.experiences.cta">Lire l'expérience complète →</div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="breve-slide">
-          <div class="exp-card">
-            <div class="exp-card-image"><div class="exp-card-date-badge" data-i18n="aboutp2.experiences.2.date">Fév à Avr 2026</div></div>
+          <a class="exp-card" href="stage-enseignante.html">
+            <div class="exp-card-image"><img src="assets/images/stage-enseignante-salle.jpg" alt="Séance d'initiation en salle informatique"><div class="exp-card-date-badge" data-i18n="aboutp2.experiences.2.date">2024</div></div>
             <div class="exp-card-body">
-              <span class="exp-card-type" data-i18n="aboutp2.experiences.type.but3">Stage · BUT 3</span>
-              <h3 class="exp-card-title" data-i18n="aboutp2.experiences.2.title">Application mobile de secours</h3>
-              <p class="exp-card-summary" data-i18n="aboutp2.experiences.2.desc">Balise radio urgence Android : suivi GPS, SOS Wi-Fi AP, recherche BLE, envoi de position. Un projet à fort enjeu terrain.</p>
-              <div class="exp-card-tags"><span>Kotlin</span><span>Firebase</span><span>BLE</span></div>
+              <span class="exp-card-type" data-i18n="aboutp2.experiences.type.stage">Stage</span>
+              <h3 class="exp-card-title" data-i18n="aboutp2.experiences.2.title">Enseignement informatique en RDC</h3>
+              <p class="exp-card-summary" data-i18n="aboutp2.experiences.2.desc">Animation de séances d'initiation à l'informatique pour une classe de Terminale : conception de supports pédagogiques clairs et transmission de notions techniques à un public qui découvrait le sujet.</p>
+              <div class="exp-card-tags"><span data-i18n="aboutp2.experiences.2.tag1">Pédagogie</span><span data-i18n="aboutp2.experiences.2.tag2">Transmission</span><span data-i18n="aboutp2.experiences.2.tag3">Responsabilité</span></div>
               <div class="exp-card-cta" data-i18n="aboutp2.experiences.cta">Lire l'expérience complète →</div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="breve-slide">
-          <div class="exp-card">
-            <div class="exp-card-image"><div class="exp-card-date-badge" data-i18n="aboutp2.experiences.3.date">Avr à Juin 2025</div></div>
+          <a class="exp-card" href="about.html#parcours">
+            <div class="exp-card-image"><img src="assets/images/events/e03.jpg" alt="Événement Project Management Institute RDC"><div class="exp-card-date-badge" data-i18n="aboutp2.experiences.3.date">2023 à 2025</div></div>
             <div class="exp-card-body">
-              <span class="exp-card-type" data-i18n="aboutp2.experiences.type.but2">Stage · BUT 2</span>
-              <h3 class="exp-card-title" data-i18n="aboutp2.experiences.3.title">Administration systèmes &amp; supervision</h3>
-              <p class="exp-card-summary" data-i18n="aboutp2.experiences.3.desc">Déploiement d'une infrastructure de supervision et d'automatisation pour une PME d'infogérance, de zéro à la mise en production.</p>
-              <div class="exp-card-tags"><span>Proxmox VE</span><span>Ansible</span><span>Zabbix</span></div>
+              <span class="exp-card-type" data-i18n="aboutp2.experiences.type.engagement">Engagement</span>
+              <h3 class="exp-card-title" data-i18n-html="aboutp2.experiences.3.title">Engagement associatif &amp; accompagnement international</h3>
+              <p class="exp-card-summary" data-i18n="aboutp2.experiences.3.desc">Chargée de communication pour l'antenne congolaise du Project Management Institute (PMI) : supports visuels, organisation d'événements et pilotage de la communication interne et externe d'une organisation professionnelle internationale.</p>
+              <div class="exp-card-tags"><span data-i18n="aboutp2.experiences.3.tag1">Communication</span><span data-i18n="aboutp2.experiences.3.tag2">Gestion de projet</span><span data-i18n="aboutp2.experiences.3.tag3">Interculturel</span></div>
               <div class="exp-card-cta" data-i18n="aboutp2.experiences.cta">Lire l'expérience complète →</div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <div class="carousel-nav">
