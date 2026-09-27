@@ -6,27 +6,28 @@ OUT = os.path.dirname(__file__)
 CSS = """
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
 *{margin:0;padding:0;box-sizing:border-box}
-@page{size:A4;margin:9.5mm 12mm}
+@page{size:A4;margin:7mm 12mm}
 html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-body{font-family:'Poppins',system-ui,Arial,sans-serif;font-size:8.4pt;line-height:1.45;color:#1e1e1e}
+body{font-family:'Poppins',system-ui,Arial,sans-serif;font-size:8.4pt;line-height:1.38;color:#1e1e1e}
 .name{font-family:'Space Grotesk','Poppins',sans-serif;font-weight:700;font-size:18pt;letter-spacing:.4px;text-transform:uppercase;color:#141414;line-height:1}
 .head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
 .subtitle{color:#e0402f;font-weight:500;font-size:8.8pt;margin-top:5px;max-width:80%;line-height:1.35}
-.contact{font-size:7.9pt;color:#3a3a3a;text-align:right;white-space:nowrap;line-height:1.65}
+.contact{font-size:7.9pt;color:#3a3a3a;text-align:right;white-space:nowrap;line-height:1.5}
 .contact b{color:#141414}
-.rule{height:2.2px;background:#e0402f;border:none;margin:8px 0 9px}
+.portfolio-link{color:#e0402f;font-weight:600;text-decoration:none}
+.rule{height:2.2px;background:#e0402f;border:none;margin:6px 0 6px}
 .intro{font-size:8.2pt;color:#333;text-align:justify;line-height:1.45}
 .cols{display:flex;gap:22px;margin-top:9px}
 .left{width:35%}
 .right{width:65%}
-.sec{margin-bottom:11px}
+.sec{margin-bottom:8px}
 .left .sec:last-child,.right .sec:last-child{margin-bottom:0}
 .sec h2{font-size:8.6pt;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:#e0402f;padding-bottom:4px;border-bottom:1px solid #e5e5e5;margin-bottom:7px}
 ul{list-style:none}
 li{position:relative;padding-left:11px;margin-bottom:4px;font-size:8.2pt;color:#2c2c2c;line-height:1.4}
 li:last-child{margin-bottom:0}
 li::before{content:"";position:absolute;left:0;top:5px;width:3px;height:3px;border-radius:50%;background:#e0402f}
-.entry{margin-bottom:9px;page-break-inside:avoid}
+.entry{margin-bottom:6px;page-break-inside:avoid}
 .entry:last-child{margin-bottom:0}
 .entry .role{font-weight:600;font-size:8.8pt;color:#141414}
 .entry .org{color:#7a7a7a;font-size:7.9pt;margin-top:1px}
@@ -70,23 +71,23 @@ def build(D):
     <div class="name">Olga Sangupamba Nika</div>
     <div class="subtitle">%s</div>
   </div>
-  <div class="contact"><b>%s</b>&nbsp; olgasangupambanika@gmail.com<br><b>%s</b>&nbsp; 06 12 40 59 39<br><b>%s</b>&nbsp; %s</div>
+  <div class="contact"><b>%s</b>&nbsp; olgasangupambanika@gmail.com<br><b>%s</b>&nbsp; 06 12 40 59 39<br><b>%s</b>&nbsp; %s<br><b>%s</b>&nbsp; <a href="https://onykas.github.io/portfolio/" class="portfolio-link">onykas.github.io/portfolio</a></div>
 </div>
 <hr class="rule">
 <p class="intro">%s</p>
 <div class="cols"><div class="left">%s</div><div class="right">%s</div></div>
-<div class="foot">olgasangupambanika@gmail.com &middot; 06 12 40 59 39 &middot; %s</div>
-</body></html>""" % (D["lang"], CSS, esc(D["subtitle"]), D["c_email"], D["c_phone"], D["c_loc"], esc(D["loc"]), esc(D["intro"]), left, right, esc(D["loc"]))
+<div class="foot"><a href="https://onykas.github.io/portfolio/" class="portfolio-link">onykas.github.io/portfolio</a> &middot; olgasangupambanika@gmail.com &middot; 06 12 40 59 39 &middot; %s</div>
+</body></html>""" % (D["lang"], CSS, esc(D["subtitle"]), D["c_email"], D["c_phone"], D["c_loc"], esc(D["loc"]), D["c_web"], esc(D["intro"]), left, right, esc(D["loc"]))
 
 
 FR = {
  "lang":"fr",
  "loc":"Montbéliard, France",
- "subtitle":"Développeuse Full-Stack & UX/UI · Étudiante en Master 2 Nouvelles Technologies de l'Information et de la Communication",
- "c_email":"Email","c_phone":"Tél.","c_loc":"Lieu",
+ "subtitle":"Conceptrice de solutions numériques · Développement & UX/UI · Étudiante en Master 2 NTIC",
+ "c_email":"Email","c_phone":"Tél.","c_loc":"Lieu","c_web":"Portfolio",
  "intro":"Je conçois et développe des applications web et mobiles de bout en bout : back-end, front-end, base de données et interface utilisateur. La recherche appliquée est au cœur de ma pratique : comprendre un besoin utilisateur par l'observation et les entretiens, prototyper, tester, itérer et documenter chaque étape de la démarche. Cette approche a déjà été mise en œuvre lors de mon stage de recherche UX/UI. Je reste ouverte à des projets de conception de solutions numériques, en entreprise comme en laboratoire de recherche.",
  "skills_h":"Compétences",
- "skills":["Full-Stack : React, Node.js, FastAPI, Python","Mobile : KivyMD, Flutter","Bases de données : PostgreSQL, SQLite, Redis","UI/UX : Figma, prototypage, accessibilité (RGAA)","Recherche : UX Research et recherche appliquée en général, design thinking","Gestion de projet digital","Création graphique, montage vidéo"],
+ "skills":["Full-Stack : React, Node.js, FastAPI, Python","Mobile : Flutter","Bases de données : PostgreSQL, SQLite, Redis","UI/UX : Figma, prototypage, accessibilité (RGAA)","Recherche : UX Research et recherche appliquée en général, design thinking","Gestion de projet digital","Création graphique, montage vidéo"],
  "lang_h":"Langues",
  "langs":["Français — langue maternelle","Anglais — B2"],
  "soft_h":"Savoir-être",
@@ -124,11 +125,11 @@ FR = {
 EN = {
  "lang":"en",
  "loc":"Montbéliard, France",
- "subtitle":"Full-Stack Developer & UX/UI Designer · Master's student in New Information & Communication Technologies",
- "c_email":"Email","c_phone":"Phone","c_loc":"Location",
+ "subtitle":"Designer of digital solutions · Development & UX/UI · Master's student in ICT",
+ "c_email":"Email","c_phone":"Phone","c_loc":"Location","c_web":"Portfolio",
  "intro":"I design and develop web and mobile applications end to end: back-end, front-end, database and user interface. Applied research is at the heart of my practice: understanding a user need through observation and interviews, prototyping, testing, iterating and documenting every step of the process. I already put this approach into practice during my UX/UI research internship. I remain open to projects designing digital solutions, in companies as well as in research labs.",
  "skills_h":"Skills",
- "skills":["Full-Stack: React, Node.js, FastAPI, Python","Mobile: KivyMD, Flutter","Databases: PostgreSQL, SQLite, Redis","UI/UX: Figma, prototyping, accessibility (WCAG)","Research: UX Research and applied research in general, design thinking","Digital project management","Graphic design, video editing"],
+ "skills":["Full-Stack: React, Node.js, FastAPI, Python","Mobile: Flutter","Databases: PostgreSQL, SQLite, Redis","UI/UX: Figma, prototyping, accessibility (WCAG)","Research: UX Research and applied research in general, design thinking","Digital project management","Graphic design, video editing"],
  "lang_h":"Languages",
  "langs":["French — native","English — B2"],
  "soft_h":"Soft skills",
@@ -166,11 +167,11 @@ EN = {
 ES = {
  "lang":"es",
  "loc":"Montbéliard, Francia",
- "subtitle":"Desarrolladora Full-Stack y diseñadora UX/UI · Estudiante de Máster 2 en Nuevas Tecnologías de la Información y la Comunicación",
- "c_email":"Correo","c_phone":"Tel.","c_loc":"Ubicación",
+ "subtitle":"Diseñadora de soluciones digitales · Desarrollo y UX/UI · Estudiante de Máster en NTIC",
+ "c_email":"Correo","c_phone":"Tel.","c_loc":"Ubicación","c_web":"Portfolio",
  "intro":"Diseño y desarrollo aplicaciones web y móviles de principio a fin: back-end, front-end, base de datos e interfaz de usuario. La investigación aplicada está en el centro de mi práctica: entender una necesidad del usuario mediante la observación y las entrevistas, prototipar, probar, iterar y documentar cada etapa del proceso. Ya puse en práctica este enfoque durante mis prácticas de investigación UX/UI. Sigo abierta a proyectos de diseño de soluciones digitales, tanto en empresas como en laboratorios de investigación.",
  "skills_h":"Habilidades",
- "skills":["Full-Stack: React, Node.js, FastAPI, Python","Móvil: KivyMD, Flutter","Bases de datos: PostgreSQL, SQLite, Redis","UI/UX: Figma, prototipado, accesibilidad (WCAG)","Investigación: UX Research e investigación aplicada en general, design thinking","Gestión de proyectos digitales","Diseño gráfico, edición de vídeo"],
+ "skills":["Full-Stack: React, Node.js, FastAPI, Python","Móvil: Flutter","Bases de datos: PostgreSQL, SQLite, Redis","UI/UX: Figma, prototipado, accesibilidad (WCAG)","Investigación: UX Research e investigación aplicada en general, design thinking","Gestión de proyectos digitales","Diseño gráfico, edición de vídeo"],
  "lang_h":"Idiomas",
  "langs":["Francés — lengua materna","Inglés — B2"],
  "soft_h":"Aptitudes personales",
@@ -208,11 +209,11 @@ ES = {
 DE = {
  "lang":"de",
  "loc":"Montbéliard, Frankreich",
- "subtitle":"Full-Stack-Entwicklerin & UX/UI-Designerin · Masterstudentin für Neue Informations- und Kommunikationstechnologien",
- "c_email":"E-Mail","c_phone":"Tel.","c_loc":"Ort",
+ "subtitle":"Gestalterin digitaler Lösungen · Entwicklung & UX/UI · Masterstudentin IKT",
+ "c_email":"E-Mail","c_phone":"Tel.","c_loc":"Ort","c_web":"Portfolio",
  "intro":"Ich konzipiere und entwickle Web- und Mobilanwendungen von Anfang bis Ende: Back-End, Front-End, Datenbank und Benutzeroberfläche. Angewandte Forschung steht im Mittelpunkt meiner Arbeit: einen Nutzerbedarf durch Beobachtung und Interviews verstehen, prototypisieren, testen, iterieren und jeden Schritt dokumentieren. Diesen Ansatz habe ich bereits während meines UX/UI-Forschungspraktikums umgesetzt. Ich bin offen für Projekte zur Gestaltung digitaler Lösungen, in Unternehmen wie auch in Forschungslaboren.",
  "skills_h":"Kompetenzen",
- "skills":["Full-Stack: React, Node.js, FastAPI, Python","Mobil: KivyMD, Flutter","Datenbanken: PostgreSQL, SQLite, Redis","UI/UX: Figma, Prototyping, Barrierefreiheit (WCAG)","Forschung: UX-Research und angewandte Forschung allgemein, Design Thinking","Digitales Projektmanagement","Grafikdesign, Videoschnitt"],
+ "skills":["Full-Stack: React, Node.js, FastAPI, Python","Mobil: Flutter","Datenbanken: PostgreSQL, SQLite, Redis","UI/UX: Figma, Prototyping, Barrierefreiheit (WCAG)","Forschung: UX-Research und angewandte Forschung allgemein, Design Thinking","Digitales Projektmanagement","Grafikdesign, Videoschnitt"],
  "lang_h":"Sprachen",
  "langs":["Französisch — Muttersprache","Englisch — B2"],
  "soft_h":"Soft Skills",
