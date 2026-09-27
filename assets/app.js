@@ -57,7 +57,7 @@
 
     var KB = [
       { keys:['qui est olga','qui es olga','c\'est qui olga','qui es-tu','qui êtes-vous','présente','presente-toi','présente-toi','te présenter'],
-        a:"Olga Sangupamba Nika, 23 ans, étudiante en Master 2 Nouvelles Technologies de l'Information et de la Communication à Montbéliard. Elle est développeuse Full-Stack & UX/UI, passionnée par le numérique et la recherche appliquée. Le détail est sur la page À propos." },
+        a:"Olga Sangupamba Nika, 23 ans, étudiante en Master 2 Nouvelles Technologies de l'Information et de la Communication à Montbéliard. Elle se définit comme conceptrice de solutions numériques (UX/UI & développement), passionnée par la recherche appliquée et la création de solutions numériques. Le détail est sur la page À propos." },
       { keys:['competence','compétence','skill','techno','stack','sait faire','maitrise','maîtrise'],
         a:"Ses compétences sont réparties en 4 familles : Full-Stack (React, React Native, Node.js, FastAPI, Flutter...), Bases de données, UX/UI & Recherche, et Gestion & Création. Détail complet dans À propos → Compétences." },
       { keys:['aide','aider','apport','apporter','pourquoi','recruter','embaucher','pourquoi toi','pourquoi elle','forces','qualités','qualites'],
